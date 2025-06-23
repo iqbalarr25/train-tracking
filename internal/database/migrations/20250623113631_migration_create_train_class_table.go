@@ -8,13 +8,13 @@ import (
 
 func init() {
 	RegisterMigration(&gormigrate.Migration{
-		ID: "20250619223335_migration_create_station_nodes_table",
+		ID: "20250623113631_migration_create_train_class_table",
 		Migrate: func(tx *gorm.DB) error {
-			return tx.AutoMigrate(&model.StationNode{})
+			return tx.AutoMigrate(&model.TrainClass{})
 		},
 		Rollback: func(tx *gorm.DB) error {
 			// Define your rollback logic here
-			return tx.Migrator().DropTable(&model.StationNode{})
+			return tx.Migrator().DropTable(&model.TrainClass{})
 		},
 	})
 }
