@@ -1,0 +1,35 @@
+version: '3'
+services:
+  application:
+    image: ${CI_REGISTRY_IMAGE}/application:${CI_COMMIT_TAG}
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./.env:/app/.env
+    working_dir: /app
+    deploy:
+      replicas: ${COMPOSE_REPLICAS:-1}
+    networks:
+      - database-network
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}.entrypoints=http"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}.rule=Host(`${APP_HOST}`)"
+      - "traefik.http.middlewares.${IMAGE_NAME}-${APP_ENV}-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}.middlewares=${IMAGE_NAME}-${APP_ENV}-https-redirect"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}-secure.entrypoints=https"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}-secure.rule=Host(`${APP_HOST}`)"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}-secure.tls=true"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}-secure.tls.certresolver=http"
+      - "traefik.http.routers.${IMAGE_NAME}-${APP_ENV}-secure.service=${IMAGE_NAME}-${APP_ENV}"
+      - "traefik.http.services.${IMAGE_NAME}-${APP_ENV}.loadbalancer.server.port=9000"
+      - "traefik.docker.network=proxy"
+
+#Docker Networks
+networks:
+  database-network:
+    external: true
+  proxy:
+    external: true
