@@ -3,9 +3,8 @@ package database
 import (
 	"TrainTracking/internal/features/model"
 	"TrainTracking/pkg/helper"
-	"log"
-
 	"gorm.io/gorm"
+	"log"
 )
 
 func init() {
