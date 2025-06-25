@@ -9,6 +9,5 @@ type (
 		ReverseCost float64  `gorm:""`         // Boleh null
 		MaxSpeed    *float64 // nullable
 		Geom        string   `gorm:"type:geometry(Point,4326)"` // Geometry LineString
-
 	}
 )
