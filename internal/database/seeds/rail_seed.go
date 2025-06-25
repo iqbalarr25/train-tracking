@@ -3,12 +3,11 @@ package database
 import (
 	"TrainTracking/internal/features/model"
 	"encoding/json"
+	"gorm.io/gorm"
 	"log"
 	"math"
 	"os"
 	"strconv"
-
-	"gorm.io/gorm"
 )
 
 type OverpassData struct {
@@ -151,7 +150,7 @@ func init() {
 					// Masukkan relasi station_id dan node_id
 					err = tx.Exec(`
 						INSERT INTO station_nodes (station_id, node_id)
-						VALUES (?, ?) 
+						VALUES (?, ?)
 						ON CONFLICT (station_id, node_id) DO NOTHING
 					`, station.ID, el.ID).Error
 
