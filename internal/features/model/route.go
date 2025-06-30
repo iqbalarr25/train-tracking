@@ -22,6 +22,23 @@ type (
 		DepartStation Station `json:"depart_station" gorm:"foreignKey:DepartStationID;references:ID"`
 		ArriveStation Station `json:"arrive_station" gorm:"foreignKey:ArriveStationID;references:ID"`
 	}
+
+	RouteDetail struct {
+		ID         uuid.UUID  `gorm:"primaryKey"`
+		ArriveTime *time.Time `json:"arrive_time" gorm:"type:timestamp without time zone"`
+		DepartTime *time.Time `json:"depart_time" gorm:"type:timestamp without time zone"`
+		Note       string     `json:"note" gorm:"type:text"`
+		MaxSpeed   *int16     `json:"max_speed" gorm:"type:float"`
+
+		RouteID   uuid.UUID `json:"route_id"`
+		StationID int64     `json:"depart_station_id"`
+		CreatedAt time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		UpdatedAt time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		DeletedAt gorm.DeletedAt
+
+		Route   Route   `json:"route" gorm:"foreignKey:RouteID;references:ID"`
+		Station Station `json:"station" gorm:"foreignKey:StationID;references:ID"`
+	}
 )
 
 func (r *Route) BeforeCreate(_ *gorm.DB) error {
@@ -32,6 +49,18 @@ func (r *Route) BeforeCreate(_ *gorm.DB) error {
 
 func (r *Route) BeforeUpdate(_ *gorm.DB) error {
 	r.ID = uuid.New()
+
+	return nil
+}
+
+func (dr *RouteDetail) BeforeCreate(_ *gorm.DB) error {
+	dr.ID = uuid.New()
+
+	return nil
+}
+
+func (dr *RouteDetail) BeforeUpdate(_ *gorm.DB) error {
+	dr.ID = uuid.New()
 
 	return nil
 }

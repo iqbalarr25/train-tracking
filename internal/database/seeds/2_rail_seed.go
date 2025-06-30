@@ -3,6 +3,7 @@ package database
 import (
 	"TrainTracking/internal/features/model"
 	"encoding/json"
+	"fmt"
 	"gorm.io/gorm"
 	"log"
 	"math"
@@ -89,19 +90,53 @@ func init() {
 			for _, el := range parsed.Elements {
 				if el.Type == "node" && (el.Tags["railway"] == "station" || el.Tags["public_transport"] == "station") {
 					name := el.Tags["name"]
-					ref := el.Tags["railway:ref"]
+					ref := el.Tags["ref"]
+					railRef := el.Tags["railway:ref"]
+
 					station := model.Station{
 						ID:   el.ID,
 						Lat:  el.Lat,
 						Lon:  el.Lon,
 						Name: name,
-						Ref:  ref,
+					}
+
+					// Coba cari stasiun pakai ref
+					if ref != "" {
+						station.Ref = ref
+					}
+
+					// Kalau belum ketemu dan masih kosong, coba pakai railway:ref
+					if station.Ref == "" && railRef != "" {
+						station.Ref = railRef
 					}
 
 					tx.Exec(`
 					  INSERT INTO stations (id, name, ref, lat, lon, geom)
 					  VALUES (?, ?, ?, ?, ?, ST_SetSRID(ST_MakePoint(?, ?), 4326))
 					`, station.ID, station.Name, station.Ref, station.Lat, station.Lon, station.Lon, station.Lat)
+				}
+			}
+
+			file, err := os.Open("data/station_update.json")
+			if err != nil {
+				return fmt.Errorf("gagal buka file JSON: %w", err)
+			}
+			defer func(file *os.File) {
+				err := file.Close()
+				if err != nil {
+				}
+			}(file)
+
+			var updatedStations []model.Station
+			if err := json.NewDecoder(file).Decode(&updatedStations); err != nil {
+				return fmt.Errorf("gagal decode JSON: %w", err)
+			}
+
+			// --- Update Stations ---x
+			for _, station := range updatedStations {
+				err = tx.Model(model.Station{}).Where("id = ?", station.ID).Update("ref", station.Ref).Error
+				if err != nil {
+					return fmt.Errorf("gagal update stasiun: %s %w", station.ID, err)
 				}
 			}
 
