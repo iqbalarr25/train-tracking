@@ -10,8 +10,10 @@ func init() {
 		ID: "20250618114643_migration_create_rail_nodes_table",
 		Migrate: func(tx *gorm.DB) error {
 			return tx.Exec(`
+				CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
 				CREATE TABLE IF NOT EXISTS rail_nodes (
-					id BIGINT PRIMARY KEY,
+					id UUID PRIMARY KEY,
 					lat DOUBLE PRECISION NOT NULL,
 					lon DOUBLE PRECISION NOT NULL,
 					geom geometry(Point, 4326)

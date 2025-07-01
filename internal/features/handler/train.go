@@ -29,11 +29,17 @@ func (h *TrainHandler) GetTrainPagination(ctx *fiber.Ctx) error {
 	pageSize := ctx.QueryInt("page_size", 5)
 	search := ctx.Query("search")
 	sort := ctx.Query("sort")
-	request := model.RequestPagination{
-		Page:     page,
-		PageSize: pageSize,
-		Sort:     sort,
-		Search:   search,
+	filter := ctx.Query("filter")
+	departStationId := ctx.Query("depart_station_id")
+	arriveStationId := ctx.Query("arrive_station_id")
+	request := model.RequestPaginationTrain{
+		Page:            page,
+		PageSize:        pageSize,
+		Search:          search,
+		Sort:            sort,
+		Filter:          filter,
+		DepartStationId: departStationId,
+		ArriveStationId: arriveStationId,
 	}
 
 	res, count, err := h.SVC.GetPagination(request)

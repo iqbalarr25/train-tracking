@@ -10,8 +10,10 @@ func init() {
 		ID: "20250619141410_migration_create_stations_table",
 		Migrate: func(tx *gorm.DB) error {
 			if err := tx.Exec(`
+				CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
 				CREATE TABLE IF NOT EXISTS stations (
-					id BIGINT PRIMARY KEY,
+					id UUID PRIMARY KEY,
 					name TEXT NOT NULL,
 					ref  TEXT,
 					lat DOUBLE PRECISION NOT NULL,

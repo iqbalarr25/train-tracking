@@ -7,7 +7,7 @@ import (
 
 type (
 	TrainRepositoryInterface interface {
-		GetTrainsPagination(req model.RequestPagination, res *[]model.Train) (count int64, err error)
+		GetTrainsPagination(req model.RequestPaginationTrain, res *[]model.Train) (count int64, err error)
 	}
 
 	TrainRepository struct {
@@ -21,8 +21,43 @@ func NewTrainRepository(db *gorm.DB) *TrainRepository {
 	}
 }
 
-func (r *TrainRepository) GetTrainsPagination(req model.RequestPagination, trains *[]model.Train) (count int64, err error) {
-	query := r.DB.Model(&model.Train{}).Where("deleted_at is null").
+func (r *TrainRepository) GetTrainsPagination(req model.RequestPaginationTrain, trains *[]model.Train) (count int64, err error) {
+	query := r.DB.Model(&model.Train{}).
+		Where("trains.deleted_at IS NULL").
+		Joins("JOIN train_classes ON train_classes.id = trains.train_class_id").
+		Joins("JOIN routes ON routes.train_id = trains.id").
+		Joins("JOIN stations AS depart_station ON depart_station.id = routes.depart_station_id").
+		Joins("JOIN stations AS arrive_station ON arrive_station.id = routes.arrive_station_id")
+
+	if req.Search != "" {
+		query = query.Where(
+			"trains.name ILIKE ? OR train_classes.name ILIKE ?",
+			"%"+req.Search+"%", "%"+req.Search+"%",
+		)
+	}
+
+	if req.Filter != "" {
+		query = query.Where(
+			"trains.status = ?",
+			req.Filter,
+		)
+	}
+
+	if req.DepartStationId != "" {
+		query = query.Where(
+			"depart_station.id = ?",
+			req.DepartStationId,
+		)
+	}
+
+	if req.ArriveStationId != "" {
+		query = query.Where(
+			"arrive_station.id = ?",
+			req.ArriveStationId,
+		)
+	}
+
+	query = query.
 		Preload("Route.DepartStation").
 		Preload("Route.ArriveStation").
 		Preload("TrainClass")
