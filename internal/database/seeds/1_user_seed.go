@@ -13,7 +13,7 @@ func init() {
 		Run: func(tx *gorm.DB) error {
 			items := []model.User{
 				{
-					Email:    "admin@transtrack.id",
+					Email:    "admin@wtb.id",
 					Name:     "admin",
 					Password: "password",
 					Role:     helper.UserRoleAdmin,

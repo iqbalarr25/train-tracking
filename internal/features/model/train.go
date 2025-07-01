@@ -11,7 +11,7 @@ type (
 		ID           uuid.UUID `gorm:"primaryKey"`
 		Name         string    `gorm:"varchar(255)"`
 		TrainCode    string    `gorm:"varchar(5);unique"`
-		Status       string    `gorm:"varchar(255);not null;default:INACTIVE"`
+		Status       string    `gorm:"varchar(255);not null;default:Inactive"`
 		TrainClassID uuid.UUID
 		CreatedAt    time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		UpdatedAt    time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
@@ -44,8 +44,9 @@ type (
 	}
 
 	TrainListStationResponse struct {
-		ID  int64  `json:"id"`
-		Ref string `json:"ref"`
+		ID   uuid.UUID `json:"id"`
+		Name string    `json:"name"`
+		Ref  string    `json:"ref"`
 	}
 )
 

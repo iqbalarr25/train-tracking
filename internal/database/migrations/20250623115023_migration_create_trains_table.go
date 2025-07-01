@@ -13,7 +13,6 @@ func init() {
 			return tx.AutoMigrate(&model.Train{})
 		},
 		Rollback: func(tx *gorm.DB) error {
-			// Define your rollback logic here
 			return tx.Migrator().DropTable(&model.Train{})
 		},
 	})

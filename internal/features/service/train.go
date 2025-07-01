@@ -7,7 +7,7 @@ import (
 
 type (
 	TrainServiceInterface interface {
-		GetPagination(req model.RequestPagination) (res []model.TrainListResponse, count int64, err error)
+		GetPagination(req model.RequestPaginationTrain) (res []model.TrainListResponse, count int64, err error)
 	}
 
 	TrainService struct {
@@ -21,7 +21,7 @@ func NewTrainService(repo repository.TrainRepositoryInterface) TrainServiceInter
 	}
 }
 
-func (s *TrainService) GetPagination(req model.RequestPagination) (res []model.TrainListResponse, count int64, err error) {
+func (s *TrainService) GetPagination(req model.RequestPaginationTrain) (res []model.TrainListResponse, count int64, err error) {
 	var trains []model.Train
 	count, err = s.Repo.GetTrainsPagination(req, &trains)
 
@@ -39,12 +39,14 @@ func (s *TrainService) GetPagination(req model.RequestPagination) (res []model.T
 				DepartTime: t.Route.DepartTime,
 				ArriveTime: t.Route.ArriveTime,
 				DepartStation: model.TrainListStationResponse{
-					ID:  t.Route.DepartStation.ID,
-					Ref: t.Route.DepartStation.Ref,
+					ID:   t.Route.DepartStation.ID,
+					Name: t.Route.DepartStation.Name,
+					Ref:  t.Route.DepartStation.Ref,
 				},
 				ArriveStation: model.TrainListStationResponse{
-					ID:  t.Route.ArriveStation.ID,
-					Ref: t.Route.ArriveStation.Ref,
+					ID:   t.Route.ArriveStation.ID,
+					Name: t.Route.ArriveStation.Name,
+					Ref:  t.Route.ArriveStation.Ref,
 				},
 			},
 		}

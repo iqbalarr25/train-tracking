@@ -11,10 +11,12 @@ func init() {
 		Migrate: func(tx *gorm.DB) error {
 			// Define your migration logic here
 			return tx.Exec(`
+				CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
 				CREATE TABLE IF NOT EXISTS rail_edges (
-					id SERIAL PRIMARY KEY,
-					source BIGINT NOT NULL,
-					target BIGINT NOT NULL,
+					id UUID PRIMARY KEY,
+					source UUID NOT NULL,
+					target UUID NOT NULL,
 					cost DOUBLE PRECISION NOT NULL,
 					reverse_cost DOUBLE PRECISION,
 					max_speed DOUBLE PRECISION,

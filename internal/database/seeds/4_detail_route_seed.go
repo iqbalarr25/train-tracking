@@ -90,7 +90,7 @@ func init() {
 						Where("trains.train_code = ?", input.TrainCode).
 						Find(&route).Error
 					if err != nil {
-						log.Printf("❌ Train %s tidak ditemukan: %v", routeDetail.StationCode, err)
+						log.Printf("❌ Train %s tidak ditemukan: %v", input.TrainCode, err)
 						break
 					}
 

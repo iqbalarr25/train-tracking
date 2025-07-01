@@ -4,6 +4,7 @@ import (
 	"TrainTracking/internal/features/model"
 	"encoding/json"
 	"fmt"
+	"github.com/google/uuid"
 	"gorm.io/gorm"
 	"log"
 	"math"
@@ -11,15 +12,17 @@ import (
 	"strconv"
 )
 
+type OverpassElement struct {
+	Type  string            `json:"type"`
+	ID    int64             `json:"id"`
+	Lat   float64           `json:"lat,omitempty"`
+	Lon   float64           `json:"lon,omitempty"`
+	Nodes []int64           `json:"nodes,omitempty"`
+	Tags  map[string]string `json:"tags,omitempty"`
+}
+
 type OverpassData struct {
-	Elements []struct {
-		Type  string            `json:"type"`
-		ID    int64             `json:"id"`
-		Lat   float64           `json:"lat,omitempty"`
-		Lon   float64           `json:"lon,omitempty"`
-		Nodes []int64           `json:"nodes,omitempty"`
-		Tags  map[string]string `json:"tags,omitempty"`
-	} `json:"elements"`
+	Elements []OverpassElement `json:"elements"`
 }
 
 func init() {
@@ -36,57 +39,64 @@ func init() {
 				log.Fatal("parse json error:", err)
 			}
 
-			nodeMap := map[int64]model.RailNode{}
+			nodeMap := map[int64]uuid.UUID{}
 
 			// --- Insert Nodes ---
 			for _, el := range parsed.Elements {
 				if el.Type == "node" {
-					node := model.RailNode{ID: el.ID, Lat: el.Lat, Lon: el.Lon}
-					tx.Exec(`
-					  INSERT INTO rail_nodes (id, lat, lon, geom)
-					  VALUES (?, ?, ?, ST_SetSRID(ST_MakePoint(?, ?), 4326))
-					`, node.ID, node.Lat, node.Lon, node.Lon, node.Lat)
-					nodeMap[el.ID] = node
+					node := model.RailNode{
+						Lat:  el.Lat,
+						Lon:  el.Lon,
+						Geom: fmt.Sprintf("SRID=4326;POINT(%f %f)", el.Lon, el.Lat),
+					}
+					if err := tx.Create(&node).Error; err != nil {
+						return fmt.Errorf("insert node error: %w", err)
+					}
+					nodeMap[el.ID] = node.ID
 				}
 			}
 
+			// --- Insert Edges ---
 			for _, el := range parsed.Elements {
 				if el.Type == "way" && len(el.Nodes) >= 2 {
 					var maxSpeed *float64
 					if ms, ok := el.Tags["maxspeed"]; ok {
-						if parsed, err := strconv.ParseFloat(ms, 64); err == nil {
-							maxSpeed = &parsed
+						if parsedSpeed, err := strconv.ParseFloat(ms, 64); err == nil {
+							maxSpeed = &parsedSpeed
 						}
 					}
 
 					for i := 0; i < len(el.Nodes)-1; i++ {
-						src := nodeMap[el.Nodes[i]]
-						dst := nodeMap[el.Nodes[i+1]]
+						srcID, ok1 := nodeMap[el.Nodes[i]]
+						dstID, ok2 := nodeMap[el.Nodes[i+1]]
+						if !ok1 || !ok2 {
+							continue
+						}
 
-						if src.ID == 0 || dst.ID == 0 {
+						src := parsed.FindNodeByID(el.Nodes[i])
+						dst := parsed.FindNodeByID(el.Nodes[i+1])
+						if src == nil || dst == nil {
 							continue
 						}
 
 						edge := model.RailEdge{
-							Source:      src.ID,
-							Target:      dst.ID,
+							Source:      srcID,
+							Target:      dstID,
 							Cost:        haversine(src.Lat, src.Lon, dst.Lat, dst.Lon),
 							ReverseCost: haversine(dst.Lat, dst.Lon, src.Lat, src.Lon),
 							MaxSpeed:    maxSpeed,
+							Geom:        fmt.Sprintf("SRID=4326;LINESTRING(%f %f, %f %f)", src.Lon, src.Lat, dst.Lon, dst.Lat),
 						}
-
-						tx.Exec(`
-							INSERT INTO rail_edges (source, target, cost, reverse_cost, max_speed, geom)
-							VALUES (?, ?, ?, ?, ?, ST_SetSRID(ST_MakeLine(
-								ST_MakePoint(?, ?),
-								ST_MakePoint(?, ?)
-							), 4326))
-						`, edge.Source, edge.Target, edge.Cost, edge.ReverseCost, edge.MaxSpeed, src.Lon, src.Lat, dst.Lon, dst.Lat)
+						if err := tx.Create(&edge).Error; err != nil {
+							log.Printf("insert edge failed: %v", err)
+						}
 					}
 				}
 			}
 
-			// --- Insert Stations ---x
+			stationMap := map[int64]uuid.UUID{}
+
+			// --- Insert Stations ---
 			for _, el := range parsed.Elements {
 				if el.Type == "node" && (el.Tags["railway"] == "station" || el.Tags["public_transport"] == "station") {
 					name := el.Tags["name"]
@@ -94,26 +104,24 @@ func init() {
 					railRef := el.Tags["railway:ref"]
 
 					station := model.Station{
-						ID:   el.ID,
-						Lat:  el.Lat,
-						Lon:  el.Lon,
-						Name: name,
+						Lat:        el.Lat,
+						Lon:        el.Lon,
+						Name:       name,
+						OverpassID: el.ID,
+						Geom:       fmt.Sprintf("SRID=4326;POINT(%f %f)", el.Lon, el.Lat),
 					}
 
-					// Coba cari stasiun pakai ref
 					if ref != "" {
 						station.Ref = ref
-					}
-
-					// Kalau belum ketemu dan masih kosong, coba pakai railway:ref
-					if station.Ref == "" && railRef != "" {
+					} else if railRef != "" {
 						station.Ref = railRef
 					}
 
-					tx.Exec(`
-					  INSERT INTO stations (id, name, ref, lat, lon, geom)
-					  VALUES (?, ?, ?, ?, ?, ST_SetSRID(ST_MakePoint(?, ?), 4326))
-					`, station.ID, station.Name, station.Ref, station.Lat, station.Lon, station.Lon, station.Lat)
+					if err := tx.Create(&station).Error; err != nil {
+						return fmt.Errorf("insert station error: %w", err)
+					}
+
+					stationMap[el.ID] = station.ID
 				}
 			}
 
@@ -127,20 +135,31 @@ func init() {
 				}
 			}(file)
 
-			var updatedStations []model.Station
+			// --- Update Station Refs dari station_update.json ---
+			file, err = os.Open("data/station_update.json")
+			if err != nil {
+				return fmt.Errorf("gagal buka file JSON: %w", err)
+			}
+			defer func(file *os.File) {
+				err := file.Close()
+				if err != nil {
+				}
+			}(file)
+
+			var updatedStations []model.StationOverpass
 			if err := json.NewDecoder(file).Decode(&updatedStations); err != nil {
 				return fmt.Errorf("gagal decode JSON: %w", err)
 			}
 
-			// --- Update Stations ---x
 			for _, station := range updatedStations {
-				err = tx.Model(model.Station{}).Where("id = ?", station.ID).Update("ref", station.Ref).Error
+				err = tx.Table("stations").Where("overpass_id = ?", station.ID).
+					Update("ref", station.Ref).Error
 				if err != nil {
-					return fmt.Errorf("gagal update stasiun: %s %w", station.ID, err)
+					return fmt.Errorf("gagal update stasiun %s: %w", station.ID, err)
 				}
 			}
 
-			// --- Insert Station <-> Node Ref Many-to-Many ---
+			// --- Insert Station <-> Node (Many-to-Many) ---
 			for _, el := range parsed.Elements {
 				if el.Type == "node" && (el.Tags["railway"] == "stop" || el.Tags["public_transport"] == "stop_position") {
 					ref := el.Tags["ref"]
@@ -148,49 +167,36 @@ func init() {
 					name := el.Tags["name"]
 
 					var station model.Station
-					var err error
+					found := false
 
-					// Coba cari stasiun pakai ref
 					if ref != "" {
-						err = tx.Raw(`SELECT id FROM stations WHERE ref = ? LIMIT 1`, ref).Scan(&station).Error
-						if err != nil {
-							log.Printf("error querying station by ref (%s): %v", ref, err)
-							continue
-						}
+						err = tx.Where("ref = ?", ref).First(&station).Error
+						found = err == nil
 					}
-
-					// Kalau belum ketemu dan masih kosong, coba pakai railway:ref
-					if station.ID == 0 && railRef != "" {
-						err = tx.Raw(`SELECT id FROM stations WHERE ref = ? LIMIT 1`, railRef).Scan(&station).Error
-						if err != nil {
-							log.Printf("error querying station by railway:ref (%s): %v", railRef, err)
-							continue
-						}
+					if !found && railRef != "" {
+						err = tx.Where("ref = ?", railRef).First(&station).Error
+						found = err == nil
 					}
-
-					// Kalau masih belum ketemu dan ada name, coba pakai name
-					if station.ID == 0 && name != "" {
-						err = tx.Raw(`SELECT id FROM stations WHERE name ILIKE ? LIMIT 1`, name).Scan(&station).Error
-						if err != nil {
-							log.Printf("error querying station by name (%s): %v", name, err)
-							continue
-						}
+					if !found && name != "" {
+						err = tx.Where("name ILIKE ?", name).First(&station).Error
+						found = err == nil
 					}
-
-					// Kalau gak ketemu, skip
-					if station.ID == 0 {
+					if !found {
 						continue
 					}
 
-					// Masukkan relasi station_id dan node_id
+					nodeUUID, ok := nodeMap[el.ID]
+					if !ok {
+						continue
+					}
+
 					err = tx.Exec(`
 						INSERT INTO station_nodes (station_id, node_id)
 						VALUES (?, ?)
 						ON CONFLICT (station_id, node_id) DO NOTHING
-					`, station.ID, el.ID).Error
-
+					`, station.ID, nodeUUID).Error
 					if err != nil {
-						log.Printf("failed to insert station_node (%d, %d): %v", station.ID, el.ID, err)
+						log.Printf("failed to insert station_node (%s, %s): %v", station.ID, nodeUUID, err)
 					}
 				}
 			}
@@ -199,6 +205,15 @@ func init() {
 			return nil
 		},
 	})
+}
+
+func (data *OverpassData) FindNodeByID(id int64) *OverpassElement {
+	for _, el := range data.Elements {
+		if el.Type == "node" && el.ID == id {
+			return &el
+		}
+	}
+	return nil
 }
 
 func haversine(lat1, lon1, lat2, lon2 float64) float64 {

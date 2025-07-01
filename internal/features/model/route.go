@@ -12,8 +12,8 @@ type (
 		DepartTime      time.Time `json:"depart_time" gorm:"type:timestamp without time zone"`
 		ArriveTime      time.Time `json:"arrive_time" gorm:"type:timestamp without time zone"`
 		TrainID         uuid.UUID `json:"train_id"`
-		DepartStationID int64     `json:"depart_station_id"`
-		ArriveStationID int64     `json:"arrive_station_id"`
+		DepartStationID uuid.UUID `json:"depart_station_id"`
+		ArriveStationID uuid.UUID `json:"arrive_station_id"`
 		CreatedAt       time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		UpdatedAt       time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		DeletedAt       gorm.DeletedAt
@@ -31,7 +31,7 @@ type (
 		MaxSpeed   *int16     `json:"max_speed" gorm:"type:float"`
 
 		RouteID   uuid.UUID `json:"route_id"`
-		StationID int64     `json:"depart_station_id"`
+		StationID uuid.UUID `json:"depart_station_id"`
 		CreatedAt time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		UpdatedAt time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		DeletedAt gorm.DeletedAt

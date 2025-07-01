@@ -1,8 +1,10 @@
 package model
 
+import "github.com/google/uuid"
+
 type (
 	StationNode struct {
-		StationID int64 `gorm:"primaryKey"`
-		NodeID    int64 `gorm:"primaryKey"`
+		StationID uuid.UUID `gorm:"type:uuid;primaryKey"`
+		NodeID    uuid.UUID `gorm:"type:uuid;primaryKey"`
 	}
 )
