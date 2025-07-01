@@ -7,7 +7,7 @@ import (
 
 type (
 	TrainRepositoryInterface interface {
-		GetTrainsPagination(req model.RequestPagination) (res []model.TrainListResponse, count int64, err error)
+		GetTrainsPagination(req model.RequestPagination, res *[]model.Train) (count int64, err error)
 	}
 
 	TrainRepository struct {
@@ -21,9 +21,7 @@ func NewTrainRepository(db *gorm.DB) *TrainRepository {
 	}
 }
 
-func (r *TrainRepository) GetTrainsPagination(req model.RequestPagination) (res []model.TrainListResponse, count int64, err error) {
-	var trains []model.Train
-
+func (r *TrainRepository) GetTrainsPagination(req model.RequestPagination, trains *[]model.Train) (count int64, err error) {
 	query := r.DB.Model(&model.Train{}).Where("deleted_at is null").
 		Preload("Route.DepartStation").
 		Preload("Route.ArriveStation").
@@ -41,31 +39,6 @@ func (r *TrainRepository) GetTrainsPagination(req model.RequestPagination) (res 
 	err = query.Find(&trains).Error
 	if err != nil {
 		return
-	}
-
-	// mapping ke response
-	res = make([]model.TrainListResponse, len(trains))
-	for i, t := range trains {
-		res[i] = model.TrainListResponse{
-			ID:         t.ID,
-			Name:       t.Name,
-			TrainCode:  t.TrainCode,
-			Status:     t.Status,
-			TrainClass: t.TrainClass,
-			TrainRouteResponse: model.TrainListRouteResponse{
-				ID:         t.Route.ID,
-				DepartTime: t.Route.DepartTime,
-				ArriveTime: t.Route.ArriveTime,
-				DepartStation: model.TrainListStationResponse{
-					ID:  t.Route.DepartStation.ID,
-					Ref: t.Route.DepartStation.Ref,
-				},
-				ArriveStation: model.TrainListStationResponse{
-					ID:  t.Route.ArriveStation.ID,
-					Ref: t.Route.ArriveStation.Ref,
-				},
-			},
-		}
 	}
 
 	return
