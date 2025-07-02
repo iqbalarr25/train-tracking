@@ -7,13 +7,16 @@ import (
 
 type (
 	RailEdge struct {
-		ID          uuid.UUID `gorm:"type:uuid;primaryKey"`
-		Source      uuid.UUID `gorm:"type:uuid;not null"`
-		Target      uuid.UUID `gorm:"type:uuid;not null"`
-		Cost        float64   `gorm:"not null"` // Panjang/jarak
-		ReverseCost float64   `gorm:""`         // Boleh null
-		MaxSpeed    *float64  // nullable
-		Geom        string    `gorm:"type:geometry(Point,4326)"` // Geometry LineString
+		ID          uuid.UUID `json:"id" gorm:"type:uuid;primaryKey"`
+		Source      uuid.UUID `json:"source" gorm:"type:uuid;not null"`
+		Target      uuid.UUID `json:"target" gorm:"type:uuid;not null"`
+		SourceInt   int       `json:"source_int"`
+		TargetInt   int       `json:"target_int"`
+		EdgeIntId   int       `json:"edge_int_id" gorm:"->"`
+		Cost        float64   `json:"cost" gorm:"not null"`
+		ReverseCost float64   `json:"reverse_cost"`
+		MaxSpeed    *float64  `json:"max_speed"`
+		Geom        string    `json:"geom" gorm:"type:geometry(Point,4326)"`
 	}
 )
 

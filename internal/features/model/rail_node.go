@@ -7,12 +7,13 @@ import (
 
 type (
 	RailNode struct {
-		ID   uuid.UUID `gorm:"type:uuid;primaryKey"`
-		Lat  float64
-		Lon  float64
-		Geom string `gorm:"type:geometry(Point,4326)"`
+		ID        uuid.UUID `json:"id" gorm:"type:uuid;primaryKey"`
+		Lat       float64   `json:"lat"`
+		Lon       float64   `json:"lon"`
+		NodeIntID int       `json:"node_int_id" gorm:"->"`
+		Geom      string    `json:"geom" gorm:"type:geometry(Point,4326)"`
 
-		Stations []*Station `gorm:"many2many:station_nodes"`
+		Stations []*Station `json:"stations" gorm:"many2many:station_nodes"`
 	}
 )
 

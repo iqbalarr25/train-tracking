@@ -16,6 +16,7 @@ func init() {
 					id UUID PRIMARY KEY,
 					lat DOUBLE PRECISION NOT NULL,
 					lon DOUBLE PRECISION NOT NULL,
+					node_int_id INTEGER GENERATED ALWAYS AS IDENTITY UNIQUE,
 					geom geometry(Point, 4326)
 				)
 			`).Error
