@@ -40,6 +40,7 @@ func init() {
 			}
 
 			nodeMap := map[int64]uuid.UUID{}
+			nodeIntMap := map[int64]int{}
 
 			// --- Insert Nodes ---
 			for _, el := range parsed.Elements {
@@ -52,7 +53,16 @@ func init() {
 					if err := tx.Create(&node).Error; err != nil {
 						return fmt.Errorf("insert node error: %w", err)
 					}
+
 					nodeMap[el.ID] = node.ID
+
+					// ambil node_int_id
+					var intID int
+					err = tx.Raw("SELECT node_int_id FROM rail_nodes WHERE id = ?", node.ID).Scan(&intID).Error
+					if err != nil {
+						return fmt.Errorf("ambil node_int_id gagal: %w", err)
+					}
+					nodeIntMap[el.ID] = intID
 				}
 			}
 
@@ -67,11 +77,11 @@ func init() {
 					}
 
 					for i := 0; i < len(el.Nodes)-1; i++ {
-						srcID, ok1 := nodeMap[el.Nodes[i]]
-						dstID, ok2 := nodeMap[el.Nodes[i+1]]
-						if !ok1 || !ok2 {
-							continue
-						}
+						srcUUID := nodeMap[el.Nodes[i]]
+						dstUUID := nodeMap[el.Nodes[i+1]]
+
+						srcInt := nodeIntMap[el.Nodes[i]]
+						dstInt := nodeIntMap[el.Nodes[i+1]]
 
 						src := parsed.FindNodeByID(el.Nodes[i])
 						dst := parsed.FindNodeByID(el.Nodes[i+1])
@@ -80,8 +90,10 @@ func init() {
 						}
 
 						edge := model.RailEdge{
-							Source:      srcID,
-							Target:      dstID,
+							Source:      srcUUID,
+							Target:      dstUUID,
+							SourceInt:   srcInt,
+							TargetInt:   dstInt,
 							Cost:        haversine(src.Lat, src.Lon, dst.Lat, dst.Lon),
 							ReverseCost: haversine(dst.Lat, dst.Lon, src.Lat, src.Lon),
 							MaxSpeed:    maxSpeed,

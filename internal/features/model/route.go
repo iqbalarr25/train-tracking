@@ -8,15 +8,15 @@ import (
 
 type (
 	Route struct {
-		ID              uuid.UUID `gorm:"primaryKey"`
-		DepartTime      time.Time `json:"depart_time" gorm:"type:timestamp without time zone"`
-		ArriveTime      time.Time `json:"arrive_time" gorm:"type:timestamp without time zone"`
-		TrainID         uuid.UUID `json:"train_id"`
-		DepartStationID uuid.UUID `json:"depart_station_id"`
-		ArriveStationID uuid.UUID `json:"arrive_station_id"`
-		CreatedAt       time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		UpdatedAt       time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		DeletedAt       gorm.DeletedAt
+		ID              uuid.UUID      `json:"id" gorm:"primaryKey"`
+		DepartTime      time.Time      `json:"depart_time" gorm:"type:timestamp without time zone"`
+		ArriveTime      time.Time      `json:"arrive_time" gorm:"type:timestamp without time zone"`
+		TrainID         uuid.UUID      `json:"train_id"`
+		DepartStationID uuid.UUID      `json:"depart_station_id"`
+		ArriveStationID uuid.UUID      `json:"arrive_station_id"`
+		CreatedAt       time.Time      `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		UpdatedAt       time.Time      `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		DeletedAt       gorm.DeletedAt `json:"deleted_at"`
 
 		Train         Train   `json:"train" gorm:"foreignKey:TrainID;references:ID"`
 		DepartStation Station `json:"depart_station" gorm:"foreignKey:DepartStationID;references:ID"`
@@ -24,17 +24,17 @@ type (
 	}
 
 	RouteDetail struct {
-		ID         uuid.UUID  `gorm:"primaryKey"`
+		ID         uuid.UUID  `json:"id" gorm:"primaryKey"`
 		ArriveTime *time.Time `json:"arrive_time" gorm:"type:timestamp without time zone"`
 		DepartTime *time.Time `json:"depart_time" gorm:"type:timestamp without time zone"`
 		Note       string     `json:"note" gorm:"type:text"`
 		MaxSpeed   *int16     `json:"max_speed" gorm:"type:float"`
 
-		RouteID   uuid.UUID `json:"route_id"`
-		StationID uuid.UUID `json:"depart_station_id"`
-		CreatedAt time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		UpdatedAt time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		DeletedAt gorm.DeletedAt
+		RouteID   uuid.UUID      `json:"route_id"`
+		StationID uuid.UUID      `json:"depart_station_id"`
+		CreatedAt time.Time      `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		UpdatedAt time.Time      `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		DeletedAt gorm.DeletedAt `json:"deleted_at"`
 
 		Route   Route   `json:"route" gorm:"foreignKey:RouteID;references:ID"`
 		Station Station `json:"station" gorm:"foreignKey:StationID;references:ID"`

@@ -9,16 +9,16 @@ import (
 
 type (
 	User struct {
-		ID        uuid.UUID `gorm:"primary_key" json:"id"`
-		Name      string    `json:"name"`
-		Email     string    `json:"email"`
-		Password  string    `json:"password"`
-		Role      string    `json:"role"`
-		FcmToken  string    `json:"fcm_token"`
-		Token     string    `json:"token"`
-		CreatedAt time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		UpdatedAt time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		DeletedAt gorm.DeletedAt
+		ID        uuid.UUID      `json:"id" gorm:"primary_key"`
+		Name      string         `json:"name"`
+		Email     string         `json:"email"`
+		Password  string         `json:"password"`
+		Role      string         `json:"role"`
+		FcmToken  string         `json:"fcm_token"`
+		Token     string         `json:"token"`
+		CreatedAt time.Time      `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		UpdatedAt time.Time      `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		DeletedAt gorm.DeletedAt `json:"deleted_at"`
 	}
 
 	AddUserRequest struct {

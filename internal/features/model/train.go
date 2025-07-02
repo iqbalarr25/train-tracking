@@ -8,22 +8,22 @@ import (
 
 type (
 	Train struct {
-		ID           uuid.UUID `gorm:"primaryKey"`
-		Name         string    `gorm:"varchar(255)"`
-		TrainCode    string    `gorm:"varchar(5);unique"`
-		Status       string    `gorm:"varchar(255);not null;default:Inactive"`
-		TrainClassID uuid.UUID
-		CreatedAt    time.Time `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		UpdatedAt    time.Time `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
-		DeletedAt    gorm.DeletedAt
+		ID           uuid.UUID      `json:"id" gorm:"primaryKey"`
+		Name         string         `json:"name" gorm:"varchar(255)"`
+		TrainCode    string         `json:"train_code" gorm:"varchar(5);unique"`
+		Status       string         `json:"status" gorm:"varchar(255);not null;default:Inactive"`
+		TrainClassID uuid.UUID      `json:"train_class_id"`
+		CreatedAt    time.Time      `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		UpdatedAt    time.Time      `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
+		DeletedAt    gorm.DeletedAt `json:"deleted_at"`
 
-		TrainClass TrainClass `gorm:"foreignKey:TrainClassID;references:ID"`
-		Route      *Route     `gorm:"foreignKey:TrainID;references:ID"`
+		TrainClass TrainClass `json:"train_class" gorm:"foreignKey:TrainClassID;references:ID"`
+		Route      *Route     `json:"route" gorm:"foreignKey:TrainID;references:ID"`
 	}
 
 	TrainClass struct {
-		ID   uuid.UUID `gorm:"primaryKey"`
-		Name string    `gorm:"varchar(255)"`
+		ID   uuid.UUID `json:"id" gorm:"primaryKey"`
+		Name string    `json:"name" gorm:"varchar(255)"`
 	}
 
 	TrainListResponse struct {
