@@ -25,6 +25,7 @@ type (
 
 	RouteDetail struct {
 		ID         uuid.UUID  `json:"id" gorm:"primaryKey"`
+		Sequence   int        `json:"sequence"`
 		ArriveTime *time.Time `json:"arrive_time" gorm:"type:timestamp without time zone"`
 		DepartTime *time.Time `json:"depart_time" gorm:"type:timestamp without time zone"`
 		Note       string     `json:"note" gorm:"type:text"`

@@ -7,6 +7,7 @@ import (
 	"gorm.io/gorm"
 	"log"
 	"os"
+	"strconv"
 	"time"
 )
 
@@ -18,6 +19,7 @@ type InputGapeka struct {
 }
 
 type InputRouteDetail struct {
+	Number      string `json:"number"`
 	StationCode string `json:"station_code"`
 	ArriveTime  string `json:"arrive_time"`
 	DepartTime  string `json:"depart_time"`
@@ -94,7 +96,13 @@ func init() {
 						break
 					}
 
+					sequence, err := strconv.Atoi(routeDetail.Number)
+					if err != nil {
+						return err
+					}
+
 					var routeDetailModel = model.RouteDetail{
+						Sequence:   sequence,
 						DepartTime: departTimePtr,
 						ArriveTime: arriveTimePtr,
 						Note:       routeDetail.Note,
