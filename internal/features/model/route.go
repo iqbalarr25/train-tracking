@@ -18,18 +18,19 @@ type (
 		UpdatedAt       time.Time      `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		DeletedAt       gorm.DeletedAt `json:"deleted_at"`
 
-		Train         Train   `json:"train" gorm:"foreignKey:TrainID;references:ID"`
-		DepartStation Station `json:"depart_station" gorm:"foreignKey:DepartStationID;references:ID"`
-		ArriveStation Station `json:"arrive_station" gorm:"foreignKey:ArriveStationID;references:ID"`
+		Train         Train         `json:"train" gorm:"foreignKey:TrainID;references:ID"`
+		DepartStation Station       `json:"depart_station" gorm:"foreignKey:DepartStationID;references:ID"`
+		ArriveStation Station       `json:"arrive_station" gorm:"foreignKey:ArriveStationID;references:ID"`
+		RouteDetails  []RouteDetail `json:"route_details" gorm:"foreignKey:RouteID;references:ID"`
 	}
 
 	RouteDetail struct {
 		ID         uuid.UUID  `json:"id" gorm:"primaryKey"`
 		Sequence   int        `json:"sequence"`
-		ArriveTime *time.Time `json:"arrive_time" gorm:"type:timestamp without time zone"`
-		DepartTime *time.Time `json:"depart_time" gorm:"type:timestamp without time zone"`
+		ArriveTime *time.Time `json:"arrive_time,omitempty" gorm:"type:timestamp without time zone"`
+		DepartTime *time.Time `json:"depart_time,omitempty" gorm:"type:timestamp without time zone"`
 		Note       string     `json:"note" gorm:"type:text"`
-		MaxSpeed   *int16     `json:"max_speed" gorm:"type:float"`
+		MaxSpeed   *int16     `json:"max_speed,omitempty" gorm:"type:float"`
 
 		RouteID   uuid.UUID      `json:"route_id"`
 		StationID uuid.UUID      `json:"depart_station_id"`
@@ -37,8 +38,36 @@ type (
 		UpdatedAt time.Time      `json:"updated_at" gorm:"not null;default:CURRENT_TIMESTAMP"`
 		DeletedAt gorm.DeletedAt `json:"deleted_at"`
 
-		Route   Route   `json:"route" gorm:"foreignKey:RouteID;references:ID"`
-		Station Station `json:"station" gorm:"foreignKey:StationID;references:ID"`
+		Route   Route   `json:"route" gorm:"foreignKey:RouteID;references:ID;constraint:OnUpdate:CASCADE,OnDelete:CASCADE"`
+		Station Station `json:"station" gorm:"foreignKey:StationID;references:ID;constraint:OnUpdate:CASCADE,OnDelete:CASCADE"`
+		Tracks  []Track `json:"tracks" gorm:"foreignKey:RouteDetailID;references:ID"`
+	}
+
+	GetRouteResponse struct {
+		ID         uuid.UUID                `json:"id" gorm:"primaryKey"`
+		From       string                   `json:"from"`
+		To         string                   `json:"to"`
+		ArriveTime *time.Time               `json:"arrive_time"`
+		DepartTime *time.Time               `json:"depart_time"`
+		Detail     []GetRouteDetailResponse `json:"details"`
+	}
+
+	GetRouteDetailResponse struct {
+		ID         uuid.UUID               `json:"id" gorm:"primaryKey"`
+		From       string                  `json:"from"`
+		To         string                  `json:"to"`
+		ArriveTime *time.Time              `json:"arrive_time"`
+		DepartTime *time.Time              `json:"depart_time"`
+		Track      []GetRouteTrackResponse `json:"tracks"`
+	}
+
+	GetRouteTrackResponse struct {
+		ID        uuid.UUID `json:"id" gorm:"primaryKey"`
+		Sequence  int       `json:"sequence"`
+		Cost      float32   `json:"cost"`
+		MaxSpeed  *float64  `json:"max_speed"`
+		Latitude  float64   `json:"latitude"`
+		Longitude float64   `json:"longitude"`
 	}
 )
 
