@@ -1,0 +1,4418 @@
+[
+  {
+    "name": "Stasiun Srowot",
+    "ref": "SWT",
+    "lat": -7.74139,
+    "lon": 110.549
+  },
+  {
+    "name": "Stasiun Pasar Senen",
+    "ref": "PSE",
+    "lat": -6.173611,
+    "lon": 106.844167
+  },
+  {
+    "name": "Stasiun Porong",
+    "ref": "PR",
+    "lat": -7.5383792,
+    "lon": 112.7016734
+  },
+  {
+    "name": "Stasiun Bumiayu",
+    "ref": "BMA",
+    "lat": -7.2375,
+    "lon": 109.01
+  },
+  {
+    "name": "Stasiun Salem",
+    "ref": "SLM",
+    "lat": -7.39556,
+    "lon": 110.827
+  },
+  {
+    "name": "Stasiun Baron",
+    "ref": "BRN",
+    "lat": -7.60278,
+    "lon": 112.039
+  },
+  {
+    "name": "Stasiun Kutoarjo",
+    "ref": "KTA",
+    "lat": -7.726092603,
+    "lon": 109.907218888
+  },
+  {
+    "name": "Stasiun Ketanggungan",
+    "ref": "KGG",
+    "lat": -6.93833,
+    "lon": 108.884
+  },
+  {
+    "name": "Stasiun Ciganea",
+    "ref": "CA",
+    "lat": -6.57333,
+    "lon": 107.431
+  },
+  {
+    "name": "Stasiun Tanjungrasa",
+    "ref": "TJS",
+    "lat": -6.40833,
+    "lon": 107.541
+  },
+  {
+    "name": "Stasiun Sungai Lassi",
+    "ref": "SNL",
+    "lat": -0.773664,
+    "lon": 100.732717
+  },
+  {
+    "name": "Stasiun Karangtengah",
+    "ref": "KE",
+    "lat": -6.896345756,
+    "lon": 106.822408206
+  },
+  {
+    "name": "Stasiun Sumobito",
+    "ref": "SBO",
+    "lat": -7.5195266,
+    "lon": 112.3392729
+  },
+  {
+    "name": "Stasiun Sumpiuh",
+    "ref": "SPH",
+    "lat": -7.615254911,
+    "lon": 109.361010992
+  },
+  {
+    "name": "Museum Kereta Api Ambarawa",
+    "ref": "ABR",
+    "lat": -7.26542,
+    "lon": 110.40126
+  },
+  {
+    "name": "Stasiun Mangga Besar",
+    "ref": "MGB",
+    "lat": -6.1496813,
+    "lon": 106.8270263
+  },
+  {
+    "name": "Stasiun Jayakarta",
+    "ref": "JYK",
+    "lat": -6.1412854,
+    "lon": 106.8231326
+  },
+  {
+    "name": "Stasiun Sawah Besar",
+    "ref": "SW",
+    "lat": -6.160667,
+    "lon": 106.827639
+  },
+  {
+    "name": "Stasiun Bekasi",
+    "ref": "BKS",
+    "lat": -6.2359,
+    "lon": 106.999
+  },
+  {
+    "name": "Halte Banjarkemantren",
+    "ref": "BJK",
+    "lat": -7.41167,
+    "lon": 112.726
+  },
+  {
+    "name": "Stasiun Pasirbungur",
+    "ref": "PAS",
+    "lat": -6.42611,
+    "lon": 107.689
+  },
+  {
+    "name": "Stasiun Klaten",
+    "ref": "KT",
+    "lat": -7.71222,
+    "lon": 110.603
+  },
+  {
+    "name": "Stasiun Kroya",
+    "ref": "KYA",
+    "lat": -7.63011,
+    "lon": 109.254
+  },
+  {
+    "name": "Stasiun Kramat",
+    "ref": "KMT",
+    "lat": -6.1938028,
+    "lon": 106.8565312
+  },
+  {
+    "name": "Stasiun Padang",
+    "ref": "PD",
+    "lat": -0.94352,
+    "lon": 100.37437
+  },
+  {
+    "name": "Stasiun Cikampek",
+    "ref": "CKP",
+    "lat": -6.4060407,
+    "lon": 107.4590401
+  },
+  {
+    "name": "Stasiun Cibungur",
+    "ref": "CBR",
+    "lat": -6.46806,
+    "lon": 107.48
+  },
+  {
+    "name": "Stasiun Gambir",
+    "ref": "GMR",
+    "lat": -6.176716,
+    "lon": 106.830508
+  },
+  {
+    "name": "Stasiun Randublatung",
+    "ref": "RBG",
+    "lat": -7.1923,
+    "lon": 111.398
+  },
+  {
+    "name": "Stasiun Lawang",
+    "ref": "LW",
+    "lat": -7.83677721,
+    "lon": 112.69777679
+  },
+  {
+    "name": "Stasiun Kandangan",
+    "ref": "KDA",
+    "lat": -7.25111,
+    "lon": 112.658
+  },
+  {
+    "name": "Stasiun Sikampuh",
+    "ref": "SKP",
+    "lat": -7.62583,
+    "lon": 109.198
+  },
+  {
+    "name": "Stasiun Purworejo",
+    "ref": "PWR",
+    "lat": -7.708606139,
+    "lon": 110.011166848
+  },
+  {
+    "name": "Stasiun Pulu Brayan",
+    "ref": "PUB",
+    "lat": 3.63167,
+    "lon": 98.6706
+  },
+  {
+    "name": "Stasiun Rambipuji",
+    "ref": "RBP",
+    "lat": -8.20333,
+    "lon": 113.614
+  },
+  {
+    "name": "Stasiun Kedungjati",
+    "ref": "KEJ",
+    "lat": -7.16361,
+    "lon": 110.636
+  },
+  {
+    "name": "Stasiun Sumberwadung",
+    "ref": "SWD",
+    "lat": -8.301772,
+    "lon": 114.105372
+  },
+  {
+    "name": "Stasiun Cepu",
+    "ref": "CU",
+    "lat": -7.1544987,
+    "lon": 111.5886352
+  },
+  {
+    "name": "Stasiun Juanda",
+    "ref": "JUA",
+    "lat": -6.1667216,
+    "lon": 106.830473
+  },
+  {
+    "name": "Stasiun Tanjung Barat",
+    "ref": "TNT",
+    "lat": -6.3078079,
+    "lon": 106.8388453
+  },
+  {
+    "name": "Stasiun Lubuk Alung",
+    "ref": "LA",
+    "lat": -0.678333,
+    "lon": 100.289
+  },
+  {
+    "name": "Stasiun Blimbing",
+    "ref": "BMG",
+    "lat": -7.94,
+    "lon": 112.645
+  },
+  {
+    "name": "Stasiun Medan",
+    "ref": "MDN",
+    "lat": 3.590879,
+    "lon": 98.679741
+  },
+  {
+    "name": "Stasiun Membang Muda",
+    "ref": "MBM",
+    "lat": 2.565621,
+    "lon": 99.650727
+  },
+  {
+    "name": "Stasiun Babat",
+    "ref": "BBT",
+    "lat": -7.10611,
+    "lon": 112.169
+  },
+  {
+    "name": "Stasiun Ciledug",
+    "ref": "CLD",
+    "lat": -6.90278,
+    "lon": 108.744
+  },
+  {
+    "name": "Stasiun Sidareja",
+    "ref": "SDR",
+    "lat": -7.4863447,
+    "lon": 108.8075186
+  },
+  {
+    "name": "Stasiun Marbau",
+    "ref": "MBU",
+    "lat": 2.260856,
+    "lon": 99.820958
+  },
+  {
+    "name": "Stasiun Jenar",
+    "ref": "JN",
+    "lat": -7.80194,
+    "lon": 110.001
+  },
+  {
+    "name": "Stasiun Pasarnguter",
+    "ref": "PNT",
+    "lat": -7.7421278,
+    "lon": 110.8796833
+  },
+  {
+    "name": "Stasiun Ancol",
+    "ref": "AC",
+    "lat": -6.127987,
+    "lon": 106.845137
+  },
+  {
+    "name": "Stasiun Cipunegara",
+    "ref": "CRA",
+    "lat": -6.45528,
+    "lon": 107.883
+  },
+  {
+    "name": "Stasiun Haurgeulis",
+    "ref": "HGL",
+    "lat": -6.45861,
+    "lon": 107.941
+  },
+  {
+    "name": "Stasiun Tebing Tinggi",
+    "ref": "TBI",
+    "lat": 3.327089,
+    "lon": 99.168409
+  },
+  {
+    "name": "Stasiun Bangil",
+    "ref": "BG",
+    "lat": -7.59889,
+    "lon": 112.778
+  },
+  {
+    "name": "Stasiun Ngujang",
+    "ref": "NJG",
+    "lat": -8.01056,
+    "lon": 111.927
+  },
+  {
+    "name": "Stasiun Karangsari (Banyumas)",
+    "ref": "KRR",
+    "lat": -7.38222,
+    "lon": 109.121
+  },
+  {
+    "name": "Stasiun Weleri",
+    "ref": "WLR",
+    "lat": -6.970929,
+    "lon": 110.069737
+  },
+  {
+    "name": "Halte Kurai Taji",
+    "ref": "KI",
+    "lat": -0.633,
+    "lon": 100.1702
+  },
+  {
+    "name": "Stasiun Arjasa",
+    "ref": "AJ",
+    "lat": -8.19083,
+    "lon": 113.648
+  },
+  {
+    "name": "Stasiun Tambun",
+    "ref": "TB",
+    "lat": -6.25861,
+    "lon": 107.056
+  },
+  {
+    "name": "Stasiun Tanjung Karang",
+    "ref": "TNK",
+    "lat": -5.4088642,
+    "lon": 105.2599558
+  },
+  {
+    "name": "Stasiun Sindanglaut",
+    "ref": "SDU",
+    "lat": -6.83278,
+    "lon": 108.626
+  },
+  {
+    "name": "Stasiun Tegal",
+    "ref": "TG",
+    "lat": -6.8673489,
+    "lon": 109.1426901
+  },
+  {
+    "name": "Stasiun Depok",
+    "ref": "DP",
+    "lat": -6.4044236,
+    "lon": 106.8170857
+  },
+  {
+    "name": "Stasiun Rajawali",
+    "ref": "RJW",
+    "lat": -6.14505,
+    "lon": 106.836698
+  },
+  {
+    "name": "Stasiun Kasugihan",
+    "ref": "KH",
+    "lat": -7.61833,
+    "lon": 109.122
+  },
+  {
+    "name": "Stasiun Araskabu",
+    "ref": "ARB",
+    "lat": 3.614501,
+    "lon": 98.846766
+  },
+  {
+    "name": "Stasiun Cilebut",
+    "ref": "CLT",
+    "lat": -6.530575,
+    "lon": 106.800605555
+  },
+  {
+    "name": "Stasiun Probolinggo",
+    "ref": "PB",
+    "lat": -7.74284,
+    "lon": 113.216
+  },
+  {
+    "name": "Stasiun Kedunggalar",
+    "ref": "KG",
+    "lat": -7.418283,
+    "lon": 111.306596
+  },
+  {
+    "name": "Stasiun Saradan",
+    "ref": "SRD",
+    "lat": -7.547611111,
+    "lon": 111.732111111
+  },
+  {
+    "name": "Stasiun Lemahabang",
+    "ref": "LMB",
+    "lat": -6.27056,
+    "lon": 107.18
+  },
+  {
+    "name": "Stasiun Kertosono",
+    "ref": "KTS",
+    "lat": -7.59222,
+    "lon": 112.101
+  },
+  {
+    "name": "Stasiun Malang",
+    "ref": "ML",
+    "lat": -7.9778024,
+    "lon": 112.6372755
+  },
+  {
+    "name": "Stasiun Sulur",
+    "ref": "SL",
+    "lat": -7.17389,
+    "lon": 111.223
+  },
+  {
+    "name": "Stasiun Bendosendung",
+    "ref": "BEO",
+    "lat": -8.090055555,
+    "lon": 112.11725
+  },
+  {
+    "name": "Stasiun Sidoarjo",
+    "ref": "SDA",
+    "lat": -7.456888,
+    "lon": 112.712666
+  },
+  {
+    "name": "Stasiun Ledokombo",
+    "ref": "LDO",
+    "lat": -8.1405869,
+    "lon": 113.875639
+  },
+  {
+    "name": "Stasiun Gandrungmangun",
+    "ref": "GDM",
+    "lat": -7.527691,
+    "lon": 108.858765
+  },
+  {
+    "name": "Stasiun Sumberlawang",
+    "ref": "SUM",
+    "lat": -7.3277748,
+    "lon": 110.8638311
+  },
+  {
+    "name": "Stasiun Jerakah",
+    "ref": "JRK",
+    "lat": -6.98056,
+    "lon": 110.363
+  },
+  {
+    "name": "Stasiun Nganjuk",
+    "ref": "NJ",
+    "lat": -7.60028,
+    "lon": 111.902
+  },
+  {
+    "name": "Stasiun Cikaum",
+    "ref": "CKM",
+    "lat": -6.43556,
+    "lon": 107.746
+  },
+  {
+    "name": "Stasiun Teluk Mengkudu",
+    "ref": "TKE",
+    "lat": 3.2853902,
+    "lon": 98.679222
+  },
+  {
+    "name": "Stasiun Padalarang",
+    "ref": "PDL",
+    "lat": -6.843025,
+    "lon": 107.49732778
+  },
+  {
+    "name": "Stasiun Mrawan",
+    "ref": "MRW",
+    "lat": -8.272431,
+    "lon": 113.92681
+  },
+  {
+    "name": "Stasiun Ceper",
+    "ref": "CE",
+    "lat": -7.6688517,
+    "lon": 110.6748613
+  },
+  {
+    "name": "Stasiun Pabuaran",
+    "ref": "PAB",
+    "lat": -6.40921,
+    "lon": 107.584
+  },
+  {
+    "name": "Stasiun Cilacap",
+    "ref": "CP",
+    "lat": -7.736093,
+    "lon": 109.006938
+  },
+  {
+    "name": "Stasiun Pasar Minggu",
+    "ref": "PSM",
+    "lat": -6.2842455,
+    "lon": 106.8445464
+  },
+  {
+    "name": "Stasiun Sumberpucung",
+    "ref": "SBP",
+    "lat": -7.9949,
+    "lon": 112.633
+  },
+  {
+    "name": "Stasiun Walikukun",
+    "ref": "WK",
+    "lat": -7.39833,
+    "lon": 111.217
+  },
+  {
+    "name": "Stasiun Batutulis",
+    "ref": "BTT",
+    "lat": -6.625933333,
+    "lon": 106.809544444
+  },
+  {
+    "name": "Stasiun Pemalang",
+    "ref": "PML",
+    "lat": -6.8875,
+    "lon": 109.388
+  },
+  {
+    "name": "Stasiun Sukomoro",
+    "ref": "SKM",
+    "lat": -7.6025,
+    "lon": 111.942
+  },
+  {
+    "name": "Stasiun Gembong",
+    "ref": "GEB",
+    "lat": -7.10222,
+    "lon": 112.223
+  },
+  {
+    "name": "Stasiun Tambak",
+    "ref": "TBK",
+    "lat": -7.613111517,
+    "lon": 109.408436587
+  },
+  {
+    "name": "Stasiun Solo Jebres",
+    "ref": "SK",
+    "lat": -7.56194,
+    "lon": 110.839
+  },
+  {
+    "name": "Stasiun Angke",
+    "ref": "AK",
+    "lat": -6.14417,
+    "lon": 106.801
+  },
+  {
+    "name": "Stasiun Cisaat",
+    "ref": "CSA",
+    "lat": -6.91402275,
+    "lon": 106.887432412
+  },
+  {
+    "name": "Stasiun Gondangdia",
+    "ref": "GDD",
+    "lat": -6.18555556,
+    "lon": 106.83222222
+  },
+  {
+    "name": "Stasiun Delanggu",
+    "ref": "DL",
+    "lat": -7.62222,
+    "lon": 110.707
+  },
+  {
+    "name": "Stasiun Goprak",
+    "ref": "GPK",
+    "lat": -7.2730112,
+    "lon": 110.8973808
+  },
+  {
+    "name": "Stasiun Ciranjang",
+    "ref": "CRJ",
+    "lat": -6.814109,
+    "lon": 107.25126
+  },
+  {
+    "name": "Stasiun Magetan",
+    "ref": "MAG",
+    "lat": -7.56222,
+    "lon": 111.451
+  },
+  {
+    "name": "Stasiun Banjar",
+    "ref": "BJR",
+    "lat": -7.376278,
+    "lon": 108.542389
+  },
+  {
+    "name": "Stasiun Cerme",
+    "ref": "CME",
+    "lat": -7.22444,
+    "lon": 112.571
+  },
+  {
+    "name": "Stasiun Rejotangan",
+    "ref": "RJ",
+    "lat": -8.12111,
+    "lon": 112.081
+  },
+  {
+    "name": "Stasiun Singosari",
+    "ref": "SGS",
+    "lat": -7.89694,
+    "lon": 112.665
+  },
+  {
+    "name": "Stasiun Lidah Tanah",
+    "ref": "LDT",
+    "lat": 3.56306,
+    "lon": 99.0142
+  },
+  {
+    "name": "Stasiun Palur",
+    "ref": "PL",
+    "lat": -7.56806,
+    "lon": 110.875
+  },
+  {
+    "name": "Stasiun Purwokerto",
+    "ref": "PWT",
+    "lat": -7.41915,
+    "lon": 109.222
+  },
+  {
+    "name": "Stasiun Gununggangsir",
+    "ref": "GNG",
+    "lat": -7.58472,
+    "lon": 112.725
+  },
+  {
+    "name": "Stasiun Wonogiri",
+    "ref": "WNG",
+    "lat": -7.81583,
+    "lon": 110.922
+  },
+  {
+    "name": "Stasiun Indro",
+    "ref": "IDO",
+    "lat": -7.17667,
+    "lon": 112.664
+  },
+  {
+    "name": "Stasiun Lempuyangan",
+    "ref": "LPN",
+    "lat": -7.78995,
+    "lon": 110.37484
+  },
+  {
+    "name": "Stasiun Jombang",
+    "ref": "JG",
+    "lat": -7.558105368,
+    "lon": 112.233494204
+  },
+  {
+    "name": "Stasiun Kuripan",
+    "ref": "KRP",
+    "lat": -6.92389,
+    "lon": 109.894
+  },
+  {
+    "name": "Stasiun Ijo",
+    "ref": "IJ",
+    "lat": -7.615,
+    "lon": 109.447
+  },
+  {
+    "name": "Stasiun Bajalinggei",
+    "ref": "BJL",
+    "lat": 3.1675,
+    "lon": 99.1108
+  },
+  {
+    "name": "Stasiun Buaran",
+    "ref": "BUA",
+    "lat": -6.215583,
+    "lon": 106.923215
+  },
+  {
+    "name": "Stasiun Selajambe",
+    "ref": "SLJ",
+    "lat": -6.813555,
+    "lon": 107.222679
+  },
+  {
+    "name": "Stasiun Gombong",
+    "ref": "GB",
+    "lat": -7.61082226,
+    "lon": 109.50687081
+  },
+  {
+    "name": "Stasiun Cibitung",
+    "ref": "CIT",
+    "lat": -6.261879,
+    "lon": 107.083664
+  },
+  {
+    "name": "Stasiun Padang Panjang",
+    "ref": "PP",
+    "lat": -0.463368,
+    "lon": 100.395
+  },
+  {
+    "name": "Stasiun Cawang",
+    "ref": "CW",
+    "lat": -6.242380253,
+    "lon": 106.858655223
+  },
+  {
+    "name": "Stasiun Rantau Prapat",
+    "ref": "RAP",
+    "lat": 2.113381,
+    "lon": 99.820928
+  },
+  {
+    "name": "Stasiun Cirebon Prujakan",
+    "ref": "CNP",
+    "lat": -6.71944444,
+    "lon": 108.55861111
+  },
+  {
+    "name": "Stasiun Cirebon Prujakan",
+    "ref": "CNP",
+    "lat": -6.71934,
+    "lon": 108.55881
+  },
+  {
+    "name": "Stasiun Karangantu",
+    "ref": "KRA",
+    "lat": -6.03917,
+    "lon": 106.162
+  },
+  {
+    "name": "Stasiun Medan Pasar",
+    "ref": "MDP",
+    "lat": 3.586909,
+    "lon": 98.691637
+  },
+  {
+    "name": "Stasiun Karangjati",
+    "ref": "KGT",
+    "lat": -7.10135,
+    "lon": 110.779156
+  },
+  {
+    "name": "Stasiun Depok Baru",
+    "ref": "DPB",
+    "lat": -6.39111,
+    "lon": 106.822
+  },
+  {
+    "name": "Stasiun Karangsuwung",
+    "ref": "KRW",
+    "lat": -6.85778,
+    "lon": 108.647
+  },
+  {
+    "name": "Stasiun Tanjung Priuk",
+    "ref": "TPK",
+    "lat": -6.11111,
+    "lon": 106.881
+  },
+  {
+    "name": "Stasiun Muarakalaban",
+    "ref": "MKB",
+    "lat": -0.712136,
+    "lon": 100.787826
+  },
+  {
+    "name": "Stasiun Krian",
+    "ref": "KRN",
+    "lat": -7.41,
+    "lon": 112.586
+  },
+  {
+    "name": "Stasiun Tanggung",
+    "ref": "TGG",
+    "lat": -7.09139,
+    "lon": 110.603
+  },
+  {
+    "name": "Stasiun Kaliwungu",
+    "ref": "KLN",
+    "lat": -6.95972,
+    "lon": 110.254
+  },
+  {
+    "name": "Stasiun Sembung",
+    "ref": "SMB",
+    "lat": -7.58278,
+    "lon": 112.167
+  },
+  {
+    "name": "Stasiun Jatibarang",
+    "ref": "JTB",
+    "lat": -6.47507,
+    "lon": 108.307871
+  },
+  {
+    "name": "Stasiun Kalitidu",
+    "ref": "KIT",
+    "lat": -7.13167,
+    "lon": 111.768
+  },
+  {
+    "name": "Stasiun Wates (Kulonprogo)",
+    "ref": "WT",
+    "lat": -7.859444,
+    "lon": 110.1578933
+  },
+  {
+    "name": "Stasiun Solo Kota",
+    "ref": "STA",
+    "lat": -7.575619,
+    "lon": 110.836337
+  },
+  {
+    "name": "Stasiun Bojong",
+    "ref": "BJG",
+    "lat": -7.34743,
+    "lon": 108.430278
+  },
+  {
+    "name": "Stasiun Ngadiluwih",
+    "ref": "NDL",
+    "lat": -7.89833,
+    "lon": 111.988
+  },
+  {
+    "name": "Stasiun Sentolo",
+    "ref": "STL",
+    "lat": -7.8334378,
+    "lon": 110.2200606
+  },
+  {
+    "name": "Stasiun Tanahabang",
+    "ref": "THB",
+    "lat": -6.18556,
+    "lon": 106.811
+  },
+  {
+    "name": "Stasiun Kedungbanteng",
+    "ref": "KDB",
+    "lat": -7.35528,
+    "lon": 111.117
+  },
+  {
+    "name": "Stasiun Surabaya Gubeng",
+    "ref": "SGU",
+    "lat": -7.26532,
+    "lon": 112.75269
+  },
+  {
+    "name": "Stasiun Pondok Cina",
+    "ref": "POC",
+    "lat": -6.3690785,
+    "lon": 106.8322081
+  },
+  {
+    "name": "Stasiun Lenteng Agung",
+    "ref": "LNA",
+    "lat": -6.3306601,
+    "lon": 106.8349814
+  },
+  {
+    "name": "Stasiun Surabaya Kota",
+    "ref": "SB",
+    "lat": -7.243,
+    "lon": 112.741
+  },
+  {
+    "name": "Stasiun Kebasen",
+    "ref": "KBS",
+    "lat": -7.53227,
+    "lon": 109.203966
+  },
+  {
+    "name": "Stasiun Madiun",
+    "ref": "MN",
+    "lat": -7.6188329,
+    "lon": 111.5243802
+  },
+  {
+    "name": "Stasiun Patuguran",
+    "ref": "PAT",
+    "lat": -7.32806,
+    "lon": 109.058
+  },
+  {
+    "name": "Stasiun Alastua",
+    "ref": "ATA",
+    "lat": -6.98444,
+    "lon": 110.476
+  },
+  {
+    "name": "Stasiun Masaran",
+    "ref": "MSR",
+    "lat": -7.46806,
+    "lon": 110.948
+  },
+  {
+    "name": "Stasiun Sumbergempol",
+    "ref": "SBL",
+    "lat": -8.08239,
+    "lon": 111.945
+  },
+  {
+    "name": "Stasiun Losari",
+    "ref": "LOS",
+    "lat": -6.846532591,
+    "lon": 108.798247778
+  },
+  {
+    "name": "Stasiun Lamongan",
+    "ref": "LMG",
+    "lat": -7.1125,
+    "lon": 112.42
+  },
+  {
+    "name": "Stasiun Ketapang (Banyuwangi)",
+    "ref": "KTG",
+    "lat": -8.14111111,
+    "lon": 114.39722222
+  },
+  {
+    "name": "Stasiun Kemayoran",
+    "ref": "KMO",
+    "lat": -6.16167,
+    "lon": 106.841
+  },
+  {
+    "name": "Stasiun Kiaracondong",
+    "ref": "KAC",
+    "lat": -6.92465556,
+    "lon": 107.64656111
+  },
+  {
+    "name": "Stasiun Duduk",
+    "ref": "DD",
+    "lat": -7.15472,
+    "lon": 112.521
+  },
+  {
+    "name": "Stasiun Larangan",
+    "ref": "LRA",
+    "lat": -6.99056,
+    "lon": 108.949
+  },
+  {
+    "name": "Stasiun Wonokromo",
+    "ref": "WO",
+    "lat": -7.301883,
+    "lon": 112.7391
+  },
+  {
+    "name": "Stasiun Blitar",
+    "ref": "BL",
+    "lat": -8.10138889,
+    "lon": 112.16305556
+  },
+  {
+    "name": "Stasiun Bandar Khalipah",
+    "ref": "BAP",
+    "lat": 3.5940888,
+    "lon": 98.7571278
+  },
+  {
+    "name": "Stasiun Pondok Jati",
+    "ref": "POK",
+    "lat": -6.2091723,
+    "lon": 106.8622733
+  },
+  {
+    "name": "Stasiun Gambringan",
+    "ref": "GBN",
+    "lat": -7.14394,
+    "lon": 110.915
+  },
+  {
+    "name": "Stasiun Babadan",
+    "ref": "BBD",
+    "lat": -7.58694,
+    "lon": 111.589
+  },
+  {
+    "name": "Stasiun Arjawinangun",
+    "ref": "AWN",
+    "lat": -6.64472,
+    "lon": 108.414
+  },
+  {
+    "name": "Stasiun Parungkuda",
+    "ref": "PRK",
+    "lat": -6.846555,
+    "lon": 106.760555
+  },
+  {
+    "name": "Stasiun Brumbung",
+    "ref": "BBG",
+    "lat": -7.02556,
+    "lon": 110.522
+  },
+  {
+    "name": "Stasiun Bogor",
+    "ref": "BOO",
+    "lat": -6.594077777,
+    "lon": 106.790822222
+  },
+  {
+    "name": "Stasiun Dolok Merangir",
+    "ref": "DMR",
+    "lat": 3.1175,
+    "lon": 99.1172
+  },
+  {
+    "name": "Stasiun Yogyakarta",
+    "ref": "YK",
+    "lat": -7.7892485,
+    "lon": 110.363471
+  },
+  {
+    "name": "Stasiun Maos",
+    "ref": "MA",
+    "lat": -7.61917,
+    "lon": 109.139
+  },
+  {
+    "name": "Stasiun Kranji",
+    "ref": "KRI",
+    "lat": -6.2245125,
+    "lon": 106.9798459
+  },
+  {
+    "name": "Stasiun Brambanan",
+    "ref": "BBN",
+    "lat": -7.756503,
+    "lon": 110.50042
+  },
+  {
+    "name": "Stasiun Petarukan",
+    "ref": "PTA",
+    "lat": -6.8975,
+    "lon": 109.45
+  },
+  {
+    "name": "Stasiun Solok",
+    "ref": "SLK",
+    "lat": -0.786667,
+    "lon": 100.655052
+  },
+  {
+    "name": "Stasiun Wonokerto",
+    "ref": "WN",
+    "lat": -7.66194,
+    "lon": 112.755
+  },
+  {
+    "name": "Stasiun Kutowinangun",
+    "ref": "KWN",
+    "lat": -7.716093826,
+    "lon": 109.732615514
+  },
+  {
+    "name": "Stasiun Wonosari",
+    "ref": "WNS",
+    "lat": -7.69735283,
+    "lon": 109.701452834
+  },
+  {
+    "name": "Halte Krikilan",
+    "ref": "KKL",
+    "lat": -8.29591,
+    "lon": 114.029
+  },
+  {
+    "name": "Stasiun Cicalengka",
+    "ref": "CCL",
+    "lat": -6.98139,
+    "lon": 107.833
+  },
+  {
+    "name": "Stasiun Jatinegara",
+    "ref": "JNG",
+    "lat": -6.215,
+    "lon": 106.87
+  },
+  {
+    "name": "Stasiun Tebet",
+    "ref": "TEB",
+    "lat": -6.225960268,
+    "lon": 106.858406262
+  },
+  {
+    "name": "Stasiun Sudirman",
+    "ref": "SUD",
+    "lat": -6.202437,
+    "lon": 106.823335
+  },
+  {
+    "name": "Stasiun Glenmore",
+    "ref": "GLM",
+    "lat": -8.29957,
+    "lon": 114.049
+  },
+  {
+    "name": "Stasiun Kalibaru",
+    "ref": "KBR",
+    "lat": -8.28884,
+    "lon": 113.984439
+  },
+  {
+    "name": "Stasiun Susuhan",
+    "ref": "SS",
+    "lat": -7.77111,
+    "lon": 112.026
+  },
+  {
+    "name": "Stasiun Klari",
+    "ref": "KLI",
+    "lat": -6.35,
+    "lon": 107.345
+  },
+  {
+    "name": "Stasiun Kediri",
+    "ref": "KD",
+    "lat": -7.81694,
+    "lon": 112.016
+  },
+  {
+    "name": "Stasiun Sidotopo",
+    "ref": "SDT",
+    "lat": -7.23639,
+    "lon": 112.756
+  },
+  {
+    "name": "Stasiun Luwung",
+    "ref": "LWG",
+    "lat": -6.77667,
+    "lon": 108.593
+  },
+  {
+    "name": "Stasiun Binjai",
+    "ref": "BIJ",
+    "lat": 3.60999,
+    "lon": 98.50269
+  },
+  {
+    "name": "Stasiun Nagreg",
+    "ref": "NG",
+    "lat": -7.01830556,
+    "lon": 107.88619444
+  },
+  {
+    "name": "Stasiun Manggarai",
+    "ref": "MRI",
+    "lat": -6.2099,
+    "lon": 106.85
+  },
+  {
+    "name": "Stasiun Wilangan",
+    "ref": "WLG",
+    "lat": -7.5611757,
+    "lon": 111.8037277
+  },
+  {
+    "name": "Stasiun Curahmalang",
+    "ref": "CRM",
+    "lat": -7.50667,
+    "lon": 112.371
+  },
+  {
+    "name": "Stasiun Kubukrambil",
+    "ref": "KKR",
+    "lat": -0.4848466,
+    "lon": 100.467323
+  },
+  {
+    "name": "Stasiun Caruban",
+    "ref": "CRB",
+    "lat": -7.551120647,
+    "lon": 111.654784807
+  },
+  {
+    "name": "Stasiun Bandung",
+    "ref": "BD",
+    "lat": -6.91416667,
+    "lon": 107.6025
+  },
+  {
+    "name": "Stasiun Rampah",
+    "ref": "RPH",
+    "lat": 3.48556,
+    "lon": 99.1383
+  },
+  {
+    "name": "Stasiun Talun",
+    "ref": "TAL",
+    "lat": -8.0915269,
+    "lon": 112.2886071
+  },
+  {
+    "name": "Stasiun Brebes",
+    "ref": "BB",
+    "lat": -6.87417,
+    "lon": 109.043
+  },
+  {
+    "name": "Stasiun Cibadak",
+    "ref": "CBD",
+    "lat": -6.888333,
+    "lon": 106.780444
+  },
+  {
+    "name": "Stasiun Belawan",
+    "ref": "BLW",
+    "lat": 3.77806,
+    "lon": 98.6817
+  },
+  {
+    "name": "Stasiun Linggapura",
+    "ref": "LG",
+    "lat": -7.185,
+    "lon": 109.012
+  },
+  {
+    "name": "Halte Sumbersalak",
+    "ref": "SBS",
+    "lat": -8.157271,
+    "lon": 113.894342
+  },
+  {
+    "name": "Stasiun Tanggul",
+    "ref": "TGL",
+    "lat": -8.16273,
+    "lon": 113.448
+  },
+  {
+    "name": "Stasiun Argopuro",
+    "ref": "AGO",
+    "lat": -8.183521,
+    "lon": 114.369389
+  },
+  {
+    "name": "Stasiun Mangli",
+    "ref": "MI",
+    "lat": -8.19111,
+    "lon": 113.648
+  },
+  {
+    "name": "Stasiun Sragen",
+    "ref": "SR",
+    "lat": -7.42917,
+    "lon": 111.018
+  },
+  {
+    "name": "Stasiun Gawok",
+    "ref": "GW",
+    "lat": -7.589349833,
+    "lon": 110.744467833
+  },
+  {
+    "name": "Stasiun Peterongan",
+    "ref": "PTR",
+    "lat": -7.54194,
+    "lon": 112.279
+  },
+  {
+    "name": "Stasiun Gang Sentiong",
+    "ref": "GST",
+    "lat": -6.18602,
+    "lon": 106.850658
+  },
+  {
+    "name": "Stasiun Sragi",
+    "ref": "SRI",
+    "lat": -6.94056,
+    "lon": 109.571
+  },
+  {
+    "name": "Stasiun Tarik",
+    "ref": "TRK",
+    "lat": -7.45944,
+    "lon": 112.519
+  },
+  {
+    "name": "Stasiun Prupuk",
+    "ref": "PPK",
+    "lat": -7.12194,
+    "lon": 108.985
+  },
+  {
+    "name": "Stasiun Cikini",
+    "ref": "CKI",
+    "lat": -6.19846,
+    "lon": 106.841
+  },
+  {
+    "name": "Stasiun Ngebruk",
+    "ref": "NB",
+    "lat": -8.1518361,
+    "lon": 112.5168022
+  },
+  {
+    "name": "Stasiun Tagogapu",
+    "ref": "TAU",
+    "lat": -6.811078,
+    "lon": 107.464953
+  },
+  {
+    "name": "Stasiun Cimahi",
+    "ref": "CMI",
+    "lat": -6.88583,
+    "lon": 107.536
+  },
+  {
+    "name": "Stasiun Dawuan",
+    "ref": "DWN",
+    "lat": -6.3932124,
+    "lon": 107.4332214
+  },
+  {
+    "name": "Stasiun Pegaden Baru",
+    "ref": "PGB",
+    "lat": -6.45389,
+    "lon": 107.817
+  },
+  {
+    "name": "Stasiun Siantar",
+    "ref": "SIR",
+    "lat": 2.7120194,
+    "lon": 98.9187445
+  },
+  {
+    "name": "Stasiun Papar",
+    "ref": "PPR",
+    "lat": -7.6975,
+    "lon": 112.079
+  },
+  {
+    "name": "Stasiun Kacang",
+    "ref": "KCN",
+    "lat": -0.61338977,
+    "lon": 100.574106386
+  },
+  {
+    "name": "Stasiun Karanganyar",
+    "ref": "KA",
+    "lat": -7.633235932,
+    "lon": 109.573420751
+  },
+  {
+    "name": "Stasiun Kemiri",
+    "ref": "KMR",
+    "lat": -7.53389,
+    "lon": 110.901
+  },
+  {
+    "name": "Stasiun Perbaungan",
+    "ref": "PBA",
+    "lat": 3.56694,
+    "lon": 98.9511
+  },
+  {
+    "name": "Stasiun Cipeundeuy",
+    "ref": "CPD",
+    "lat": -7.0936306,
+    "lon": 108.1006237
+  },
+  {
+    "name": "Stasiun Klender",
+    "ref": "KLD",
+    "lat": -6.213333,
+    "lon": 106.899722
+  },
+  {
+    "name": "Stasiun Wlingi",
+    "ref": "WG",
+    "lat": -8.0883317,
+    "lon": 112.32004
+  },
+  {
+    "name": "Stasiun Legok",
+    "ref": "LGK",
+    "lat": -7.35556,
+    "lon": 109.087
+  },
+  {
+    "name": "Stasiun Mangkang",
+    "ref": "MKG",
+    "lat": -6.97111,
+    "lon": 110.303
+  },
+  {
+    "name": "Stasiun Labuan (Medan)",
+    "ref": "LBU",
+    "lat": 3.73528,
+    "lon": 98.6772
+  },
+  {
+    "name": "Halte Buduran",
+    "ref": "BDR",
+    "lat": -7.42774,
+    "lon": 112.723
+  },
+  {
+    "name": "Halte Gebang",
+    "ref": "GEL",
+    "lat": -8.1002045,
+    "lon": 112.1783124
+  },
+  {
+    "name": "Halte Jemursari",
+    "ref": "JMS",
+    "lat": -7.32937,
+    "lon": 112.731
+  },
+  {
+    "name": "Halte Pagerwojo",
+    "ref": "PWJ",
+    "lat": -7.44174,
+    "lon": 112.715
+  },
+  {
+    "name": "Halte Ngagel",
+    "ref": "NGA",
+    "lat": -7.288948,
+    "lon": 112.747762
+  },
+  {
+    "name": "Halte Rancakole",
+    "ref": "RCL",
+    "lat": -7.36005,
+    "lon": 108.637
+  },
+  {
+    "name": "Halte Sawotratap",
+    "ref": "STP",
+    "lat": -7.3685,
+    "lon": 112.729
+  },
+  {
+    "name": "Stasiun Kuala Tanjung",
+    "ref": "KTJ",
+    "lat": 3.369861,
+    "lon": 99.424227
+  },
+  {
+    "name": "Stasiun Andir",
+    "ref": "AND",
+    "lat": -6.908141,
+    "lon": 107.579245
+  },
+  {
+    "name": "Stasiun Anyer Kidul",
+    "ref": "ANK",
+    "lat": -6.070737,
+    "lon": 105.886222
+  },
+  {
+    "name": "Stasiun Awipari",
+    "ref": "AW",
+    "lat": -7.353888888,
+    "lon": 108.2741666
+  },
+  {
+    "name": "Stasiun Balapulang",
+    "ref": "BLP",
+    "lat": -7.04974,
+    "lon": 109.096422
+  },
+  {
+    "name": "Stasiun Bangsalsari",
+    "ref": "BSS",
+    "lat": -8.20294,
+    "lon": 113.533
+  },
+  {
+    "name": "Stasiun Bamban",
+    "ref": "BMB",
+    "lat": 3.43768,
+    "lon": 99.1671
+  },
+  {
+    "name": "Stasiun Bangoduwa",
+    "ref": "BDW",
+    "lat": -6.66308,
+    "lon": 108.46
+  },
+  {
+    "name": "Stasiun Batang",
+    "ref": "BTG",
+    "lat": -6.909960805,
+    "lon": 109.747635805
+  },
+  {
+    "name": "Stasiun Bayeman",
+    "ref": "BYM",
+    "lat": -7.734597,
+    "lon": 113.118837
+  },
+  {
+    "name": "Stasiun Batu Tabal",
+    "ref": "BTL",
+    "lat": -0.543765,
+    "lon": 100.522859
+  },
+  {
+    "name": "Stasiun Benowo",
+    "ref": "BNW",
+    "lat": -7.2340056,
+    "lon": 112.6151944
+  },
+  {
+    "name": "Museum Kereta Api Bondowoso",
+    "ref": "BO",
+    "lat": -7.91695,
+    "lon": 113.82948
+  },
+  {
+    "name": "Stasiun Bowerno",
+    "ref": "BWO",
+    "lat": -7.13133,
+    "lon": 112.1
+  },
+  {
+    "name": "Stasiun Bulakamba",
+    "ref": "BKA",
+    "lat": -6.876164,
+    "lon": 108.948531
+  },
+  {
+    "name": "Stasiun Cangkring",
+    "ref": "CNK",
+    "lat": -6.67957,
+    "lon": 108.501
+  },
+  {
+    "name": "Stasiun Catang",
+    "ref": "CT",
+    "lat": -6.2656916,
+    "lon": 106.268026
+  },
+  {
+    "name": "Stasiun Ciamis",
+    "ref": "CI",
+    "lat": -7.32916667,
+    "lon": 108.35591667
+  },
+  {
+    "name": "Stasiun Cianjur",
+    "ref": "CJ",
+    "lat": -6.824630337,
+    "lon": 107.142751534
+  },
+  {
+    "name": "Stasiun Cibatu",
+    "ref": "CB",
+    "lat": -7.100115,
+    "lon": 107.979467
+  },
+  {
+    "name": "Stasiun Cibinong",
+    "ref": "CBN",
+    "lat": -6.464221785,
+    "lon": 106.852530222
+  },
+  {
+    "name": "Stasiun Cijulang",
+    "ref": "CIJ",
+    "lat": -7.7278002,
+    "lon": 108.4740743
+  },
+  {
+    "name": "Stasiun Cikeusal",
+    "ref": "CKL",
+    "lat": -6.217036,
+    "lon": 106.244641
+  },
+  {
+    "name": "Stasiun Cikudapateuh",
+    "ref": "CTH",
+    "lat": -6.91885,
+    "lon": 107.626
+  },
+  {
+    "name": "Stasiun Cimekar",
+    "ref": "CMK",
+    "lat": -6.948995,
+    "lon": 107.712355
+  },
+  {
+    "name": "Stasiun Cimindi",
+    "ref": "CMD",
+    "lat": -6.896178,
+    "lon": 107.56112
+  },
+  {
+    "name": "Stasiun Cipatat",
+    "ref": "CPT",
+    "lat": -6.822008,
+    "lon": 107.386004
+  },
+  {
+    "name": "Stasiun Cirahayu",
+    "ref": "CAA",
+    "lat": -7.134405408,
+    "lon": 108.118342214
+  },
+  {
+    "name": "Stasiun Cipeuyeum",
+    "ref": "CPY",
+    "lat": -6.818466944,
+    "lon": 107.298158611
+  },
+  {
+    "name": "Stasiun Cisauk",
+    "ref": "CSK",
+    "lat": -6.3248396,
+    "lon": 106.6387697
+  },
+  {
+    "name": "Stasiun Comal",
+    "ref": "CO",
+    "lat": -6.9091856,
+    "lon": 109.5368189
+  },
+  {
+    "name": "Stasiun Citayam",
+    "ref": "CTA",
+    "lat": -6.448833,
+    "lon": 106.802528
+  },
+  {
+    "name": "Stasiun Doplang",
+    "ref": "DPL",
+    "lat": -7.18294,
+    "lon": 111.288
+  },
+  {
+    "name": "Stasiun Duri",
+    "ref": "DU",
+    "lat": -6.156302,
+    "lon": 106.801063
+  },
+  {
+    "name": "Stasiun Garut",
+    "ref": "GRT",
+    "lat": -7.213611,
+    "lon": 107.904389
+  },
+  {
+    "name": "Stasiun Geneng",
+    "ref": "GG",
+    "lat": -7.49803114,
+    "lon": 111.41853333
+  },
+  {
+    "name": "Stasiun Gedebage",
+    "ref": "GDB",
+    "lat": -6.940801,
+    "lon": 107.689463
+  },
+  {
+    "name": "Stasiun Gogodalem",
+    "ref": "GGD",
+    "lat": -7.232183,
+    "lon": 110.550523
+  },
+  {
+    "name": "Stasiun Grati",
+    "ref": "GI",
+    "lat": -7.71744,
+    "lon": 113.012
+  },
+  {
+    "name": "Stasiun Gubug",
+    "ref": "GUB",
+    "lat": -7.061,
+    "lon": 110.669555
+  },
+  {
+    "name": "Stasiun Grujugan",
+    "ref": "GRJ",
+    "lat": -7.96935,
+    "lon": 113.822856
+  },
+  {
+    "name": "Stasiun Gumilir",
+    "ref": "GM",
+    "lat": -7.68516,
+    "lon": 109.042
+  },
+  {
+    "name": "Stasiun Indihiang",
+    "ref": "IH",
+    "lat": -7.286793321,
+    "lon": 108.200851422
+  },
+  {
+    "name": "Stasiun Jambu",
+    "ref": "JMB",
+    "lat": -7.2798,
+    "lon": 110.368737
+  },
+  {
+    "name": "Stasiun Jambon",
+    "ref": "JBN",
+    "lat": -7.15032,
+    "lon": 111.01
+  },
+  {
+    "name": "Stasiun Jurangmangu",
+    "ref": "JMG",
+    "lat": -6.288612,
+    "lon": 106.729154
+  },
+  {
+    "name": "Stasiun Kalibodri",
+    "ref": "KBD",
+    "lat": -6.97354,
+    "lon": 110.148
+  },
+  {
+    "name": "Stasiun Jeruklegi",
+    "ref": "JRL",
+    "lat": -7.62306,
+    "lon": 109.018
+  },
+  {
+    "name": "Stasiun Kalioso",
+    "ref": "KO",
+    "lat": -7.46617,
+    "lon": 110.805
+  },
+  {
+    "name": "Stasiun Kalisat",
+    "ref": "KLT",
+    "lat": -8.12694,
+    "lon": 113.812
+  },
+  {
+    "name": "Stasiun Kaliwedi",
+    "ref": "KLW",
+    "lat": -6.58655,
+    "lon": 108.385
+  },
+  {
+    "name": "Stasiun Kadokangabus",
+    "ref": "KAB",
+    "lat": -6.46775,
+    "lon": 108.107
+  },
+  {
+    "name": "Stasiun Kalasan",
+    "ref": "KLS",
+    "lat": -7.774444,
+    "lon": 110.465
+  },
+  {
+    "name": "Halte Kalimenur",
+    "ref": "KLR",
+    "lat": -7.8655605,
+    "lon": 110.2066845
+  },
+  {
+    "name": "Stasiun Kapuan",
+    "ref": "KPA",
+    "lat": -7.18881,
+    "lon": 111.555
+  },
+  {
+    "name": "Stasiun Kapas",
+    "ref": "KPS",
+    "lat": -7.1993,
+    "lon": 111.933
+  },
+  {
+    "name": "Stasiun Banyuwangi Kota",
+    "ref": "BWI",
+    "lat": -8.22291,
+    "lon": 114.341
+  },
+  {
+    "name": "Stasiun Karet",
+    "ref": "KRT",
+    "lat": -6.1855261,
+    "lon": 106.8106592
+  },
+  {
+    "name": "Stasiun Kawunganten",
+    "ref": "KWG",
+    "lat": -7.5909027,
+    "lon": 108.9170735
+  },
+  {
+    "name": "Stasiun Kebonromo",
+    "ref": "KRO",
+    "lat": -7.4191,
+    "lon": 111.064
+  },
+  {
+    "name": "Stasiun Kendal",
+    "ref": "KL",
+    "lat": -6.921022,
+    "lon": 110.192341
+  },
+  {
+    "name": "Stasiun Kedinding",
+    "ref": "KDN",
+    "lat": -7.43702,
+    "lon": 112.553
+  },
+  {
+    "name": "Stasiun Kemranjen",
+    "ref": "KJ",
+    "lat": -7.62154321,
+    "lon": 109.315131984
+  },
+  {
+    "name": "Stasiun Kertasemaya",
+    "ref": "KTM",
+    "lat": -6.52832,
+    "lon": 108.353
+  },
+  {
+    "name": "Stasiun Kradenan",
+    "ref": "KNN",
+    "lat": -7.15003,
+    "lon": 111.145
+  },
+  {
+    "name": "Stasiun Krengseng",
+    "ref": "KNS",
+    "lat": -6.9524441,
+    "lon": 110.0279836
+  },
+  {
+    "name": "Stasiun Lampegan",
+    "ref": "LP",
+    "lat": -6.949977,
+    "lon": 107.061549
+  },
+  {
+    "name": "Stasiun Langen",
+    "ref": "LN",
+    "lat": -7.36005,
+    "lon": 108.637
+  },
+  {
+    "name": "Stasiun Larangan (Tegal)",
+    "ref": "LR",
+    "lat": -7.69738,
+    "lon": 109.701
+  },
+  {
+    "name": "Stasiun Lebeng",
+    "ref": "LBG",
+    "lat": -7.6215853,
+    "lon": 109.0763401
+  },
+  {
+    "name": "Stasiun Lubuklinggau",
+    "ref": "LLG",
+    "lat": -3.289,
+    "lon": 102.878
+  },
+  {
+    "name": "Stasiun Malasan",
+    "ref": "MLS",
+    "lat": -7.88594,
+    "lon": 113.26
+  },
+  {
+    "name": "Stasiun Mampang",
+    "ref": "MPG",
+    "lat": -6.205915,
+    "lon": 106.83986
+  },
+  {
+    "name": "Stasiun Margasari",
+    "ref": "MGS",
+    "lat": -7.092198,
+    "lon": 109.02368
+  },
+  {
+    "name": "Stasiun Maseng",
+    "ref": "MSG",
+    "lat": -6.702555,
+    "lon": 106.814666
+  },
+  {
+    "name": "Stasiun Merak",
+    "ref": "MER",
+    "lat": -5.930333,
+    "lon": 105.996737
+  },
+  {
+    "name": "Stasiun Minggiran",
+    "ref": "MGN",
+    "lat": -7.72811,
+    "lon": 112.057
+  },
+  {
+    "name": "Stasiun Mojokerto",
+    "ref": "MR",
+    "lat": -7.47238,
+    "lon": 112.434
+  },
+  {
+    "name": "Stasiun Ngrombo",
+    "ref": "NBO",
+    "lat": -7.14522,
+    "lon": 110.901
+  },
+  {
+    "name": "Stasiun Padas",
+    "ref": "PDS",
+    "lat": -7.179255,
+    "lon": 110.671892
+  },
+  {
+    "name": "Stasiun Palmerah",
+    "ref": "PLM",
+    "lat": -6.207366,
+    "lon": 106.797471
+  },
+  {
+    "name": "Stasiun Panunggalan",
+    "ref": "PNL",
+    "lat": -7.15275,
+    "lon": 111.061
+  },
+  {
+    "name": "Stasiun Parigi",
+    "ref": "PAR",
+    "lat": -7.701722222,
+    "lon": 108.497277777
+  },
+  {
+    "name": "Stasiun Pasar Usang",
+    "ref": "PRU",
+    "lat": -0.736395,
+    "lon": 100.31
+  },
+  {
+    "name": "Halte Pauh Kambar",
+    "ref": "PAK",
+    "lat": -0.651257,
+    "lon": 100.219565
+  },
+  {
+    "name": "Stasiun Plabuan",
+    "ref": "PLB",
+    "lat": -6.91987,
+    "lon": 109.956
+  },
+  {
+    "name": "Stasiun Pohgajih",
+    "ref": "PGJ",
+    "lat": -8.15702,
+    "lon": 112.42
+  },
+  {
+    "name": "Stasiun Pondok Ranji",
+    "ref": "PDJ",
+    "lat": -6.276595,
+    "lon": 106.744651
+  },
+  {
+    "name": "Stasiun Poris",
+    "ref": "PI",
+    "lat": -6.1699387,
+    "lon": 106.6800057
+  },
+  {
+    "name": "Stasiun Prajekan",
+    "ref": "PRJ",
+    "lat": -7.807,
+    "lon": 113.97680556
+  },
+  {
+    "name": "Stasiun Prembun",
+    "ref": "PRB",
+    "lat": -7.724327302,
+    "lon": 109.797825285
+  },
+  {
+    "name": "Stasiun Pucuk",
+    "ref": "PC",
+    "lat": -7.09752,
+    "lon": 112.27
+  },
+  {
+    "name": "Stasiun Purwakarta",
+    "ref": "PWK",
+    "lat": -6.5525,
+    "lon": 107.446
+  },
+  {
+    "name": "Stasiun Pringkasap",
+    "ref": "PRI",
+    "lat": -6.41801,
+    "lon": 107.634
+  },
+  {
+    "name": "Stasiun Randegan",
+    "ref": "RDN",
+    "lat": -7.5699012,
+    "lon": 109.2198999
+  },
+  {
+    "name": "Stasiun Rajapolah",
+    "ref": "RJP",
+    "lat": -7.21955556,
+    "lon": 108.19113889
+  },
+  {
+    "name": "Stasiun Ranuyoso",
+    "ref": "RN",
+    "lat": -7.954373,
+    "lon": 113.236928
+  },
+  {
+    "name": "Stasiun Rejoso",
+    "ref": "RO",
+    "lat": -7.63784,
+    "lon": 112.91
+  },
+  {
+    "name": "Stasiun Rawa Buaya",
+    "ref": "RW",
+    "lat": -6.16269,
+    "lon": 106.723159
+  },
+  {
+    "name": "Stasiun Sepanjang",
+    "ref": "SPJ",
+    "lat": -7.3470388,
+    "lon": 112.6976063
+  },
+  {
+    "name": "Stasiun Serpong",
+    "ref": "SRP",
+    "lat": -6.3201452,
+    "lon": 106.6651493
+  },
+  {
+    "name": "Stasiun Situbondo",
+    "ref": "SIT",
+    "lat": -7.714,
+    "lon": 113.99516667
+  },
+  {
+    "name": "Stasiun Soka",
+    "ref": "SOA",
+    "lat": -7.67915,
+    "lon": 109.64
+  },
+  {
+    "name": "Stasiun Sudimara",
+    "ref": "SDM",
+    "lat": -6.29672,
+    "lon": 106.713
+  },
+  {
+    "name": "Stasiun Sukorejo",
+    "ref": "SKJ",
+    "lat": -7.719444,
+    "lon": 112.723555
+  },
+  {
+    "name": "Halte Sukosari",
+    "ref": "SSR",
+    "lat": -8.083639,
+    "lon": 113.832417
+  },
+  {
+    "name": "Stasiun Sukowono",
+    "ref": "SKW",
+    "lat": -8.058919,
+    "lon": 113.837298
+  },
+  {
+    "name": "Stasiun Sumberrejo",
+    "ref": "SRJ",
+    "lat": -7.177612,
+    "lon": 112.001515
+  },
+  {
+    "name": "Stasiun Suradadi",
+    "ref": "SD",
+    "lat": -7.69738,
+    "lon": 109.701
+  },
+  {
+    "name": "Stasiun Tanggulangin",
+    "ref": "TGA",
+    "lat": -7.5069444,
+    "lon": 112.7080556
+  },
+  {
+    "name": "Stasiun Tegowanu",
+    "ref": "TGW",
+    "lat": -7.052888,
+    "lon": 110.602345
+  },
+  {
+    "name": "Stasiun Tanjung",
+    "ref": "TGN",
+    "lat": -6.876896077,
+    "lon": 108.860413343
+  },
+  {
+    "name": "Stasiun Telagasari",
+    "ref": "TLS",
+    "lat": -6.46484,
+    "lon": 108.235
+  },
+  {
+    "name": "Stasiun Tempuran",
+    "ref": "TPN",
+    "lat": -7.196132,
+    "lon": 110.59851
+  },
+  {
+    "name": "Stasiun Terisi",
+    "ref": "TIS",
+    "lat": -6.41801,
+    "lon": 107.634
+  },
+  {
+    "name": "Stasiun Tigaraksa",
+    "ref": "TGS",
+    "lat": -6.32833333,
+    "lon": 106.43472222
+  },
+  {
+    "name": "Stasiun Tobo",
+    "ref": "TBO",
+    "lat": -7.1724,
+    "lon": 111.655
+  },
+  {
+    "name": "Stasiun Universitas Pancasila",
+    "ref": "UP",
+    "lat": -6.3389397,
+    "lon": 106.8344298
+  },
+  {
+    "name": "Stasiun Wadu",
+    "ref": "WDU",
+    "lat": -7.1964,
+    "lon": 111.5
+  },
+  {
+    "name": "Stasiun Wanaraja",
+    "ref": "WNR",
+    "lat": -7.165026,
+    "lon": 107.976733
+  },
+  {
+    "name": "Stasiun Waruduwur",
+    "ref": "WDW",
+    "lat": -6.78558675,
+    "lon": 108.625329998
+  },
+  {
+    "name": "Halte Kepuh",
+    "ref": "KEH",
+    "lat": -7.707967815,
+    "lon": 110.8580315
+  },
+  {
+    "name": "Halte Kertomenanggal",
+    "ref": "KTL",
+    "lat": -7.3405778,
+    "lon": 112.7295083
+  },
+  {
+    "name": "Halte Margorejo",
+    "ref": "MGR",
+    "lat": -7.3148333,
+    "lon": 112.7344556
+  },
+  {
+    "name": "Halte Silebu",
+    "ref": "SIB",
+    "lat": -6.179926093,
+    "lon": 106.236194948
+  },
+  {
+    "name": "Stasiun Pelabuhan Kuala Tanjung",
+    "ref": "PKT",
+    "lat": 3.361872,
+    "lon": 99.445163
+  },
+  {
+    "name": "Stasiun Tanjung Gading",
+    "ref": "TGD",
+    "lat": 3.311403,
+    "lon": 99.348864
+  },
+  {
+    "name": "Stasiun Air Asam",
+    "ref": "ASM",
+    "lat": -3.6473,
+    "lon": 104.3007
+  },
+  {
+    "name": "Stasiun Airtuba",
+    "ref": "ART",
+    "lat": -4.220933,
+    "lon": 104.244555
+  },
+  {
+    "name": "Halte Ajung",
+    "ref": "AJU",
+    "lat": -8.123333333,
+    "lon": 113.826111111
+  },
+  {
+    "name": "Stasiun Banjarsari (Lahat)",
+    "ref": "BJS",
+    "lat": -3.676777,
+    "lon": 103.698343
+  },
+  {
+    "name": "Stasiun Batuceper",
+    "ref": "BPR",
+    "lat": -6.172130555,
+    "lon": 106.665633333
+  },
+  {
+    "name": "Stasiun Baturaja",
+    "ref": "BTA",
+    "lat": -4.1274,
+    "lon": 104.162
+  },
+  {
+    "name": "Stasiun Bekri",
+    "ref": "BKI",
+    "lat": -5.073222,
+    "lon": 105.136222
+  },
+  {
+    "name": "Stasiun Belatung",
+    "ref": "BLT",
+    "lat": -4.0266,
+    "lon": 104.2287
+  },
+  {
+    "name": "Stasiun Belimbing Airkak",
+    "ref": "BIG",
+    "lat": -3.991188,
+    "lon": 104.292
+  },
+  {
+    "name": "Stasiun Geurugok",
+    "ref": "GRU",
+    "lat": 5.228445,
+    "lon": 96.876903
+  },
+  {
+    "name": "Stasiun Benteng",
+    "ref": "BET",
+    "lat": -7.22113,
+    "lon": 112.743856
+  },
+  {
+    "name": "Stasiun Blambangan Pagar",
+    "ref": "BBA",
+    "lat": -4.895333,
+    "lon": 105.0392
+  },
+  {
+    "name": "Stasiun Blambangan Umpu",
+    "ref": "BBU",
+    "lat": -4.498222,
+    "lon": 104.52013
+  },
+  {
+    "name": "Stasiun Boharan",
+    "ref": "BH",
+    "lat": -7.3879333,
+    "lon": 112.6196389
+  },
+  {
+    "name": "Stasiun Bojong Indah",
+    "ref": "BOI",
+    "lat": -6.159824,
+    "lon": 106.737007
+  },
+  {
+    "name": "Stasiun Branti",
+    "ref": "BTI",
+    "lat": -5.254888,
+    "lon": 105.178666
+  },
+  {
+    "name": "Stasiun Bungamas",
+    "ref": "BGM",
+    "lat": -3.703355,
+    "lon": 103.3681
+  },
+  {
+    "name": "Stasiun Bungkaih",
+    "ref": "BKH",
+    "lat": 5.259797,
+    "lon": 96.96514
+  },
+  {
+    "name": "Stasiun Candi Umbul",
+    "ref": "CAI",
+    "lat": -7.3615003,
+    "lon": 110.296809
+  },
+  {
+    "name": "Stasiun Candimas",
+    "ref": "CMS",
+    "lat": -4.849944,
+    "lon": 104.925151
+  },
+  {
+    "name": "Stasiun Cempaka",
+    "ref": "CEP",
+    "lat": -4.793919,
+    "lon": 104.819591
+  },
+  {
+    "name": "Stasiun Ciawi",
+    "ref": "CAW",
+    "lat": -7.157494,
+    "lon": 108.145666
+  },
+  {
+    "name": "Stasiun Cicayur",
+    "ref": "CC",
+    "lat": -6.3295473,
+    "lon": 106.6167587
+  },
+  {
+    "name": "Stasiun Cikoya",
+    "ref": "CKY",
+    "lat": -6.335561,
+    "lon": 106.411791
+  },
+  {
+    "name": "Stasiun Cilaku",
+    "ref": "CLK",
+    "lat": -6.887973959,
+    "lon": 107.126411603
+  },
+  {
+    "name": "Stasiun Cilegeh",
+    "ref": "CLH",
+    "lat": -6.4640274,
+    "lon": 108.0352284
+  },
+  {
+    "name": "Stasiun Cilegon",
+    "ref": "CLG",
+    "lat": -6.019619,
+    "lon": 106.053124
+  },
+  {
+    "name": "Stasiun Cilejit",
+    "ref": "CJT",
+    "lat": -6.354368,
+    "lon": 106.509581
+  },
+  {
+    "name": "Stasiun Ciomas",
+    "ref": "CS",
+    "lat": -6.663555,
+    "lon": 106.816954
+  },
+  {
+    "name": "Stasiun Cireungas",
+    "ref": "CRG",
+    "lat": -6.958534,
+    "lon": 107.037211
+  },
+  {
+    "name": "Stasiun Ciwidey",
+    "ref": "CWD",
+    "lat": -7.101787,
+    "lon": 107.465767
+  },
+  {
+    "name": "Stasiun Dadapan",
+    "ref": "DPA",
+    "lat": -8.217182,
+    "lon": 114.37572
+  },
+  {
+    "name": "Stasiun Daru",
+    "ref": "DAR",
+    "lat": -6.338054,
+    "lon": 106.49246
+  },
+  {
+    "name": "Stasiun Durian",
+    "ref": "DUR",
+    "lat": -3.967933,
+    "lon": 104.308888
+  },
+  {
+    "name": "Stasiun Gadobangkong",
+    "ref": "GK",
+    "lat": -6.8648111,
+    "lon": 107.5152028
+  },
+  {
+    "name": "Stasiun Gandasoli",
+    "ref": "GDS",
+    "lat": -6.941454143,
+    "lon": 106.992094559
+  },
+  {
+    "name": "Stasiun Gedungratu",
+    "ref": "GDR",
+    "lat": -5.343838,
+    "lon": 105.224066
+  },
+  {
+    "name": "Stasiun Glumbang",
+    "ref": "GLB",
+    "lat": -3.246333,
+    "lon": 104.441222
+  },
+  {
+    "name": "Stasiun Giham",
+    "ref": "GHM",
+    "lat": -4.4206,
+    "lon": 104.493894
+  },
+  {
+    "name": "Stasiun Gilas",
+    "ref": "GLS",
+    "lat": -4.264141,
+    "lon": 104.285
+  },
+  {
+    "name": "Stasiun Gunung Putri",
+    "ref": "GPI",
+    "lat": -6.47175,
+    "lon": 106.88844444
+  },
+  {
+    "name": "Stasiun Haji Pemanggilan",
+    "ref": "HJP",
+    "lat": -5.002222,
+    "lon": 105.106666
+  },
+  {
+    "name": "Stasiun Indralaya",
+    "ref": "IDR",
+    "lat": -3.209333,
+    "lon": 104.642555
+  },
+  {
+    "name": "Stasiun Jati",
+    "ref": "JT",
+    "lat": -7.755726,
+    "lon": 113.224185
+  },
+  {
+    "name": "Stasiun Jati",
+    "ref": "JI",
+    "lat": -7.755726,
+    "lon": 113.224185
+  },
+  {
+    "name": "Stasiun Jatiroto",
+    "ref": "JTR",
+    "lat": -8.123302,
+    "lon": 113.364106
+  },
+  {
+    "name": "Halte Jetis (Grobogan)",
+    "ref": "JIS",
+    "lat": -7.185355,
+    "lon": 110.799066
+  },
+  {
+    "name": "Stasiun Juwana",
+    "ref": "JU",
+    "lat": -6.7201302,
+    "lon": 111.1443871
+  },
+  {
+    "name": "Stasiun Kabat",
+    "ref": "KBT",
+    "lat": -8.276082,
+    "lon": 114.315994
+  },
+  {
+    "name": "Stasiun Kalibalangan",
+    "ref": "KAG",
+    "lat": -4.866666,
+    "lon": 104.972727
+  },
+  {
+    "name": "Stasiun Kalimas",
+    "ref": "KLM",
+    "lat": -7.221685884,
+    "lon": 112.734403334
+  },
+  {
+    "name": "Stasiun Karangenda",
+    "ref": "KED",
+    "lat": -3.304111,
+    "lon": 104.396
+  },
+  {
+    "name": "Stasiun Karangkandri",
+    "ref": "KKD",
+    "lat": -7.6662416,
+    "lon": 109.0757612
+  },
+  {
+    "name": "Stasiun Karangpucung",
+    "ref": "KNP",
+    "lat": -7.353583,
+    "lon": 108.494005
+  },
+  {
+    "name": "Stasiun Karangsono",
+    "ref": "KSO",
+    "lat": -7.19627,
+    "lon": 110.825626
+  },
+  {
+    "name": "Stasiun Kedundang",
+    "ref": "KDG",
+    "lat": -7.8783858,
+    "lon": 110.0984449
+  },
+  {
+    "name": "Stasiun Kemelak",
+    "ref": "KMK",
+    "lat": -4.1633,
+    "lon": 104.191111
+  },
+  {
+    "name": "Stasiun Kepanjen",
+    "ref": "KPN",
+    "lat": -8.1319791,
+    "lon": 112.5731599
+  },
+  {
+    "name": "Stasiun Kepayang",
+    "ref": "KPY",
+    "lat": -4.012,
+    "lon": 104.26311
+  },
+  {
+    "name": "Stasiun Ketandan",
+    "ref": "KET",
+    "lat": -7.69571,
+    "lon": 110.632929
+  },
+  {
+    "name": "Stasiun Ketapang (Lampung Utara)",
+    "ref": "KTP",
+    "lat": -4.7173,
+    "lon": 104.7984
+  },
+  {
+    "name": "Stasiun Klakah",
+    "ref": "KK",
+    "lat": -7.994111,
+    "lon": 113.249343
+  },
+  {
+    "name": "Stasiun Kotabaru",
+    "ref": "KBU",
+    "lat": -3.731333,
+    "lon": 104.3318
+  },
+  {
+    "name": "Stasiun Kotabumi",
+    "ref": "KB",
+    "lat": -4.821919,
+    "lon": 104.881221
+  },
+  {
+    "name": "Stasiun Kota Padang",
+    "ref": "KOP",
+    "lat": -3.426666,
+    "lon": 102.966
+  },
+  {
+    "name": "Stasiun Krenceng",
+    "ref": "KEN",
+    "lat": -6.009745,
+    "lon": 106.023065
+  },
+  {
+    "name": "Stasiun Kudaile",
+    "ref": "KDE",
+    "lat": -6.958609,
+    "lon": 109.132615
+  },
+  {
+    "name": "Stasiun Labuan",
+    "ref": "LBN",
+    "lat": -6.377138888,
+    "lon": 105.826025
+  },
+  {
+    "name": "Stasiun Labuhanratu",
+    "ref": "LAR",
+    "lat": -5.3726,
+    "lon": 105.2523
+  },
+  {
+    "name": "Stasiun Lahat",
+    "ref": "LT",
+    "lat": -3.78976,
+    "lon": 103.53732
+  },
+  {
+    "name": "Stasiun Lembak",
+    "ref": "LEB",
+    "lat": -3.342333,
+    "lon": 104.341555
+  },
+  {
+    "name": "Stasiun Lubuk Batang",
+    "ref": "LBT",
+    "lat": -4.057777,
+    "lon": 104.217555
+  },
+  {
+    "name": "Stasiun Lubuk Rukam",
+    "ref": "LRM",
+    "lat": -3.932777,
+    "lon": 104.340555
+  },
+  {
+    "name": "Stasiun Manonjaya",
+    "ref": "MNJ",
+    "lat": -7.353278,
+    "lon": 108.302521
+  },
+  {
+    "name": "Stasiun Martapura",
+    "ref": "MP",
+    "lat": -4.316444,
+    "lon": 104.346777
+  },
+  {
+    "name": "Stasiun Meluwung",
+    "ref": "MLW",
+    "lat": -7.3943091,
+    "lon": 108.6973451
+  },
+  {
+    "name": "Stasiun Mertoyudan",
+    "ref": "MTY",
+    "lat": -7.5171668,
+    "lon": 110.2264363
+  },
+  {
+    "name": "Stasiun Metur",
+    "ref": "MET",
+    "lat": -3.790777,
+    "lon": 104.345
+  },
+  {
+    "name": "Stasiun Montelan",
+    "ref": "MTL",
+    "lat": -7.7534557,
+    "lon": 109.9496501
+  },
+  {
+    "name": "Stasiun Muara Enim",
+    "ref": "ME",
+    "lat": -3.652777,
+    "lon": 103.776111
+  },
+  {
+    "name": "Stasiun Muara Gula",
+    "ref": "MRL",
+    "lat": -3.586077,
+    "lon": 103.775777
+  },
+  {
+    "name": "Stasiun Muara Saling",
+    "ref": "MSL",
+    "lat": -3.43,
+    "lon": 103.039
+  },
+  {
+    "name": "Stasiun Nambo",
+    "ref": "NMO",
+    "lat": -6.4662,
+    "lon": 106.9062
+  },
+  {
+    "name": "Stasiun Negeri Agung",
+    "ref": "NGN",
+    "lat": -4.572444,
+    "lon": 104.60606
+  },
+  {
+    "name": "Stasiun Pagar Gunung",
+    "ref": "PGG",
+    "lat": -3.6874,
+    "lon": 104.317222
+  },
+  {
+    "name": "Stasiun Pakisaji",
+    "ref": "PSI",
+    "lat": -8.0692787,
+    "lon": 112.5985068
+  },
+  {
+    "name": "Stasiun Bogor Paledang",
+    "ref": "BOP",
+    "lat": -6.597889,
+    "lon": 106.790544
+  },
+  {
+    "name": "Stasiun Panarukan",
+    "ref": "PNR",
+    "lat": -7.698055555,
+    "lon": 113.935
+  },
+  {
+    "name": "Stasiun Pangandaran",
+    "ref": "PND",
+    "lat": -7.680855,
+    "lon": 108.6503877
+  },
+  {
+    "name": "Stasiun Payakabung",
+    "ref": "PYK",
+    "lat": -3.199256,
+    "lon": 104.60505
+  },
+  {
+    "name": "Stasiun Penanggiran",
+    "ref": "PGR",
+    "lat": -3.48205,
+    "lon": 103.81311
+  },
+  {
+    "name": "Stasiun Penimur",
+    "ref": "PNM",
+    "lat": -3.445955,
+    "lon": 104.155744
+  },
+  {
+    "name": "Stasiun Peninjawan",
+    "ref": "PNW",
+    "lat": -3.8798,
+    "lon": 104.3765
+  },
+  {
+    "name": "Halte Pondok Leungsir",
+    "ref": "PON",
+    "lat": -6.904993,
+    "lon": 106.853147
+  },
+  {
+    "name": "Stasiun Prambon",
+    "ref": "PBN",
+    "lat": -7.4614456,
+    "lon": 112.5643365
+  },
+  {
+    "name": "Stasiun Rawa Buntu",
+    "ref": "RU",
+    "lat": -6.315037,
+    "lon": 106.676157
+  },
+  {
+    "name": "Stasiun Rejosari",
+    "ref": "RJS",
+    "lat": -5.294111,
+    "lon": 105.187555
+  },
+  {
+    "name": "Stasiun Rengas",
+    "ref": "RGS",
+    "lat": -5.134,
+    "lon": 105.154444
+  },
+  {
+    "name": "Stasiun Rogojampi",
+    "ref": "RGP",
+    "lat": -8.304502,
+    "lon": 114.292582
+  },
+  {
+    "name": "Stasiun Saketi",
+    "ref": "STI",
+    "lat": -6.40186,
+    "lon": 105.99271
+  },
+  {
+    "name": "Stasiun Saungnaga",
+    "ref": "SNA",
+    "lat": -3.626333,
+    "lon": 103.1893
+  },
+  {
+    "name": "Stasiun Secang",
+    "ref": "SCA",
+    "lat": -7.39214,
+    "lon": 110.244754
+  },
+  {
+    "name": "Stasiun Sedadi",
+    "ref": "SDI",
+    "lat": -7.14064,
+    "lon": 110.848376
+  },
+  {
+    "name": "Stasiun Semarang Gudang",
+    "ref": "SMG",
+    "lat": -6.956289,
+    "lon": 110.434246
+  },
+  {
+    "name": "Stasiun Sempolan",
+    "ref": "SPL",
+    "lat": -8.1926,
+    "lon": 113.89633
+  },
+  {
+    "name": "Stasiun Sepancar",
+    "ref": "SPC",
+    "lat": -4.184333,
+    "lon": 104.2103
+  },
+  {
+    "name": "Stasiun Serdang",
+    "ref": "SDN",
+    "lat": -3.22,
+    "lon": 104.52318
+  },
+  {
+    "name": "Stasiun Simpang",
+    "ref": "SIG",
+    "lat": -3.1045,
+    "lon": 104.6994
+  },
+  {
+    "name": "Stasiun Singkarak",
+    "ref": "SKA",
+    "lat": -0.693222222,
+    "lon": 100.599027777
+  },
+  {
+    "name": "Stasiun Singojuruh",
+    "ref": "SGJ",
+    "lat": -8.306525,
+    "lon": 114.240698
+  },
+  {
+    "name": "Stasiun Sruweng",
+    "ref": "SRW",
+    "lat": -7.654367532,
+    "lon": 109.602189257
+  },
+  {
+    "name": "Stasiun Suka Cinta",
+    "ref": "SCT",
+    "lat": -3.778455,
+    "lon": 103.625188
+  },
+  {
+    "name": "Stasiun Sukamenanti",
+    "ref": "SKN",
+    "lat": -5.4687,
+    "lon": 105.3237
+  },
+  {
+    "name": "Stasiun Sukamerindu",
+    "ref": "SKU",
+    "lat": -3.596575,
+    "lon": 104.276414
+  },
+  {
+    "name": "Stasiun Sukaraja",
+    "ref": "SUA",
+    "lat": -3.6637,
+    "lon": 103.272011
+  },
+  {
+    "name": "Stasiun Surabayan",
+    "ref": "SBN",
+    "lat": -7.099887,
+    "lon": 112.355424
+  },
+  {
+    "name": "Stasiun Sulusuban",
+    "ref": "SLS",
+    "lat": -4.946,
+    "lon": 105.083
+  },
+  {
+    "name": "Stasiun Sumlaran",
+    "ref": "SLR",
+    "lat": -7.0937278,
+    "lon": 112.3218333
+  },
+  {
+    "name": "Stasiun Sungai Tuha",
+    "ref": "SGT",
+    "lat": -4.281777,
+    "lon": 104.319777
+  },
+  {
+    "name": "Stasiun Talangbaru",
+    "ref": "TLB",
+    "lat": -3.844,
+    "lon": 104.363422
+  },
+  {
+    "name": "Stasiun Taman Kota",
+    "ref": "TKO",
+    "lat": -6.158651,
+    "lon": 106.75651
+  },
+  {
+    "name": "Stasiun Solo Balapan",
+    "ref": "SLO",
+    "lat": -7.5567545,
+    "lon": 110.8213985
+  },
+  {
+    "name": "Stasiun Lebakjero",
+    "ref": "LBJ",
+    "lat": -7.053666,
+    "lon": 107.893888
+  },
+  {
+    "name": "Stasiun Jember",
+    "ref": "JR",
+    "lat": -8.16583,
+    "lon": 113.702
+  },
+  {
+    "name": "Stasiun Kampung Bandan",
+    "ref": "KPB",
+    "lat": -6.1325,
+    "lon": 106.829
+  },
+  {
+    "name": "Stasiun Kosambi",
+    "ref": "KOS",
+    "lat": -6.36944,
+    "lon": 107.375
+  },
+  {
+    "name": "Stasiun Ujungnegoro",
+    "ref": "UJN",
+    "lat": -6.90889,
+    "lon": 109.789
+  },
+  {
+    "name": "Stasiun Ngawi",
+    "ref": "NGW",
+    "lat": -7.441919,
+    "lon": 111.385756
+  },
+  {
+    "name": "Stasiun Sengon",
+    "ref": "SN",
+    "lat": -7.75472,
+    "lon": 112.724
+  },
+  {
+    "name": "Stasiun Bagor",
+    "ref": "BGR",
+    "lat": -7.57191698,
+    "lon": 111.853178197
+  },
+  {
+    "name": "Stasiun Pasuruan",
+    "ref": "PS",
+    "lat": -7.6378384,
+    "lon": 112.910158
+  },
+  {
+    "name": "Stasiun Pasuruan",
+    "ref": "PS",
+    "lat": -7.63778,
+    "lon": 112.91
+  },
+  {
+    "name": "Stasiun Kesamben",
+    "ref": "KSB",
+    "lat": -8.14917,
+    "lon": 112.364
+  },
+  {
+    "name": "Stasiun Butuh",
+    "ref": "BTH",
+    "lat": -7.724432936,
+    "lon": 109.858677924
+  },
+  {
+    "name": "Stasiun Sukabumi",
+    "ref": "SI",
+    "lat": -6.925041952,
+    "lon": 106.929578045
+  },
+  {
+    "name": "Stasiun Cipari",
+    "ref": "CPI",
+    "lat": -7.440304,
+    "lon": 108.7610842
+  },
+  {
+    "name": "Stasiun Batang Kuis",
+    "ref": "BTK",
+    "lat": 3.61194,
+    "lon": 98.8017
+  },
+  {
+    "name": "Stasiun Songgom",
+    "ref": "SGG",
+    "lat": -7.02444,
+    "lon": 108.989
+  },
+  {
+    "name": "Stasiun Semarang Poncol",
+    "ref": "SMC",
+    "lat": -6.97282,
+    "lon": 110.41479
+  },
+  {
+    "name": "Stasiun Parungpanjang",
+    "ref": "PRP",
+    "lat": -6.3441538,
+    "lon": 106.5686595
+  },
+  {
+    "name": "Stasiun Pariaman",
+    "ref": "PMN",
+    "lat": -0.62665,
+    "lon": 100.1165128
+  },
+  {
+    "name": "Stasiun Temuguruh",
+    "ref": "TGR",
+    "lat": -8.30945,
+    "lon": 114.202139
+  },
+  {
+    "name": "Stasiun Rancaekek",
+    "ref": "RCK",
+    "lat": -6.965,
+    "lon": 107.756
+  },
+  {
+    "name": "Stasiun Cakung",
+    "ref": "CUK",
+    "lat": -6.219031,
+    "lon": 106.952433
+  },
+  {
+    "name": "Stasiun Babakan",
+    "ref": "BBK",
+    "lat": -6.860414086,
+    "lon": 108.71873588
+  },
+  {
+    "name": "Stasiun Gedangan (Sidoarjo)",
+    "ref": "GDG",
+    "lat": -7.38889,
+    "lon": 112.729
+  },
+  {
+    "name": "Stasiun Kretek",
+    "ref": "KRT",
+    "lat": -7.28556,
+    "lon": 109.03
+  },
+  {
+    "name": "Stasiun Tasikmalaya",
+    "ref": "TSM",
+    "lat": -7.3223484,
+    "lon": 108.2238083
+  },
+  {
+    "name": "Stasiun Ngunut",
+    "ref": "NT",
+    "lat": -8.01056,
+    "lon": 111.927
+  },
+  {
+    "name": "Stasiun Cipinang",
+    "ref": "CPN",
+    "lat": -6.21444,
+    "lon": 106.884
+  },
+  {
+    "name": "Stasiun Kalisetail",
+    "ref": "KSL",
+    "lat": -8.30278,
+    "lon": 114.14
+  },
+  {
+    "name": "Stasiun Semarang Tawang",
+    "ref": "SMT",
+    "lat": -6.96444444,
+    "lon": 110.42777778
+  },
+  {
+    "name": "Stasiun Semarang Tawang",
+    "ref": "SMT",
+    "lat": -6.96442,
+    "lon": 110.42795
+  },
+  {
+    "name": "Stasiun Tulungagung",
+    "ref": "TA",
+    "lat": -8.062930555,
+    "lon": 111.904597222
+  },
+  {
+    "name": "Stasiun Gresik",
+    "ref": "GS",
+    "lat": -7.15278,
+    "lon": 112.658
+  },
+  {
+    "name": "Stasiun Kras",
+    "ref": "KRS",
+    "lat": -7.948729,
+    "lon": 111.960323
+  },
+  {
+    "name": "Museum Kereta Api Sawahlunto",
+    "ref": "SWL",
+    "lat": -0.68297,
+    "lon": 100.77694
+  },
+  {
+    "name": "Museum Kereta Api Sawahlunto",
+    "ref": "SWL",
+    "lat": -0.682913888,
+    "lon": 100.776946111
+  },
+  {
+    "name": "Stasiun Notog",
+    "ref": "NTG",
+    "lat": -7.486019,
+    "lon": 109.213397
+  },
+  {
+    "name": "Stasiun Banjaran, Tegal",
+    "ref": "BJN",
+    "lat": -6.935967,
+    "lon": 109.134332
+  },
+  {
+    "name": "Stasiun Rewulu",
+    "ref": "RWL",
+    "lat": -7.7959792,
+    "lon": 110.2843276
+  },
+  {
+    "name": "Stasiun Lubuk Pakam",
+    "ref": "LBP",
+    "lat": 3.56383333,
+    "lon": 98.87866667
+  },
+  {
+    "name": "Stasiun Universitas Indonesia",
+    "ref": "UI",
+    "lat": -6.360754,
+    "lon": 106.831748
+  },
+  {
+    "name": "Stasiun Kotok",
+    "ref": "KTK",
+    "lat": -8.12639,
+    "lon": 113.779
+  },
+  {
+    "name": "Stasiun Duku",
+    "ref": "DUK",
+    "lat": -0.786944,
+    "lon": 100.317
+  },
+  {
+    "name": "Stasiun Purwosari",
+    "ref": "PWS",
+    "lat": -7.5617,
+    "lon": 110.7965
+  },
+  {
+    "name": "Stasiun Cikarang",
+    "ref": "CKR",
+    "lat": -6.255393,
+    "lon": 107.145129
+  },
+  {
+    "name": "Stasiun Citeras",
+    "ref": "CTR",
+    "lat": -6.334939,
+    "lon": 106.3305023
+  },
+  {
+    "name": "Stasiun Kebumen",
+    "ref": "KM",
+    "lat": -7.68188,
+    "lon": 109.662
+  },
+  {
+    "name": "Stasiun Serang",
+    "ref": "SG",
+    "lat": -6.11222,
+    "lon": 106.159
+  },
+  {
+    "name": "Stasiun Tabing",
+    "ref": "TAB",
+    "lat": -0.866637,
+    "lon": 100.342367
+  },
+  {
+    "name": "Halte Cijambe",
+    "ref": "CJE",
+    "lat": -6.817655,
+    "lon": 106.76006
+  },
+  {
+    "name": "Halte Cijambe",
+    "ref": "CJB",
+    "lat": -6.817655,
+    "lon": 106.76006
+  },
+  {
+    "name": "Stasiun Cicurug",
+    "ref": "CCR",
+    "lat": -6.790444,
+    "lon": 106.779666
+  },
+  {
+    "name": "Stasiun Ciroyom",
+    "ref": "CIR",
+    "lat": -6.91388889,
+    "lon": 107.59
+  },
+  {
+    "name": "Stasiun Garum",
+    "ref": "GRM",
+    "lat": -8.07348,
+    "lon": 112.217
+  },
+  {
+    "name": "Stasiun Surabaya Pasarturi",
+    "ref": "SBI",
+    "lat": -7.24806,
+    "lon": 112.731
+  },
+  {
+    "name": "Stasiun Cirebon",
+    "ref": "CN",
+    "lat": -6.7052705,
+    "lon": 108.5554415
+  },
+  {
+    "name": "Stasiun Bojonegoro",
+    "ref": "BJ",
+    "lat": -7.16444,
+    "lon": 111.887
+  },
+  {
+    "name": "Stasiun Kisaran",
+    "ref": "KIS",
+    "lat": 2.98611,
+    "lon": 99.6197
+  },
+  {
+    "name": "Stasiun Kedunggedeh",
+    "ref": "KDH",
+    "lat": -6.270058,
+    "lon": 107.261224
+  },
+  {
+    "name": "Stasiun Malang Kotalama",
+    "ref": "MLK",
+    "lat": -7.994765821,
+    "lon": 112.633011535
+  },
+  {
+    "name": "Stasiun Bojonggede",
+    "ref": "BJG",
+    "lat": -6.49333,
+    "lon": 106.795
+  },
+  {
+    "name": "Stasiun Kraton",
+    "ref": "KN",
+    "lat": -7.622923,
+    "lon": 112.878944
+  },
+  {
+    "name": "Stasiun Kempit",
+    "ref": "KMP",
+    "lat": -8.30293,
+    "lon": 114.07642
+  },
+  {
+    "name": "Stasiun Karanggandul",
+    "ref": "KGD",
+    "lat": -7.38806,
+    "lon": 109.186
+  },
+  {
+    "name": "Stasiun Sukoharjo",
+    "ref": "SKH",
+    "lat": -7.67976,
+    "lon": 110.8432316
+  },
+  {
+    "name": "Stasiun Ketanggungan Barat",
+    "ref": "KGB",
+    "lat": -6.92932,
+    "lon": 108.856
+  },
+  {
+    "name": "Stasiun Wojo",
+    "ref": "WJ",
+    "lat": -7.86194,
+    "lon": 110.041
+  },
+  {
+    "name": "Stasiun Karawang",
+    "ref": "KW",
+    "lat": -6.30472,
+    "lon": 107.299
+  },
+  {
+    "name": "Stasiun LRT Dishub",
+    "ref": "DIS",
+    "lat": -2.978489,
+    "lon": 104.748939
+  },
+  {
+    "name": "Stasiun Leces",
+    "ref": "LEC",
+    "lat": -7.84639,
+    "lon": 113.229
+  },
+  {
+    "name": "Stasiun Stabat",
+    "ref": "SBT",
+    "lat": 3.765517,
+    "lon": 98.381154
+  },
+  {
+    "name": "Stasiun LRT Demang",
+    "ref": "DMG",
+    "lat": -2.964415,
+    "lon": 104.73588
+  },
+  {
+    "name": "Stasiun LRT Polresta",
+    "ref": "POL",
+    "lat": -3.005128,
+    "lon": 104.772586
+  },
+  {
+    "name": "Stasiun LRT Garuda Dempo",
+    "ref": "GAD",
+    "lat": -2.956239,
+    "lon": 104.735833
+  },
+  {
+    "name": "Stasiun Cibeber",
+    "ref": "CBB",
+    "lat": -6.937596287,
+    "lon": 107.121154595
+  },
+  {
+    "name": "Stasiun Duren Kalibata",
+    "ref": "DRN",
+    "lat": -6.2553411,
+    "lon": 106.8550395
+  },
+  {
+    "name": "Stasiun Cigombong",
+    "ref": "CGB",
+    "lat": -6.742333,
+    "lon": 106.803111
+  },
+  {
+    "name": "Halte Maleber",
+    "ref": "MLB",
+    "lat": -6.817915,
+    "lon": 107.17563
+  },
+  {
+    "name": "Stasiun Rajamandala",
+    "ref": "RM",
+    "lat": -6.824553,
+    "lon": 107.346551
+  },
+  {
+    "name": "Stasiun Garahan",
+    "ref": "GRN",
+    "lat": -8.22513,
+    "lon": 113.896
+  },
+  {
+    "name": "Stasiun Gundih",
+    "ref": "GD",
+    "lat": -7.218755,
+    "lon": 110.899937
+  },
+  {
+    "name": "Stasiun Maguwo",
+    "ref": "MGW",
+    "lat": -7.784968,
+    "lon": 110.43677
+  },
+  {
+    "name": "Stasiun Patukan",
+    "ref": "PTN",
+    "lat": -7.79083,
+    "lon": 110.325
+  },
+  {
+    "name": "Stasiun Pekalongan",
+    "ref": "PK",
+    "lat": -6.89,
+    "lon": 109.664
+  },
+  {
+    "name": "Stasiun Purwoasri",
+    "ref": "PWA",
+    "lat": -7.6475,
+    "lon": 112.1
+  },
+  {
+    "name": "Stasiun Slawi",
+    "ref": "SLW",
+    "lat": -6.98187,
+    "lon": 109.136558
+  },
+  {
+    "name": "Stasiun Tanjungbalai",
+    "ref": "TNB",
+    "lat": 2.97083,
+    "lon": 99.7997
+  },
+  {
+    "name": "Stasiun Kramasan",
+    "ref": "KAS",
+    "lat": -3.0473491,
+    "lon": 104.738184
+  },
+  {
+    "name": "Stasiun Maja",
+    "ref": "MJ",
+    "lat": -6.3323121,
+    "lon": 106.3965612
+  },
+  {
+    "name": "Stasiun Tangerang",
+    "ref": "TNG",
+    "lat": -6.17694,
+    "lon": 106.633
+  },
+  {
+    "name": "Stasiun Pasirian",
+    "ref": "PSR",
+    "lat": -8.21389,
+    "lon": 113.116
+  },
+  {
+    "name": "Stasiun Lumajang",
+    "ref": "LM",
+    "lat": -8.129166666,
+    "lon": 113.222666666
+  },
+  {
+    "name": "Stasiun Jambu Baru",
+    "ref": "JBU",
+    "lat": -6.302981,
+    "lon": 106.260571
+  },
+  {
+    "name": "Stasiun Rangkasbitung",
+    "ref": "RK",
+    "lat": -6.35266,
+    "lon": 106.25153
+  },
+  {
+    "name": "Stasiun Bonosare",
+    "ref": "BNS",
+    "lat": -7.888055555,
+    "lon": 113.892777777
+  },
+  {
+    "name": "Stasiun Bringin",
+    "ref": "BRI",
+    "lat": -7.253122,
+    "lon": 110.523356
+  },
+  {
+    "name": "Stasiun Tamanan",
+    "ref": "TMN",
+    "lat": -8.015277777,
+    "lon": 113.827222222
+  },
+  {
+    "name": "Stasiun Tanah Tinggi",
+    "ref": "TTI",
+    "lat": -6.175453,
+    "lon": 106.645491
+  },
+  {
+    "name": "Stasiun Tanjung Enim",
+    "ref": "TAM",
+    "lat": -3.751111,
+    "lon": 103.794888
+  },
+  {
+    "name": "Stasiun Tanjung Enim Baru",
+    "ref": "TMB",
+    "lat": -3.706333,
+    "lon": 103.799111
+  },
+  {
+    "name": "Stasiun Tanjungrajo",
+    "ref": "TJO",
+    "lat": -4.407814,
+    "lon": 104.462351
+  },
+  {
+    "name": "Stasiun Kuta Blang",
+    "ref": "KKG",
+    "lat": 5.211839,
+    "lon": 96.843293
+  },
+  {
+    "name": "Stasiun Tarahan",
+    "ref": "THN",
+    "lat": -5.506666,
+    "lon": 105.338888
+  },
+  {
+    "name": "Stasiun Tebing Tinggi (Empat Lawang)",
+    "ref": "TI",
+    "lat": -3.5847222,
+    "lon": 103.0813889
+  },
+  {
+    "name": "Stasiun Tegineneng",
+    "ref": "TGI",
+    "lat": -5.202333,
+    "lon": 105.172111
+  },
+  {
+    "name": "Stasiun Telawa",
+    "ref": "TW",
+    "lat": -7.1840475,
+    "lon": 110.7435738
+  },
+  {
+    "name": "Stasiun Tenjo",
+    "ref": "TEJ",
+    "lat": -6.3272565,
+    "lon": 106.4613589
+  },
+  {
+    "name": "Stasiun Tigagajah",
+    "ref": "TJH",
+    "lat": -4.110711,
+    "lon": 104.16868
+  },
+  {
+    "name": "Stasiun Tuban",
+    "ref": "TN",
+    "lat": -7.1063472,
+    "lon": 112.1688083
+  },
+  {
+    "name": "Stasiun Tulangan",
+    "ref": "TLN",
+    "lat": -7.465736,
+    "lon": 112.651
+  },
+  {
+    "name": "Stasiun Tulungbuyut",
+    "ref": "TLY",
+    "lat": -4.625926,
+    "lon": 104.664146
+  },
+  {
+    "name": "Stasiun Ujan Mas",
+    "ref": "UJM",
+    "lat": -3.5323,
+    "lon": 103.7763
+  },
+  {
+    "name": "Stasiun Walantaka",
+    "ref": "WLT",
+    "lat": -6.1555095,
+    "lon": 106.2188241
+  },
+  {
+    "name": "Stasiun Waru",
+    "ref": "WR",
+    "lat": -7.3526404,
+    "lon": 112.7293235
+  },
+  {
+    "name": "Stasiun Warungbandrek",
+    "ref": "WB",
+    "lat": -7.064672028,
+    "lon": 108.00697267
+  },
+  {
+    "name": "Stasiun Way Pisang",
+    "ref": "WAP",
+    "lat": -4.349888,
+    "lon": 104.386777
+  },
+  {
+    "name": "Stasiun Way Tuba",
+    "ref": "WAY",
+    "lat": -4.379444,
+    "lon": 104.41177
+  },
+  {
+    "name": "Stasiun Gemawang",
+    "ref": "GWG",
+    "lat": -7.3194776,
+    "lon": 110.3295504
+  },
+  {
+    "name": "Stasiun Grabag Merbabu",
+    "ref": "GMB",
+    "lat": -7.3475431,
+    "lon": 110.3211726
+  },
+  {
+    "name": "Halte Sroyo",
+    "ref": "SYO",
+    "lat": -7.1639083,
+    "lon": 112.043825
+  },
+  {
+    "name": "Stasiun Karangtalun",
+    "ref": "KRL",
+    "lat": -7.684646828,
+    "lon": 109.0231313
+  },
+  {
+    "name": "Stasiun Bandara Kualanamu",
+    "ref": "KNM",
+    "lat": 3.635147,
+    "lon": 98.878568
+  },
+  {
+    "name": "Stasiun Anyer Lor",
+    "ref": "ANL",
+    "lat": -6.05405,
+    "lon": 105.923843
+  },
+  {
+    "name": "Stasiun Banyuwangi",
+    "ref": "BW",
+    "lat": -8.217182,
+    "lon": 114.37572
+  },
+  {
+    "name": "Stasiun Bumiwaluya",
+    "ref": "BMW",
+    "lat": -7.058605309,
+    "lon": 108.07056047
+  },
+  {
+    "name": "Stasiun Kalideres",
+    "ref": "KDS",
+    "lat": -6.165817,
+    "lon": 106.704642
+  },
+  {
+    "name": "Stasiun Kertapati",
+    "ref": "KPT",
+    "lat": -3.016533,
+    "lon": 104.751602
+  },
+  {
+    "name": "Stasiun Negararatu",
+    "ref": "NRR",
+    "lat": -4.656767,
+    "lon": 104.737626
+  },
+  {
+    "name": "Stasiun Niru",
+    "ref": "NRU",
+    "lat": -3.4536,
+    "lon": 104.06418
+  },
+  {
+    "name": "Stasiun Prabumulih",
+    "ref": "PBM",
+    "lat": -3.433,
+    "lon": 104.24086
+  },
+  {
+    "name": "Stasiun Bedono",
+    "ref": "BDN",
+    "lat": -7.309154,
+    "lon": 110.352972
+  },
+  {
+    "name": "Stasiun Randuagung",
+    "ref": "RDA",
+    "lat": -8.070051,
+    "lon": 113.305274
+  },
+  {
+    "name": "Stasiun Bandar Tinggi",
+    "ref": "BDT",
+    "lat": 3.284488,
+    "lon": 99.30385
+  },
+  {
+    "name": "Stasiun Kadipiro",
+    "ref": "KDO",
+    "lat": -7.53079,
+    "lon": 110.818017
+  },
+  {
+    "name": "Stasiun LRT DJKA",
+    "ref": "BTP",
+    "lat": -3.031516,
+    "lon": 104.790323
+  },
+  {
+    "name": "Stasiun Silungkang",
+    "ref": "SLN",
+    "lat": -0.721704,
+    "lon": 100.762877
+  },
+  {
+    "name": "Stasiun Mesigit",
+    "ref": "MST",
+    "lat": -7.241161211,
+    "lon": 112.726896072
+  },
+  {
+    "name": "Halte Ranji",
+    "ref": "RI",
+    "lat": -6.935522,
+    "lon": 106.969422
+  },
+  {
+    "name": "Stasiun Bandara Internasional Minangkabau",
+    "ref": "BIM",
+    "lat": -0.783436,
+    "lon": 100.286383
+  },
+  {
+    "name": "Stasiun Bukit Putus",
+    "ref": "BKP",
+    "lat": -0.986444,
+    "lon": 100.384333
+  },
+  {
+    "name": "Stasiun Pasirjengkol",
+    "ref": "PSJ",
+    "lat": -7.128309,
+    "lon": 107.992357
+  },
+  {
+    "name": "Stasiun Indarung",
+    "ref": "IDA",
+    "lat": -0.95,
+    "lon": 100.467373
+  },
+  {
+    "name": "Stasiun Garuntang",
+    "ref": "GR",
+    "lat": -5.435679,
+    "lon": 105.291683
+  },
+  {
+    "name": "Stasiun Pidada",
+    "ref": "PID",
+    "lat": -5.461342,
+    "lon": 105.316151
+  },
+  {
+    "name": "Stasiun Panjang",
+    "ref": "PJN",
+    "lat": -5.4703,
+    "lon": 105.321222
+  },
+  {
+    "name": "Stasiun Semarang Pelabuhan",
+    "ref": "SMH",
+    "lat": -6.944745,
+    "lon": 110.426951
+  },
+  {
+    "name": "Stasiun Pandeglang",
+    "ref": "PDG",
+    "lat": -6.327944444,
+    "lon": 106.110611111
+  },
+  {
+    "name": "Stasiun Menes",
+    "ref": "MNS",
+    "lat": -6.388583333,
+    "lon": 105.919666666
+  },
+  {
+    "name": "Stasiun Plumpang",
+    "ref": "PMG",
+    "lat": -7.02533,
+    "lon": 112.099272
+  },
+  {
+    "name": "Stasiun Hengelo",
+    "ref": "HL",
+    "lat": 2.859075,
+    "lon": 99.639241
+  },
+  {
+    "name": "Stasiun Pauh Lima",
+    "ref": "IMA",
+    "lat": -0.937878,
+    "lon": 100.435043
+  },
+  {
+    "name": "Stasiun Alai",
+    "ref": "AI",
+    "lat": -0.926465,
+    "lon": 100.366354
+  },
+  {
+    "name": "Halte Air Tawar",
+    "ref": "ATR",
+    "lat": -0.900385,
+    "lon": 100.350947
+  },
+  {
+    "name": "Stasiun Gedangan",
+    "ref": "GN",
+    "lat": -7.185355,
+    "lon": 110.799066
+  },
+  {
+    "name": "Stasiun Pesing",
+    "ref": "PSG",
+    "lat": -6.1612657,
+    "lon": 106.7714667
+  },
+  {
+    "name": "Stasiun Grogol",
+    "ref": "GGL",
+    "lat": -6.1620267,
+    "lon": 106.7893716
+  },
+  {
+    "name": "Stasiun Kebayoran",
+    "ref": "KBY",
+    "lat": -6.237228,
+    "lon": 106.782537
+  },
+  {
+    "name": "Stasiun Gebang",
+    "ref": "GBA",
+    "lat": 3.96659,
+    "lon": 98.36235
+  },
+  {
+    "name": "Halte Kepet",
+    "ref": "KEP",
+    "lat": -6.957826,
+    "lon": 112.101434
+  },
+  {
+    "name": "Halte Klotok",
+    "ref": "KOK",
+    "lat": -7.07666667,
+    "lon": 112.11722222
+  },
+  {
+    "name": "Stasiun Pangkalan Brandan",
+    "ref": "PBD",
+    "lat": 4.022182,
+    "lon": 98.290692
+  },
+  {
+    "name": "Stasiun Merakurak",
+    "ref": "MKR",
+    "lat": -6.880045,
+    "lon": 111.985786
+  },
+  {
+    "name": "Stasiun Krueng Geukueh",
+    "ref": "KRG",
+    "lat": 5.243736,
+    "lon": 97.020636
+  },
+  {
+    "name": "Stasiun Krueng Mane",
+    "ref": "KRM",
+    "lat": 5.251056,
+    "lon": 96.922621
+  },
+  {
+    "name": "Stasiun Pasoso",
+    "ref": "POO",
+    "lat": -6.1092,
+    "lon": 106.883331
+  },
+  {
+    "name": "Stasiun Bahlias",
+    "ref": "BLI",
+    "lat": 3.2014242,
+    "lon": 99.3383293
+  },
+  {
+    "name": "Stasiun Bunut",
+    "ref": "BUU",
+    "lat": 3.00193,
+    "lon": 99.599924
+  },
+  {
+    "name": "Stasiun Teluk Dalam",
+    "ref": "TUK",
+    "lat": 2.82739,
+    "lon": 99.626293
+  },
+  {
+    "name": "Stasiun Padang Halaban",
+    "ref": "PHA",
+    "lat": 2.313728,
+    "lon": 99.820473
+  },
+  {
+    "name": "Stasiun Laut Tador",
+    "ref": "LTD",
+    "lat": 3.281699,
+    "lon": 99.25545
+  },
+  {
+    "name": "Stasiun Situngir",
+    "ref": "SIU",
+    "lat": 2.492754,
+    "lon": 99.678659
+  },
+  {
+    "name": "Stasiun Pamingke",
+    "ref": "PME",
+    "lat": 2.3767048,
+    "lon": 99.7603735
+  },
+  {
+    "name": "Stasiun Dusun",
+    "ref": "DSU",
+    "lat": 3.127924,
+    "lon": 99.509686
+  },
+  {
+    "name": "Stasiun Sei Bejangkar",
+    "ref": "SBJ",
+    "lat": 3.127924,
+    "lon": 99.509686
+  },
+  {
+    "name": "Stasiun Aek Loba",
+    "ref": "AKB",
+    "lat": 2.651386,
+    "lon": 99.615821
+  },
+  {
+    "name": "Stasiun Lima Puluh",
+    "ref": "LMP",
+    "lat": 3.173355,
+    "lon": 99.412596
+  },
+  {
+    "name": "Stasiun Pulu Raja",
+    "ref": "PUR",
+    "lat": 2.697359,
+    "lon": 99.617008
+  },
+  {
+    "name": "Stasiun Perlanaan",
+    "ref": "PRA",
+    "lat": 3.175661,
+    "lon": 99.364873
+  },
+  {
+    "name": "Stasiun Palang",
+    "ref": "PAG",
+    "lat": -6.901611,
+    "lon": 112.112269
+  },
+  {
+    "name": "Stasiun Telagamurni",
+    "ref": "MTM",
+    "lat": -6.257417,
+    "lon": 107.111125
+  },
+  {
+    "name": "Stasiun BNI City",
+    "ref": "BNC",
+    "lat": -6.2016573,
+    "lon": 106.8198485
+  },
+  {
+    "name": "Stasiun LRT RSUD",
+    "ref": "RSU",
+    "lat": -2.947647,
+    "lon": 104.732508
+  },
+  {
+    "name": "Stasiun LRT Punti Kayu",
+    "ref": "PUK",
+    "lat": -2.940629,
+    "lon": 104.724311
+  },
+  {
+    "name": "Stasiun LRT Asrama Haji",
+    "ref": "ASH",
+    "lat": -2.919556,
+    "lon": 104.711833
+  },
+  {
+    "name": "Stasiun Cigading",
+    "ref": "CGD",
+    "lat": -6.0207815,
+    "lon": 105.9641841
+  },
+  {
+    "name": "Stasiun Bandara Soekarno-Hatta",
+    "ref": "BST",
+    "lat": -6.127382,
+    "lon": 106.652205
+  },
+  {
+    "name": "Stasiun Besitang",
+    "ref": "BSG",
+    "lat": 4.042521,
+    "lon": 98.185574
+  },
+  {
+    "name": "Stasiun Kayu Tanam",
+    "ref": "KTN",
+    "lat": -0.5480563,
+    "lon": 100.3311725
+  },
+  {
+    "name": "Stasiun Sicincin",
+    "ref": "SCN",
+    "lat": -0.5661754,
+    "lon": 100.2779731
+  },
+  {
+    "name": "Stasiun Kandang Ampat",
+    "ref": "KDP",
+    "lat": -0.501342,
+    "lon": 100.339137
+  },
+  {
+    "name": "Stasiun Kuala Bingai",
+    "ref": "KUN",
+    "lat": 3.707977,
+    "lon": 98.428978
+  },
+  {
+    "name": "Stasiun Tanjung Selamat",
+    "ref": "TAS",
+    "lat": 3.833806,
+    "lon": 98.333891
+  },
+  {
+    "name": "Stasiun LRT Jakabaring",
+    "ref": "JAB",
+    "lat": -3.02317,
+    "lon": 104.784682
+  },
+  {
+    "name": "Stasiun LRT Ampera",
+    "ref": "AMP",
+    "lat": -2.988946,
+    "lon": 104.762056
+  },
+  {
+    "name": "Stasiun LRT Bandara Sultan Mahmud Badaruddin II",
+    "ref": "BDR",
+    "lat": -2.894095,
+    "lon": 104.705593
+  },
+  {
+    "name": "Stasiun Pulau Aie",
+    "ref": "PLA",
+    "lat": -0.960556,
+    "lon": 100.366111
+  },
+  {
+    "name": "Stasiun LRT Bumi Sriwijaya",
+    "ref": "BUS",
+    "lat": -2.977145,
+    "lon": 104.745244
+  },
+  {
+    "name": "Stasiun LRT Cinde",
+    "ref": "CIN",
+    "lat": -2.980701,
+    "lon": 104.756216
+  },
+  {
+    "name": "Halte Kumendung",
+    "ref": "KMG",
+    "lat": -7.370278,
+    "lon": 112.652778
+  },
+  {
+    "name": "Stasiun Tanjung Pura",
+    "ref": "TPU",
+    "lat": 3.911277,
+    "lon": 98.421526
+  },
+  {
+    "name": "Stasiun Gunung Megang",
+    "ref": "GNM",
+    "lat": -3.454111,
+    "lon": 103.866777
+  },
+  {
+    "name": "Stasiun Tanjung Rambang",
+    "ref": "TJR",
+    "lat": -3.544066,
+    "lon": 104.261842
+  },
+  {
+    "name": "Stasiun Tanjung Terang",
+    "ref": "TGE",
+    "lat": -3.455412,
+    "lon": 103.929376
+  },
+  {
+    "name": "Stasiun Belimbing Pendopo",
+    "ref": "BIB",
+    "lat": -3.443179,
+    "lon": 103.975733
+  },
+  {
+    "name": "Stasiun Talang Padang",
+    "ref": "TLP",
+    "lat": -3.449927,
+    "lon": 104.017182
+  },
+  {
+    "name": "Stasiun Sunggal",
+    "ref": "SUN",
+    "lat": 3.604359,
+    "lon": 98.604797
+  },
+  {
+    "name": "Halte Lubuk Buaya",
+    "ref": "LBY",
+    "lat": -0.833677,
+    "lon": 100.327743
+  },
+  {
+    "name": "Stasiun Bandara Adisoemarmo",
+    "ref": "SMO",
+    "lat": -7.51348,
+    "lon": 110.747914
+  },
+  {
+    "name": "Stasiun Titi Papan",
+    "ref": "TPP",
+    "lat": 3.687488,
+    "lon": 98.668623
+  },
+  {
+    "name": "Halte Pasirhayam",
+    "ref": "PH",
+    "lat": -6.848551,
+    "lon": 107.129168
+  },
+  {
+    "name": "Halte Panyuran",
+    "ref": "PYR",
+    "lat": -6.89694444,
+    "lon": 112.09
+  },
+  {
+    "name": "Halte Sindangresmi",
+    "ref": "SSI",
+    "lat": -6.953703,
+    "lon": 107.109687
+  },
+  {
+    "name": "Stasiun Naras",
+    "ref": "NRS",
+    "lat": -0.570859,
+    "lon": 100.097893
+  },
+  {
+    "name": "Stasiun Parit Malintang",
+    "ref": "PRM",
+    "lat": -0.622627,
+    "lon": 100.272135
+  },
+  {
+    "name": "Stasiun Petung",
+    "ref": "PET",
+    "lat": -8.207066,
+    "lon": 113.58429
+  },
+  {
+    "name": "Halte Sumberbaru",
+    "ref": "SBB",
+    "lat": -8.123898,
+    "lon": 113.385093
+  },
+  {
+    "name": "Stasiun Kaliboto",
+    "ref": "KLO",
+    "lat": -8.109205,
+    "lon": 113.346565
+  },
+  {
+    "name": "Halte Buwek",
+    "ref": "BWK",
+    "lat": -8.034834,
+    "lon": 113.271123
+  },
+  {
+    "name": "Halte Jorongan",
+    "ref": "JOR",
+    "lat": -7.815994,
+    "lon": 113.225686
+  },
+  {
+    "name": "Stasiun Nguling",
+    "ref": "NL",
+    "lat": -7.718112,
+    "lon": 113.073135
+  },
+  {
+    "name": "Stasiun Sungai Lagoa",
+    "ref": "SAO",
+    "lat": -6.111782,
+    "lon": 106.876744
+  },
+  {
+    "name": "Stasiun Rambutan",
+    "ref": "RMT",
+    "lat": 3.375594,
+    "lon": 99.16831
+  },
+  {
+    "name": "Halte Bangsal",
+    "ref": "BSL",
+    "lat": -7.469177,
+    "lon": 112.483923
+  },
+  {
+    "name": "Halte Widuri",
+    "ref": "WDR",
+    "lat": -7.783796954,
+    "lon": 113.988065271
+  },
+  {
+    "name": "Stasiun Bandung Gudang",
+    "ref": "BDG",
+    "lat": -6.913889,
+    "lon": 107.592018
+  },
+  {
+    "name": "Stasiun Banjarsari",
+    "ref": "BJI",
+    "lat": -7.485833333,
+    "lon": 108.611111111
+  },
+  {
+    "name": "Stasiun Kalipucang",
+    "ref": "KLC",
+    "lat": -7.6362929,
+    "lon": 108.7513004
+  },
+  {
+    "name": "Halte Cipedang",
+    "ref": "CPA",
+    "lat": -6.461321,
+    "lon": 107.986617
+  },
+  {
+    "name": "Stasiun Matraman",
+    "ref": "MTR",
+    "lat": -6.212563,
+    "lon": 106.859825
+  },
+  {
+    "name": "Stasiun Padangan",
+    "ref": "PGN",
+    "lat": -7.158036,
+    "lon": 111.617047
+  },
+  {
+    "name": "Halte Tarandam",
+    "ref": "TDA",
+    "lat": -0.951187315,
+    "lon": 100.368388406
+  },
+  {
+    "name": "Stasiun Naga Kasiangan",
+    "ref": "NGK",
+    "lat": 3.278427,
+    "lon": 99.106499
+  },
+  {
+    "name": "Halte Tangsil",
+    "ref": "TGS",
+    "lat": -7.909722222,
+    "lon": 113.855
+  },
+  {
+    "name": "Halte Tapen",
+    "ref": "TAP",
+    "lat": -7.853611111,
+    "lon": 113.934722222
+  },
+  {
+    "name": "Halte Kalibagor",
+    "ref": "KLB",
+    "lat": -7.763888888,
+    "lon": 114.002222222
+  },
+  {
+    "name": "Halte Tribungan",
+    "ref": "TBG",
+    "lat": -7.711388888,
+    "lon": 113.971944444
+  },
+  {
+    "name": "Stasiun Celangap",
+    "ref": "CEA",
+    "lat": -7.137712,
+    "lon": 111.72628
+  },
+  {
+    "name": "Stasiun Warungdowo",
+    "ref": "WDO",
+    "lat": -7.685638888,
+    "lon": 112.882944444
+  }
+]
