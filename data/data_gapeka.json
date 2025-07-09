@@ -110071,7 +110071,7 @@
   },
   {
     "sequence": 172,
-    "train_name": "KA 173 (Ciremai)",
+    "train_name": "KA 174 (Ciremai)",
     "tracks": [
       {
         "number": "1",
@@ -110245,10 +110245,188 @@
         "max_speed": 110
       }
     ],
-    "train_code": "173"
+    "train_code": "174"
   },
   {
     "sequence": 173,
+    "train_name": "KA 173 (Ciremai)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Bandung (BD)",
+        "arrive_time": "",
+        "depart_time": "16:55:00",
+        "note": "",
+        "station_code": "BD",
+        "max_speed": 110
+      },
+      {
+        "number": "2",
+        "station": "Andir (AND)",
+        "arrive_time": "Ls",
+        "depart_time": "17:00:00",
+        "note": "",
+        "station_code": "AND",
+        "max_speed": 110
+      },
+      {
+        "number": "3",
+        "station": "Cimindi (CMD)",
+        "arrive_time": "Ls",
+        "depart_time": "17:02:00",
+        "note": "",
+        "station_code": "CMD",
+        "max_speed": 110
+      },
+      {
+        "number": "4",
+        "station": "Cimahi (CMI)",
+        "arrive_time": "17:06:00",
+        "depart_time": "17:08:00",
+        "note": "",
+        "station_code": "CMI",
+        "max_speed": 110
+      },
+      {
+        "number": "5",
+        "station": "Gadobangkong (GK)",
+        "arrive_time": "Ls",
+        "depart_time": "-",
+        "note": "",
+        "station_code": "GK",
+        "max_speed": 110
+      },
+      {
+        "number": "6",
+        "station": "Padalarang (PDL)",
+        "arrive_time": "Ls",
+        "depart_time": "17:15:00",
+        "note": "",
+        "station_code": "PDL",
+        "max_speed": 110
+      },
+      {
+        "number": "7",
+        "station": "Cilame (CLE)",
+        "arrive_time": "Ls",
+        "depart_time": "17:24:00",
+        "note": "",
+        "station_code": "CLE",
+        "max_speed": 60
+      },
+      {
+        "number": "8",
+        "station": "Sasaksaat (SKT)",
+        "arrive_time": "Ls",
+        "depart_time": "17:32:00",
+        "note": "",
+        "station_code": "SKT",
+        "max_speed": 60
+      },
+      {
+        "number": "9",
+        "station": "Maswati (MSI)",
+        "arrive_time": "Ls",
+        "depart_time": "17:38:00",
+        "note": "X KA 350 (KA 350 X)",
+        "station_code": "MSI",
+        "max_speed": 60
+      },
+      {
+        "number": "10",
+        "station": "Rendeh (RH)",
+        "arrive_time": "Ls",
+        "depart_time": "17:43:00",
+        "note": "",
+        "station_code": "RH",
+        "max_speed": 60
+      },
+      {
+        "number": "11",
+        "station": "Cikadongdong (CD)",
+        "arrive_time": "Ls",
+        "depart_time": "17:47:00",
+        "note": "",
+        "station_code": "CD",
+        "max_speed": 60
+      },
+      {
+        "number": "12",
+        "station": "Cisomang (CG)",
+        "arrive_time": "Ls",
+        "depart_time": "-",
+        "note": "",
+        "station_code": "CG",
+        "max_speed": 60
+      },
+      {
+        "number": "13",
+        "station": "Plered (PLD)",
+        "arrive_time": "Ls",
+        "depart_time": "18:01:00",
+        "note": "",
+        "station_code": "PLD",
+        "max_speed": 60
+      },
+      {
+        "number": "14",
+        "station": "Sukatani (SUT)",
+        "arrive_time": "Ls",
+        "depart_time": "18:06:00",
+        "note": "",
+        "station_code": "SUT",
+        "max_speed": 60
+      },
+      {
+        "number": "15",
+        "station": "Ciganea (CA)",
+        "arrive_time": "Ls",
+        "depart_time": "18:14:00",
+        "note": "",
+        "station_code": "CA",
+        "max_speed": 60
+      },
+      {
+        "number": "16",
+        "station": "Purwakarta (PWK)",
+        "arrive_time": "18:23:00",
+        "depart_time": "18:26:00",
+        "note": "",
+        "station_code": "PWK",
+        "max_speed": 60
+      },
+      {
+        "number": "17",
+        "station": "Sadang (SAD)",
+        "arrive_time": "Ls",
+        "depart_time": "-",
+        "note": "",
+        "station_code": "SAD",
+        "max_speed": 100
+      },
+      {
+        "number": "18",
+        "station": "Cibungur (CBR)",
+        "arrive_time": "Ls",
+        "depart_time": "18:36:00",
+        "note": "",
+        "station_code": "CBR",
+        "max_speed": 100
+      },
+      {
+        "number": "19",
+        "station": "Cikampek (CKP)",
+        "arrive_time": "18:45:00",
+        "depart_time": "19:10:00",
+        "note": "PERJALANANNYA DITERUSKAN OLEH\nKA 172",
+        "station_code": "CKP",
+        "max_speed": 100
+      }
+    ],
+    "train_code": "173"
+  },
+  {
+    "sequence": 174,
     "train_name": "KA 172 (Ciremai)",
     "tracks": [
       {
@@ -110660,7 +110838,7 @@
     "train_code": "172"
   },
   {
-    "sequence": 174,
+    "sequence": 175,
     "train_name": "KA 175 (Menoreh)",
     "tracks": [
       {
@@ -111225,7 +111403,7 @@
     "train_code": "175"
   },
   {
-    "sequence": 175,
+    "sequence": 176,
     "train_name": "KA 176 (Menoreh)",
     "tracks": [
       {
@@ -111790,7 +111968,7 @@
     "train_code": "176"
   },
   {
-    "sequence": 176,
+    "sequence": 177,
     "train_name": "KA 177 (Menoreh)",
     "tracks": [
       {
@@ -112355,7 +112533,7 @@
     "train_code": "177"
   },
   {
-    "sequence": 177,
+    "sequence": 178,
     "train_name": "KA 178 (Tawangjaya Premium)",
     "tracks": [
       {
@@ -112920,7 +113098,7 @@
     "train_code": "178"
   },
   {
-    "sequence": 178,
+    "sequence": 179,
     "train_name": "KA 179 (Tawangjaya Premium)",
     "tracks": [
       {
@@ -113485,7 +113663,7 @@
     "train_code": "179"
   },
   {
-    "sequence": 179,
+    "sequence": 180,
     "train_name": "KA 180 (Tawangjaya Premium)",
     "tracks": [
       {
@@ -114050,7 +114228,7 @@
     "train_code": "180"
   },
   {
-    "sequence": 180,
+    "sequence": 181,
     "train_name": "KA 181 (Kamandaka)",
     "tracks": [
       {
@@ -114165,7 +114343,7 @@
     "train_code": "181"
   },
   {
-    "sequence": 181,
+    "sequence": 182,
     "train_name": "KA 182 (Kamandaka)",
     "tracks": [
       {
@@ -114352,7 +114530,7 @@
     "train_code": "182"
   },
   {
-    "sequence": 182,
+    "sequence": 183,
     "train_name": "KA 183 (Kamandaka)",
     "tracks": [
       {
@@ -114539,7 +114717,7 @@
     "train_code": "183"
   },
   {
-    "sequence": 183,
+    "sequence": 184,
     "train_name": "KA 184 (Kamandaka)",
     "tracks": [
       {
@@ -114654,7 +114832,7 @@
     "train_code": "184"
   },
   {
-    "sequence": 184,
+    "sequence": 185,
     "train_name": "KA 191 (Kamandaka)",
     "tracks": [
       {
@@ -114841,7 +115019,7 @@
     "train_code": "191"
   },
   {
-    "sequence": 185,
+    "sequence": 186,
     "train_name": "KA 190 (Kamandaka)",
     "tracks": [
       {
@@ -114956,7 +115134,7 @@
     "train_code": "190"
   },
   {
-    "sequence": 186,
+    "sequence": 187,
     "train_name": "KA 194 (Kamandaka)",
     "tracks": [
       {
@@ -115026,8 +115204,8 @@
     "train_code": "194"
   },
   {
-    "sequence": 187,
-    "train_name": "KA 196 (Kamandaka)",
+    "sequence": 188,
+    "train_name": "KA 195 (Kamandaka)",
     "tracks": [
       {
         "number": "1",
@@ -115174,11 +115352,198 @@
         "max_speed": 100
       }
     ],
+    "train_code": "195"
+  },
+  {
+    "sequence": 189,
+    "train_name": "KA 196 (Kamandaka)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Tegal (TG)",
+        "arrive_time": "16:30:00",
+        "depart_time": "16:36:00",
+        "note": "MENERUSKAN PERJALANAN KA 195",
+        "station_code": "TG",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Larangan (LR)",
+        "arrive_time": "Ls",
+        "depart_time": "16:41:00",
+        "note": "",
+        "station_code": "LR",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Surodadi (SD)",
+        "arrive_time": "Ls",
+        "depart_time": "16:48:00",
+        "note": "",
+        "station_code": "SD",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Pemalang (PML)",
+        "arrive_time": "16:57:00",
+        "depart_time": "16:59:00",
+        "note": "",
+        "station_code": "PML",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Petarukan (PTA)",
+        "arrive_time": "Ls",
+        "depart_time": "17:05:00",
+        "note": "",
+        "station_code": "PTA",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Comal (CO)",
+        "arrive_time": "Ls",
+        "depart_time": "17:12:00",
+        "note": "",
+        "station_code": "CO",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Sragi (SRI)",
+        "arrive_time": "Ls",
+        "depart_time": "17:15:00",
+        "note": "",
+        "station_code": "SRI",
+        "max_speed": 100
+      },
+      {
+        "number": "8",
+        "station": "Pekalongan (PK)",
+        "arrive_time": "17:24:00",
+        "depart_time": "17:27:00",
+        "note": "",
+        "station_code": "PK",
+        "max_speed": 100
+      },
+      {
+        "number": "9",
+        "station": "Batang (BTG)",
+        "arrive_time": "Ls",
+        "depart_time": "17:35:00",
+        "note": "",
+        "station_code": "BTG",
+        "max_speed": 100
+      },
+      {
+        "number": "10",
+        "station": "Ujungnegoro (UJN)",
+        "arrive_time": "Ls",
+        "depart_time": "17:38:00",
+        "note": "",
+        "station_code": "UJN",
+        "max_speed": 100
+      },
+      {
+        "number": "11",
+        "station": "Kuripan (KRP)",
+        "arrive_time": "Ls",
+        "depart_time": "17:46:00",
+        "note": "",
+        "station_code": "KRP",
+        "max_speed": 100
+      },
+      {
+        "number": "12",
+        "station": "Plabuan (PLB)",
+        "arrive_time": "Ls",
+        "depart_time": "17:51:00",
+        "note": "",
+        "station_code": "PLB",
+        "max_speed": 100
+      },
+      {
+        "number": "13",
+        "station": "Krengseng (KNS)",
+        "arrive_time": "Ls",
+        "depart_time": "17:58:00",
+        "note": "",
+        "station_code": "KNS",
+        "max_speed": 100
+      },
+      {
+        "number": "14",
+        "station": "Weleri (WLR)",
+        "arrive_time": "18:03:00",
+        "depart_time": "18:05:00",
+        "note": "",
+        "station_code": "WLR",
+        "max_speed": 100
+      },
+      {
+        "number": "15",
+        "station": "Kalibodri (KBD)",
+        "arrive_time": "Ls",
+        "depart_time": "18:12:00",
+        "note": "",
+        "station_code": "KBD",
+        "max_speed": 100
+      },
+      {
+        "number": "16",
+        "station": "Kaliwungu (KLN)",
+        "arrive_time": "Ls",
+        "depart_time": "18:21:00",
+        "note": "",
+        "station_code": "KLN",
+        "max_speed": 100
+      },
+      {
+        "number": "17",
+        "station": "Mangkang (MKG)",
+        "arrive_time": "Ls",
+        "depart_time": "18:25:00",
+        "note": "",
+        "station_code": "MKG",
+        "max_speed": 100
+      },
+      {
+        "number": "18",
+        "station": "Jerakah (JRK)",
+        "arrive_time": "Ls",
+        "depart_time": "18:30:00",
+        "note": "",
+        "station_code": "JRK",
+        "max_speed": 100
+      },
+      {
+        "number": "19",
+        "station": "Semarang Poncol (SMC)",
+        "arrive_time": "18:37:00",
+        "depart_time": "18:40:00",
+        "note": "",
+        "station_code": "SMC",
+        "max_speed": 50
+      },
+      {
+        "number": "20",
+        "station": "Semarang Tawang (SMT)",
+        "arrive_time": "18:46:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "SMT",
+        "max_speed": 50
+      }
+    ],
     "train_code": "196"
   },
   {
-    "sequence": 188,
-    "train_name": "KA 198 (Kamandaka)",
+    "sequence": 190,
+    "train_name": "KA 197 (Kamandaka)",
     "tracks": [
       {
         "number": "1",
@@ -115361,10 +115726,231 @@
         "max_speed": 100
       }
     ],
+    "train_code": "197"
+  },
+  {
+    "sequence": 191,
+    "train_name": "KA 198 (Kamandaka)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Tegal (TG)",
+        "arrive_time": "08:08:00",
+        "depart_time": "08:11:00",
+        "note": "MENERUSKAN PERJALANAN KA 197",
+        "station_code": "TG",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Slawi (SLW)",
+        "arrive_time": "08:26:00",
+        "depart_time": "08:28:00",
+        "note": "",
+        "station_code": "SLW",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Balapulang (BLP)",
+        "arrive_time": "Ls",
+        "depart_time": "-",
+        "note": "",
+        "station_code": "BLP",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Margasari (MGS)",
+        "arrive_time": "Ls",
+        "depart_time": "-",
+        "note": "",
+        "station_code": "MGS",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Prupuk (PPK)",
+        "arrive_time": "Ls",
+        "depart_time": "08:53:00",
+        "note": "(KA 2617 X)",
+        "station_code": "PPK",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Linggapura (LG)",
+        "arrive_time": "Ls",
+        "depart_time": "09:04:00",
+        "note": "",
+        "station_code": "LG",
+        "max_speed": 80
+      },
+      {
+        "number": "7",
+        "station": "Bumiayu (BMA)",
+        "arrive_time": "09:13:00",
+        "depart_time": "09:15:00",
+        "note": "",
+        "station_code": "BMA",
+        "max_speed": 80
+      },
+      {
+        "number": "8",
+        "station": "Kretek (KRT)",
+        "arrive_time": "Ls",
+        "depart_time": "09:23:00",
+        "note": "",
+        "station_code": "KRT",
+        "max_speed": 70
+      },
+      {
+        "number": "9",
+        "station": "Patuguran (PAT)",
+        "arrive_time": "Ls",
+        "depart_time": "09:29:00",
+        "note": "",
+        "station_code": "PAT",
+        "max_speed": 70
+      },
+      {
+        "number": "10",
+        "station": "Karangsari (KRR)",
+        "arrive_time": "Ls",
+        "depart_time": "09:40:00",
+        "note": "",
+        "station_code": "KRR",
+        "max_speed": 70
+      },
+      {
+        "number": "11",
+        "station": "Karanggandul (KGD)",
+        "arrive_time": "Ls",
+        "depart_time": "09:48:00",
+        "note": "",
+        "station_code": "KGD",
+        "max_speed": 70
+      },
+      {
+        "number": "12",
+        "station": "Purwokerto (PWT)",
+        "arrive_time": "09:56:00",
+        "depart_time": "10:06:00",
+        "note": "",
+        "station_code": "PWT",
+        "max_speed": 70
+      },
+      {
+        "number": "13",
+        "station": "Notog (NTG)",
+        "arrive_time": "Ls",
+        "depart_time": "10:14:00",
+        "note": "",
+        "station_code": "NTG",
+        "max_speed": null
+      },
+      {
+        "number": "14",
+        "station": "Kebasen (KBS)",
+        "arrive_time": "Ls",
+        "depart_time": "10:19:00",
+        "note": "",
+        "station_code": "KBS",
+        "max_speed": null
+      },
+      {
+        "number": "15",
+        "station": "Randegan (RDN)",
+        "arrive_time": "Ls",
+        "depart_time": "10:22:00",
+        "note": "",
+        "station_code": "RDN",
+        "max_speed": null
+      },
+      {
+        "number": "16",
+        "station": "Kroya (KYA)",
+        "arrive_time": "10:29:00",
+        "depart_time": "10:59:00",
+        "note": "",
+        "station_code": "KYA",
+        "max_speed": null
+      }
+    ],
     "train_code": "198"
   },
   {
-    "sequence": 189,
+    "sequence": 192,
+    "train_name": "KA 199 (Kamandaka)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Kroya (KYA)",
+        "arrive_time": "10:29:00",
+        "depart_time": "10:59:00",
+        "note": "X KA 2734F JJ KA 2622",
+        "station_code": "KYA",
+        "max_speed": null
+      },
+      {
+        "number": "2",
+        "station": "Sikampuh (SKP)",
+        "arrive_time": "11:06:00",
+        "depart_time": "11:14:00",
+        "note": "X KA 78 (KA 78 X)",
+        "station_code": "SKP",
+        "max_speed": null
+      },
+      {
+        "number": "3",
+        "station": "Maos (MA)",
+        "arrive_time": "11:21:00",
+        "depart_time": "11:23:00",
+        "note": "",
+        "station_code": "MA",
+        "max_speed": null
+      },
+      {
+        "number": "4",
+        "station": "Kasugihan (KH)",
+        "arrive_time": "Ls",
+        "depart_time": "11:26:00",
+        "note": "",
+        "station_code": "KH",
+        "max_speed": null
+      },
+      {
+        "number": "5",
+        "station": "Karangkandri (KKD)",
+        "arrive_time": "Ls",
+        "depart_time": "11:32:00",
+        "note": "",
+        "station_code": "KKD",
+        "max_speed": null
+      },
+      {
+        "number": "6",
+        "station": "Gumilir (GM)",
+        "arrive_time": "11:37:00",
+        "depart_time": "11:39:00",
+        "note": "",
+        "station_code": "GM",
+        "max_speed": null
+      },
+      {
+        "number": "7",
+        "station": "Cilacap (CP)",
+        "arrive_time": "11:48:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "CP",
+        "max_speed": null
+      }
+    ],
+    "train_code": "199"
+  },
+  {
+    "sequence": 193,
     "train_name": "KA 185 (Joglosemarkerto)",
     "tracks": [
       {
@@ -115479,7 +116065,7 @@
     "train_code": "185"
   },
   {
-    "sequence": 190,
+    "sequence": 194,
     "train_name": "KA 186 (Joglosemarkerto)",
     "tracks": [
       {
@@ -115792,7 +116378,7 @@
     "train_code": "186"
   },
   {
-    "sequence": 191,
+    "sequence": 195,
     "train_name": "KA 187 (Joglosemarkerto)",
     "tracks": [
       {
@@ -116105,7 +116691,7 @@
     "train_code": "187"
   },
   {
-    "sequence": 192,
+    "sequence": 196,
     "train_name": "KA 188 (Joglosemarkerto)",
     "tracks": [
       {
@@ -116535,7 +117121,7 @@
     "train_code": "188"
   },
   {
-    "sequence": 193,
+    "sequence": 197,
     "train_name": "KA 189 (Joglosemarkerto)",
     "tracks": [
       {
@@ -116677,7 +117263,7 @@
     "train_code": "189"
   },
   {
-    "sequence": 194,
+    "sequence": 198,
     "train_name": "KA 193 (Joglosemarkerto)",
     "tracks": [
       {
@@ -117107,7 +117693,7 @@
     "train_code": "193"
   },
   {
-    "sequence": 195,
+    "sequence": 199,
     "train_name": "KA 192 (Joglosemarkerto)",
     "tracks": [
       {
@@ -117420,7 +118006,7 @@
     "train_code": "192"
   },
   {
-    "sequence": 196,
+    "sequence": 200,
     "train_name": "KA 201 (Joglosemarkerto)",
     "tracks": [
       {
@@ -117679,7 +118265,7 @@
     "train_code": "201"
   },
   {
-    "sequence": 197,
+    "sequence": 201,
     "train_name": "KA 202 (Joglosemarkerto)",
     "tracks": [
       {
@@ -117938,7 +118524,7 @@
     "train_code": "202"
   },
   {
-    "sequence": 198,
+    "sequence": 202,
     "train_name": "KA 203 (Tegal Bahari)",
     "tracks": [
       {
@@ -118332,7 +118918,7 @@
     "train_code": "203"
   },
   {
-    "sequence": 199,
+    "sequence": 203,
     "train_name": "KA 204 (Tegal Bahari)",
     "tracks": [
       {
@@ -118726,7 +119312,7 @@
     "train_code": "204"
   },
   {
-    "sequence": 200,
+    "sequence": 204,
     "train_name": "KA 208F (Baturraden Ekspres)",
     "tracks": [
       {
@@ -118778,7 +119364,7 @@
     "train_code": "208F"
   },
   {
-    "sequence": 201,
+    "sequence": 205,
     "train_name": "KA 205F (Baturraden Ekspres)",
     "tracks": [
       {
@@ -119145,7 +119731,7 @@
     "train_code": "205F"
   },
   {
-    "sequence": 202,
+    "sequence": 206,
     "train_name": "KA 206F (Baturraden Ekspres)",
     "tracks": [
       {
@@ -119512,7 +120098,7 @@
     "train_code": "206F"
   },
   {
-    "sequence": 203,
+    "sequence": 207,
     "train_name": "KA 207F (Baturraden Ekspres)",
     "tracks": [
       {
@@ -119564,7 +120150,7 @@
     "train_code": "207F"
   },
   {
-    "sequence": 204,
+    "sequence": 208,
     "train_name": "KA 209 (Mutiara Timur)",
     "tracks": [
       {
@@ -120039,7 +120625,7 @@
     "train_code": "209"
   },
   {
-    "sequence": 205,
+    "sequence": 209,
     "train_name": "KA 210 (Mutiara Timur)",
     "tracks": [
       {
@@ -120514,7 +121100,7 @@
     "train_code": "210"
   },
   {
-    "sequence": 206,
+    "sequence": 210,
     "train_name": "KA 211F (Mutiara Timur)",
     "tracks": [
       {
@@ -120962,7 +121548,7 @@
     "train_code": "211F"
   },
   {
-    "sequence": 207,
+    "sequence": 211,
     "train_name": "KA 212F (Mutiara Timur)",
     "tracks": [
       {
@@ -121410,7 +121996,7 @@
     "train_code": "212F"
   },
   {
-    "sequence": 208,
+    "sequence": 212,
     "train_name": "KA 213 (Kaligung)",
     "tracks": [
       {
@@ -121597,7 +122183,7 @@
     "train_code": "213"
   },
   {
-    "sequence": 209,
+    "sequence": 213,
     "train_name": "KA 214 (Kaligung)",
     "tracks": [
       {
@@ -121784,8 +122370,8 @@
     "train_code": "214"
   },
   {
-    "sequence": 210,
-    "train_name": "KA 216 (Kaligung)",
+    "sequence": 214,
+    "train_name": "KA 215 (Kaligung)",
     "tracks": [
       {
         "number": "1",
@@ -121959,10 +122545,197 @@
         "max_speed": 100
       }
     ],
+    "train_code": "215"
+  },
+  {
+    "sequence": 215,
+    "train_name": "KA 216 (Kaligung)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Brebes (BB)",
+        "arrive_time": "",
+        "depart_time": "04:50:00",
+        "note": "",
+        "station_code": "BB",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Tegal (TG)",
+        "arrive_time": "05:02:00",
+        "depart_time": "05:07:00",
+        "note": "",
+        "station_code": "TG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Larangan (LR)",
+        "arrive_time": "Ls",
+        "depart_time": "05:13:00",
+        "note": "",
+        "station_code": "LR",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Surodadi (SD)",
+        "arrive_time": "Ls",
+        "depart_time": "05:20:00",
+        "note": "",
+        "station_code": "SD",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Pemalang (PML)",
+        "arrive_time": "05:29:00",
+        "depart_time": "05:31:00",
+        "note": "",
+        "station_code": "PML",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Petarukan (PTA)",
+        "arrive_time": "Ls",
+        "depart_time": "05:37:00",
+        "note": "",
+        "station_code": "PTA",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Comal (CO)",
+        "arrive_time": "Ls",
+        "depart_time": "05:44:00",
+        "note": "",
+        "station_code": "CO",
+        "max_speed": 100
+      },
+      {
+        "number": "8",
+        "station": "Sragi (SRI)",
+        "arrive_time": "Ls",
+        "depart_time": "05:47:00",
+        "note": "",
+        "station_code": "SRI",
+        "max_speed": 100
+      },
+      {
+        "number": "9",
+        "station": "Pekalongan (PK)",
+        "arrive_time": "05:57:00",
+        "depart_time": "06:00:00",
+        "note": "",
+        "station_code": "PK",
+        "max_speed": 100
+      },
+      {
+        "number": "10",
+        "station": "Batang (BTG)",
+        "arrive_time": "06:10:00",
+        "depart_time": "06:12:00",
+        "note": "",
+        "station_code": "BTG",
+        "max_speed": 100
+      },
+      {
+        "number": "11",
+        "station": "Ujungnegoro (UJN)",
+        "arrive_time": "Ls",
+        "depart_time": "06:17:00",
+        "note": "",
+        "station_code": "UJN",
+        "max_speed": 100
+      },
+      {
+        "number": "12",
+        "station": "Kuripan (KRP)",
+        "arrive_time": "Ls",
+        "depart_time": "06:25:00",
+        "note": "",
+        "station_code": "KRP",
+        "max_speed": 100
+      },
+      {
+        "number": "13",
+        "station": "Plabuan (PLB)",
+        "arrive_time": "Ls",
+        "depart_time": "06:30:00",
+        "note": "",
+        "station_code": "PLB",
+        "max_speed": 100
+      },
+      {
+        "number": "14",
+        "station": "Krengseng (KNS)",
+        "arrive_time": "Ls",
+        "depart_time": "06:37:00",
+        "note": "",
+        "station_code": "KNS",
+        "max_speed": 100
+      },
+      {
+        "number": "15",
+        "station": "Weleri (WLR)",
+        "arrive_time": "06:43:00",
+        "depart_time": "06:45:00",
+        "note": "",
+        "station_code": "WLR",
+        "max_speed": 100
+      },
+      {
+        "number": "16",
+        "station": "Kalibodri (KBD)",
+        "arrive_time": "Ls",
+        "depart_time": "06:53:00",
+        "note": "",
+        "station_code": "KBD",
+        "max_speed": 100
+      },
+      {
+        "number": "17",
+        "station": "Kaliwungu (KLN)",
+        "arrive_time": "Ls",
+        "depart_time": "07:02:00",
+        "note": "",
+        "station_code": "KLN",
+        "max_speed": 100
+      },
+      {
+        "number": "18",
+        "station": "Mangkang (MKG)",
+        "arrive_time": "Ls",
+        "depart_time": "07:06:00",
+        "note": "",
+        "station_code": "MKG",
+        "max_speed": 100
+      },
+      {
+        "number": "19",
+        "station": "Jerakah (JRK)",
+        "arrive_time": "Ls",
+        "depart_time": "07:11:00",
+        "note": "",
+        "station_code": "JRK",
+        "max_speed": 100
+      },
+      {
+        "number": "20",
+        "station": "Semarang Poncol (SMC)",
+        "arrive_time": "07:18:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "SMC",
+        "max_speed": 100
+      }
+    ],
     "train_code": "216"
   },
   {
-    "sequence": 211,
+    "sequence": 216,
     "train_name": "KA 217 (Kaligung)",
     "tracks": [
       {
@@ -122194,7 +122967,7 @@
     "train_code": "217"
   },
   {
-    "sequence": 212,
+    "sequence": 217,
     "train_name": "KA 218 (Kaligung)",
     "tracks": [
       {
@@ -122426,7 +123199,7 @@
     "train_code": "218"
   },
   {
-    "sequence": 213,
+    "sequence": 218,
     "train_name": "KA 219 (Kaligung)",
     "tracks": [
       {
@@ -122604,7 +123377,7 @@
     "train_code": "219"
   },
   {
-    "sequence": 214,
+    "sequence": 219,
     "train_name": "KA 220 (Kaligung)",
     "tracks": [
       {
@@ -122782,7 +123555,7 @@
     "train_code": "220"
   },
   {
-    "sequence": 215,
+    "sequence": 220,
     "train_name": "KA 221F (Kaligung)",
     "tracks": [
       {
@@ -122960,7 +123733,7 @@
     "train_code": "221F"
   },
   {
-    "sequence": 216,
+    "sequence": 221,
     "train_name": "KA 222F (Kaligung)",
     "tracks": [
       {
@@ -123138,7 +123911,7 @@
     "train_code": "222F"
   },
   {
-    "sequence": 217,
+    "sequence": 222,
     "train_name": "KA 223 (Pangrango)",
     "tracks": [
       {
@@ -123271,7 +124044,7 @@
     "train_code": "223"
   },
   {
-    "sequence": 218,
+    "sequence": 223,
     "train_name": "KA 224 (Pangrango)",
     "tracks": [
       {
@@ -123404,7 +124177,7 @@
     "train_code": "224"
   },
   {
-    "sequence": 219,
+    "sequence": 224,
     "train_name": "KA 225 (Pangrango)",
     "tracks": [
       {
@@ -123537,7 +124310,7 @@
     "train_code": "225"
   },
   {
-    "sequence": 220,
+    "sequence": 225,
     "train_name": "KA 226 (Pangrango)",
     "tracks": [
       {
@@ -123670,7 +124443,7 @@
     "train_code": "226"
   },
   {
-    "sequence": 221,
+    "sequence": 226,
     "train_name": "KA 227 (Pangrango)",
     "tracks": [
       {
@@ -123803,7 +124576,7 @@
     "train_code": "227"
   },
   {
-    "sequence": 222,
+    "sequence": 227,
     "train_name": "KA 228 (Pangrango)",
     "tracks": [
       {
@@ -123936,7 +124709,7 @@
     "train_code": "228"
   },
   {
-    "sequence": 223,
+    "sequence": 228,
     "train_name": "KA 229 (Pangrango)",
     "tracks": [
       {
@@ -124069,7 +124842,7 @@
     "train_code": "229"
   },
   {
-    "sequence": 224,
+    "sequence": 229,
     "train_name": "KA 230 (Pangrango)",
     "tracks": [
       {
@@ -124202,7 +124975,7 @@
     "train_code": "230"
   },
   {
-    "sequence": 225,
+    "sequence": 230,
     "train_name": "KA 231 (Banyubiru Ekspres)",
     "tracks": [
       {
@@ -124344,7 +125117,7 @@
     "train_code": "231"
   },
   {
-    "sequence": 226,
+    "sequence": 231,
     "train_name": "KA 232 (Banyubiru Ekspres)",
     "tracks": [
       {
@@ -124486,8 +125259,8 @@
     "train_code": "232"
   },
   {
-    "sequence": 227,
-    "train_name": "KA 234F (Sancaka Utara)",
+    "sequence": 232,
+    "train_name": "KA 233F (Sancaka Utara)",
     "tracks": [
       {
         "number": "1",
@@ -124496,7 +125269,7 @@
         "depart_time": "07:00:00",
         "note": "",
         "station_code": "SBI",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "2",
@@ -124505,7 +125278,7 @@
         "depart_time": "07:06:00",
         "note": "",
         "station_code": "TES",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "3",
@@ -124514,7 +125287,7 @@
         "depart_time": "07:08:00",
         "note": "",
         "station_code": "KDA",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "4",
@@ -124523,7 +125296,7 @@
         "depart_time": "07:12:00",
         "note": "",
         "station_code": "BNW",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "5",
@@ -124532,7 +125305,7 @@
         "depart_time": "07:16:00",
         "note": "",
         "station_code": "CME",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "6",
@@ -124541,7 +125314,7 @@
         "depart_time": "07:23:00",
         "note": "",
         "station_code": "DD",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "7",
@@ -124550,7 +125323,7 @@
         "depart_time": "07:36:00",
         "note": "",
         "station_code": "LMG",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "8",
@@ -124559,7 +125332,7 @@
         "depart_time": "07:43:00",
         "note": "",
         "station_code": "SBN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "9",
@@ -124568,7 +125341,7 @@
         "depart_time": "07:50:00",
         "note": "",
         "station_code": "PC",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "10",
@@ -124577,7 +125350,7 @@
         "depart_time": "07:54:00",
         "note": "",
         "station_code": "GEB",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "11",
@@ -124586,7 +125359,7 @@
         "depart_time": "08:03:00",
         "note": "",
         "station_code": "BBT",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "12",
@@ -124595,7 +125368,7 @@
         "depart_time": "08:11:00",
         "note": "",
         "station_code": "BWO",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "13",
@@ -124604,7 +125377,7 @@
         "depart_time": "08:20:00",
         "note": "",
         "station_code": "SRJ",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "14",
@@ -124613,7 +125386,7 @@
         "depart_time": "08:26:00",
         "note": "",
         "station_code": "KPS",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "15",
@@ -124622,7 +125395,7 @@
         "depart_time": "08:36:00",
         "note": "",
         "station_code": "BJ",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "16",
@@ -124631,7 +125404,7 @@
         "depart_time": "08:48:00",
         "note": "",
         "station_code": "KIT",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "17",
@@ -124640,7 +125413,7 @@
         "depart_time": "08:58:00",
         "note": "",
         "station_code": "TBO",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "18",
@@ -124649,7 +125422,7 @@
         "depart_time": "09:08:00",
         "note": "",
         "station_code": "CU",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "19",
@@ -124658,7 +125431,7 @@
         "depart_time": "09:13:00",
         "note": "",
         "station_code": "KPA",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "20",
@@ -124667,7 +125440,7 @@
         "depart_time": "09:17:00",
         "note": "",
         "station_code": "WDU",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "21",
@@ -124676,7 +125449,7 @@
         "depart_time": "09:30:00",
         "note": "// KA 2523 (KA 2523 =)",
         "station_code": "RBG",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "22",
@@ -124685,7 +125458,7 @@
         "depart_time": "09:43:00",
         "note": "",
         "station_code": "DPL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "23",
@@ -124694,7 +125467,7 @@
         "depart_time": "09:48:00",
         "note": "",
         "station_code": "SL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "24",
@@ -124703,7 +125476,7 @@
         "depart_time": "10:15:00",
         "note": "= KA 39 (KA 39 //)",
         "station_code": "KNN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "25",
@@ -124712,7 +125485,7 @@
         "depart_time": "10:24:00",
         "note": "",
         "station_code": "PNL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "26",
@@ -124721,7 +125494,7 @@
         "depart_time": "10:28:00",
         "note": "",
         "station_code": "JBN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "27",
@@ -124730,14 +125503,93 @@
         "depart_time": "10:46:00",
         "note": "PERJALANANNYA DITERUSKAN OLEH\nKA 234F",
         "station_code": "GBN",
-        "max_speed": null
+        "max_speed": 100
+      }
+    ],
+    "train_code": "233F"
+  },
+  {
+    "sequence": 233,
+    "train_name": "KA 234F (Sancaka Utara)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Gambringan (GBN)",
+        "arrive_time": "10:41:00",
+        "depart_time": "10:46:00",
+        "note": "MENERUSKAN PERJALANAN KA 233F",
+        "station_code": "GBN",
+        "max_speed": 40
+      },
+      {
+        "number": "2",
+        "station": "Gundih (GD)",
+        "arrive_time": "11:08:00",
+        "depart_time": "11:13:00",
+        "note": "X KA 2713",
+        "station_code": "GD",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Goprak (GPK)",
+        "arrive_time": "Ls",
+        "depart_time": "11:19:00",
+        "note": "",
+        "station_code": "GPK",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sumberlawang (SUM)",
+        "arrive_time": "Ls",
+        "depart_time": "11:26:00",
+        "note": "",
+        "station_code": "SUM",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Salem (SLM)",
+        "arrive_time": "11:34:00",
+        "depart_time": "11:36:00",
+        "note": "",
+        "station_code": "SLM",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Kalioso (KO)",
+        "arrive_time": "Ls",
+        "depart_time": "11:43:00",
+        "note": "",
+        "station_code": "KO",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Kadipiro (KDO)",
+        "arrive_time": "Ls",
+        "depart_time": "11:49:00",
+        "note": "",
+        "station_code": "KDO",
+        "max_speed": 100
+      },
+      {
+        "number": "8",
+        "station": "Solobalapan (SLO)",
+        "arrive_time": "11:56:00",
+        "depart_time": "12:00:00",
+        "note": "",
+        "station_code": "SLO",
+        "max_speed": 100
       }
     ],
     "train_code": "234F"
   },
   {
-    "sequence": 228,
-    "train_name": "KA 236F (Sancaka Utara)",
+    "sequence": 234,
+    "train_name": "KA 235F (Sancaka Utara)",
     "tracks": [
       {
         "number": "1",
@@ -125082,10 +125934,359 @@
         "max_speed": null
       }
     ],
+    "train_code": "235F"
+  },
+  {
+    "sequence": 235,
+    "train_name": "KA 236F (Sancaka Utara)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Cilacap (CP)",
+        "arrive_time": "",
+        "depart_time": "17:10:00",
+        "note": "",
+        "station_code": "CP",
+        "max_speed": null
+      },
+      {
+        "number": "2",
+        "station": "Gumilir (GM)",
+        "arrive_time": "17:19:00",
+        "depart_time": "17:21:00",
+        "note": "",
+        "station_code": "GM",
+        "max_speed": null
+      },
+      {
+        "number": "3",
+        "station": "Karangkandri (KKD)",
+        "arrive_time": "Ls",
+        "depart_time": "17:26:00",
+        "note": "",
+        "station_code": "KKD",
+        "max_speed": null
+      },
+      {
+        "number": "4",
+        "station": "Kasugihan (KH)",
+        "arrive_time": "17:33:00",
+        "depart_time": "17:35:00",
+        "note": "X KA 2719 (KA 2719 X)",
+        "station_code": "KH",
+        "max_speed": null
+      },
+      {
+        "number": "5",
+        "station": "Maos (MA)",
+        "arrive_time": "17:39:00",
+        "depart_time": "17:47:00",
+        "note": "X KA 287 (KA 287 X)",
+        "station_code": "MA",
+        "max_speed": null
+      },
+      {
+        "number": "6",
+        "station": "Sikampuh (SKP)",
+        "arrive_time": "Ls",
+        "depart_time": "17:53:00",
+        "note": "",
+        "station_code": "SKP",
+        "max_speed": null
+      },
+      {
+        "number": "7",
+        "station": "Kroya (KYA)",
+        "arrive_time": "17:59:00",
+        "depart_time": "18:22:00",
+        "note": "= KA 112 (KA 112 //)",
+        "station_code": "KYA",
+        "max_speed": null
+      },
+      {
+        "number": "8",
+        "station": "Kemranjen (KJ)",
+        "arrive_time": "Ls",
+        "depart_time": "18:28:00",
+        "note": "",
+        "station_code": "KJ",
+        "max_speed": null
+      },
+      {
+        "number": "9",
+        "station": "Sumpiuh (SPH)",
+        "arrive_time": "Ls",
+        "depart_time": "18:32:00",
+        "note": "",
+        "station_code": "SPH",
+        "max_speed": null
+      },
+      {
+        "number": "10",
+        "station": "Tambak (TBK)",
+        "arrive_time": "Ls",
+        "depart_time": "18:36:00",
+        "note": "",
+        "station_code": "TBK",
+        "max_speed": null
+      },
+      {
+        "number": "11",
+        "station": "Ijo (IJ)",
+        "arrive_time": "Ls",
+        "depart_time": "18:39:00",
+        "note": "",
+        "station_code": "IJ",
+        "max_speed": null
+      },
+      {
+        "number": "12",
+        "station": "Gombong (GB)",
+        "arrive_time": "18:45:00",
+        "depart_time": "18:59:00",
+        "note": "= KA 44 (KA 44 //)",
+        "station_code": "GB",
+        "max_speed": null
+      },
+      {
+        "number": "13",
+        "station": "Karanganyar (KA)",
+        "arrive_time": "Ls",
+        "depart_time": "19:06:00",
+        "note": "",
+        "station_code": "KA",
+        "max_speed": null
+      },
+      {
+        "number": "14",
+        "station": "Sruweng (SRW)",
+        "arrive_time": "Ls",
+        "depart_time": "19:08:30",
+        "note": "",
+        "station_code": "SRW",
+        "max_speed": null
+      },
+      {
+        "number": "15",
+        "station": "Kebumen (KM)",
+        "arrive_time": "19:15:00",
+        "depart_time": "19:17:00",
+        "note": "",
+        "station_code": "KM",
+        "max_speed": null
+      },
+      {
+        "number": "16",
+        "station": "Wonosari (WNS)",
+        "arrive_time": "Ls",
+        "depart_time": "19:21:00",
+        "note": "",
+        "station_code": "WNS",
+        "max_speed": null
+      },
+      {
+        "number": "17",
+        "station": "Kutowinangun (KWN)",
+        "arrive_time": "Ls",
+        "depart_time": "19:24:00",
+        "note": "",
+        "station_code": "KWN",
+        "max_speed": null
+      },
+      {
+        "number": "18",
+        "station": "Prembun (PRB)",
+        "arrive_time": "Ls",
+        "depart_time": "19:29:00",
+        "note": "",
+        "station_code": "PRB",
+        "max_speed": null
+      },
+      {
+        "number": "19",
+        "station": "Butuh (BTH)",
+        "arrive_time": "Ls",
+        "depart_time": "19:34:00",
+        "note": "",
+        "station_code": "BTH",
+        "max_speed": null
+      },
+      {
+        "number": "20",
+        "station": "Kutoarjo (KTA)",
+        "arrive_time": "19:39:00",
+        "depart_time": "19:44:00",
+        "note": "",
+        "station_code": "KTA",
+        "max_speed": null
+      },
+      {
+        "number": "21",
+        "station": "Jenar (JN)",
+        "arrive_time": "Ls",
+        "depart_time": "19:55:00",
+        "note": "",
+        "station_code": "JN",
+        "max_speed": null
+      },
+      {
+        "number": "22",
+        "station": "Wojo (WJ)",
+        "arrive_time": "Ls",
+        "depart_time": "20:01:00",
+        "note": "",
+        "station_code": "WJ",
+        "max_speed": null
+      },
+      {
+        "number": "23",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "20:06:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": null
+      },
+      {
+        "number": "24",
+        "station": "Wates (WT)",
+        "arrive_time": "20:12:00",
+        "depart_time": "20:14:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": null
+      },
+      {
+        "number": "25",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "20:23:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": null
+      },
+      {
+        "number": "26",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "20:30:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": null
+      },
+      {
+        "number": "27",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "20:34:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": null
+      },
+      {
+        "number": "28",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "20:39:00",
+        "depart_time": "20:44:00",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": null
+      },
+      {
+        "number": "29",
+        "station": "Lempuyangan (LPN)",
+        "arrive_time": "Ls",
+        "depart_time": "20:47:00",
+        "note": "",
+        "station_code": "LPN",
+        "max_speed": null
+      },
+      {
+        "number": "30",
+        "station": "Maguwo (MGW)",
+        "arrive_time": "Ls",
+        "depart_time": "20:52:00",
+        "note": "",
+        "station_code": "MGW",
+        "max_speed": null
+      },
+      {
+        "number": "31",
+        "station": "Brambanan (BBN)",
+        "arrive_time": "Ls",
+        "depart_time": "20:58:00",
+        "note": "",
+        "station_code": "BBN",
+        "max_speed": null
+      },
+      {
+        "number": "32",
+        "station": "Srowot (SWT)",
+        "arrive_time": "Ls",
+        "depart_time": "21:02:00",
+        "note": "",
+        "station_code": "SWT",
+        "max_speed": null
+      },
+      {
+        "number": "33",
+        "station": "Klaten (KT)",
+        "arrive_time": "21:08:00",
+        "depart_time": "21:10:00",
+        "note": "",
+        "station_code": "KT",
+        "max_speed": null
+      },
+      {
+        "number": "34",
+        "station": "Ceper (CE)",
+        "arrive_time": "Ls",
+        "depart_time": "21:18:00",
+        "note": "",
+        "station_code": "CE",
+        "max_speed": null
+      },
+      {
+        "number": "35",
+        "station": "Delanggu (DL)",
+        "arrive_time": "Ls",
+        "depart_time": "21:23:00",
+        "note": "",
+        "station_code": "DL",
+        "max_speed": null
+      },
+      {
+        "number": "36",
+        "station": "Gawok (GW)",
+        "arrive_time": "Ls",
+        "depart_time": "21:27:00",
+        "note": "",
+        "station_code": "GW",
+        "max_speed": null
+      },
+      {
+        "number": "37",
+        "station": "Purwosari (PWS)",
+        "arrive_time": "Ls",
+        "depart_time": "21:32:00",
+        "note": "",
+        "station_code": "PWS",
+        "max_speed": null
+      },
+      {
+        "number": "38",
+        "station": "Solobalapan (SLO)",
+        "arrive_time": "21:37:00",
+        "depart_time": "21:45:00",
+        "note": "",
+        "station_code": "SLO",
+        "max_speed": null
+      }
+    ],
     "train_code": "236F"
   },
   {
-    "sequence": 229,
+    "sequence": 236,
     "train_name": "KA 237F (Sancaka Utara)",
     "tracks": [
       {
@@ -125164,7 +126365,7 @@
     "train_code": "237F"
   },
   {
-    "sequence": 230,
+    "sequence": 237,
     "train_name": "KA 238F (Sancaka Utara)",
     "tracks": [
       {
@@ -125174,7 +126375,7 @@
         "depart_time": "23:34:00",
         "note": "MENERUSKAN PERJALANAN KA 237F",
         "station_code": "GBN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "2",
@@ -125183,7 +126384,7 @@
         "depart_time": "23:45:00",
         "note": "",
         "station_code": "JBN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "3",
@@ -125192,7 +126393,7 @@
         "depart_time": "23:50:00",
         "note": "",
         "station_code": "PNL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "4",
@@ -125201,7 +126402,7 @@
         "depart_time": "00:01:00",
         "note": "",
         "station_code": "KNN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "5",
@@ -125210,7 +126411,7 @@
         "depart_time": "00:09:00",
         "note": "",
         "station_code": "SL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "6",
@@ -125219,7 +126420,7 @@
         "depart_time": "00:14:00",
         "note": "",
         "station_code": "DPL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "7",
@@ -125228,7 +126429,7 @@
         "depart_time": "00:29:00",
         "note": "",
         "station_code": "RBG",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "8",
@@ -125237,7 +126438,7 @@
         "depart_time": "00:41:00",
         "note": "",
         "station_code": "WDU",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "9",
@@ -125246,7 +126447,7 @@
         "depart_time": "00:46:00",
         "note": "",
         "station_code": "KPA",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "10",
@@ -125255,7 +126456,7 @@
         "depart_time": "00:56:00",
         "note": "",
         "station_code": "CU",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "11",
@@ -125264,7 +126465,7 @@
         "depart_time": "01:04:00",
         "note": "",
         "station_code": "TBO",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "12",
@@ -125273,7 +126474,7 @@
         "depart_time": "01:14:00",
         "note": "",
         "station_code": "KIT",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "13",
@@ -125282,7 +126483,7 @@
         "depart_time": "01:29:00",
         "note": "",
         "station_code": "BJ",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "14",
@@ -125291,7 +126492,7 @@
         "depart_time": "01:36:00",
         "note": "",
         "station_code": "KPS",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "15",
@@ -125300,7 +126501,7 @@
         "depart_time": "01:42:00",
         "note": "",
         "station_code": "SRJ",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "16",
@@ -125309,7 +126510,7 @@
         "depart_time": "01:50:00",
         "note": "",
         "station_code": "BWO",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "17",
@@ -125318,7 +126519,7 @@
         "depart_time": "02:00:00",
         "note": "",
         "station_code": "BBT",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "18",
@@ -125327,7 +126528,7 @@
         "depart_time": "02:06:00",
         "note": "",
         "station_code": "GEB",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "19",
@@ -125336,7 +126537,7 @@
         "depart_time": "02:10:00",
         "note": "",
         "station_code": "PC",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "20",
@@ -125345,7 +126546,7 @@
         "depart_time": "02:17:00",
         "note": "",
         "station_code": "SBN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "21",
@@ -125354,7 +126555,7 @@
         "depart_time": "02:26:00",
         "note": "",
         "station_code": "LMG",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "22",
@@ -125363,7 +126564,7 @@
         "depart_time": "02:35:00",
         "note": "",
         "station_code": "DD",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "23",
@@ -125372,7 +126573,7 @@
         "depart_time": "02:42:00",
         "note": "",
         "station_code": "CME",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "24",
@@ -125381,7 +126582,7 @@
         "depart_time": "02:46:00",
         "note": "",
         "station_code": "BNW",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "25",
@@ -125390,7 +126591,7 @@
         "depart_time": "02:50:00",
         "note": "",
         "station_code": "KDA",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "26",
@@ -125399,7 +126600,7 @@
         "depart_time": "02:52:00",
         "note": "",
         "station_code": "TES",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "27",
@@ -125408,13 +126609,13 @@
         "depart_time": "",
         "note": "",
         "station_code": "SBI",
-        "max_speed": null
+        "max_speed": 100
       }
     ],
     "train_code": "238F"
   },
   {
-    "sequence": 231,
+    "sequence": 238,
     "train_name": "KA 240F (Ijen Ekspres)",
     "tracks": [
       {
@@ -125727,7 +126928,7 @@
     "train_code": "240F"
   },
   {
-    "sequence": 232,
+    "sequence": 239,
     "train_name": "KA 241F (Ijen Ekspres)",
     "tracks": [
       {
@@ -125806,7 +127007,7 @@
     "train_code": "241F"
   },
   {
-    "sequence": 233,
+    "sequence": 240,
     "train_name": "KA 242F (Ijen Ekspres)",
     "tracks": [
       {
@@ -125885,7 +127086,7 @@
     "train_code": "242F"
   },
   {
-    "sequence": 234,
+    "sequence": 241,
     "train_name": "KA 239F (Ijen Ekspres)",
     "tracks": [
       {
@@ -126198,7 +127399,7 @@
     "train_code": "239F"
   },
   {
-    "sequence": 235,
+    "sequence": 242,
     "train_name": "KA 245 (Majapahit)",
     "tracks": [
       {
@@ -127294,7 +128495,7 @@
     "train_code": "245"
   },
   {
-    "sequence": 236,
+    "sequence": 243,
     "train_name": "KA 246 (Majapahit)",
     "tracks": [
       {
@@ -128390,7 +129591,7 @@
     "train_code": "246"
   },
   {
-    "sequence": 237,
+    "sequence": 244,
     "train_name": "KA 250 (Logawa)",
     "tracks": [
       {
@@ -128838,7 +130039,7 @@
     "train_code": "250"
   },
   {
-    "sequence": 238,
+    "sequence": 245,
     "train_name": "KA 247 (Logawa)",
     "tracks": [
       {
@@ -129484,7 +130685,7 @@
     "train_code": "247"
   },
   {
-    "sequence": 239,
+    "sequence": 246,
     "train_name": "KA 248 (Logawa)",
     "tracks": [
       {
@@ -130130,7 +131331,7 @@
     "train_code": "248"
   },
   {
-    "sequence": 240,
+    "sequence": 247,
     "train_name": "KA 249 (Logawa)",
     "tracks": [
       {
@@ -130578,7 +131779,7 @@
     "train_code": "249"
   },
   {
-    "sequence": 241,
+    "sequence": 248,
     "train_name": "KA 251 (Jayakarta)",
     "tracks": [
       {
@@ -131674,7 +132875,7 @@
     "train_code": "251"
   },
   {
-    "sequence": 242,
+    "sequence": 249,
     "train_name": "KA 252 (Jayakarta)",
     "tracks": [
       {
@@ -132770,7 +133971,7 @@
     "train_code": "252"
   },
   {
-    "sequence": 243,
+    "sequence": 250,
     "train_name": "KA 253 (Kertajaya)",
     "tracks": [
       {
@@ -133641,7 +134842,7 @@
     "train_code": "253"
   },
   {
-    "sequence": 244,
+    "sequence": 251,
     "train_name": "KA 254 (Kertajaya)",
     "tracks": [
       {
@@ -134512,7 +135713,7 @@
     "train_code": "254"
   },
   {
-    "sequence": 245,
+    "sequence": 252,
     "train_name": "KA 255 (Jaka Tingkir)",
     "tracks": [
       {
@@ -135293,7 +136494,7 @@
     "train_code": "255"
   },
   {
-    "sequence": 246,
+    "sequence": 253,
     "train_name": "KA 256 (Jaka Tingkir)",
     "tracks": [
       {
@@ -136074,7 +137275,7 @@
     "train_code": "256"
   },
   {
-    "sequence": 247,
+    "sequence": 254,
     "train_name": "KA 257 (Progo)",
     "tracks": [
       {
@@ -136774,7 +137975,7 @@
     "train_code": "257"
   },
   {
-    "sequence": 248,
+    "sequence": 255,
     "train_name": "KA 258 (Progo)",
     "tracks": [
       {
@@ -137474,7 +138675,7 @@
     "train_code": "258"
   },
   {
-    "sequence": 249,
+    "sequence": 256,
     "train_name": "KA 259 (Tawang Jaya)",
     "tracks": [
       {
@@ -138030,7 +139231,7 @@
     "train_code": "259"
   },
   {
-    "sequence": 250,
+    "sequence": 257,
     "train_name": "KA 260 (Tawang Jaya)",
     "tracks": [
       {
@@ -138586,7 +139787,7 @@
     "train_code": "260"
   },
   {
-    "sequence": 251,
+    "sequence": 258,
     "train_name": "KA 261 (Blora Jaya)",
     "tracks": [
       {
@@ -138764,7 +139965,7 @@
     "train_code": "261"
   },
   {
-    "sequence": 252,
+    "sequence": 259,
     "train_name": "KA 262 (Blora Jaya)",
     "tracks": [
       {
@@ -138942,7 +140143,7 @@
     "train_code": "262"
   },
   {
-    "sequence": 253,
+    "sequence": 260,
     "train_name": "KA 263 (Ambarawa Ekspres)",
     "tracks": [
       {
@@ -139273,7 +140474,7 @@
     "train_code": "263"
   },
   {
-    "sequence": 254,
+    "sequence": 261,
     "train_name": "KA 264 (Ambarawa Ekspres)",
     "tracks": [
       {
@@ -139604,7 +140805,7 @@
     "train_code": "264"
   },
   {
-    "sequence": 255,
+    "sequence": 262,
     "train_name": "KA 265 (Ambarawa Ekspres)",
     "tracks": [
       {
@@ -139935,7 +141136,7 @@
     "train_code": "265"
   },
   {
-    "sequence": 256,
+    "sequence": 263,
     "train_name": "KA 266 (Ambarawa Ekspres)",
     "tracks": [
       {
@@ -140266,7 +141467,7 @@
     "train_code": "266"
   },
   {
-    "sequence": 257,
+    "sequence": 264,
     "train_name": "KA 267 (Banyubiru)",
     "tracks": [
       {
@@ -140408,7 +141609,7 @@
     "train_code": "267"
   },
   {
-    "sequence": 258,
+    "sequence": 265,
     "train_name": "KA 268 (Banyubiru)",
     "tracks": [
       {
@@ -140550,7 +141751,7 @@
     "train_code": "268"
   },
   {
-    "sequence": 259,
+    "sequence": 266,
     "train_name": "KA 269 (Matarmaja)",
     "tracks": [
       {
@@ -141646,7 +142847,7 @@
     "train_code": "269"
   },
   {
-    "sequence": 260,
+    "sequence": 267,
     "train_name": "KA 270 (Matarmaja)",
     "tracks": [
       {
@@ -142742,7 +143943,7 @@
     "train_code": "270"
   },
   {
-    "sequence": 261,
+    "sequence": 268,
     "train_name": "KA 271 (Airlangga)",
     "tracks": [
       {
@@ -143613,7 +144814,7 @@
     "train_code": "271"
   },
   {
-    "sequence": 262,
+    "sequence": 269,
     "train_name": "KA 272 (Airlangga)",
     "tracks": [
       {
@@ -144484,7 +145685,7 @@
     "train_code": "272"
   },
   {
-    "sequence": 263,
+    "sequence": 270,
     "train_name": "KA 273 (Kahuripan)",
     "tracks": [
       {
@@ -145418,7 +146619,7 @@
     "train_code": "273"
   },
   {
-    "sequence": 264,
+    "sequence": 271,
     "train_name": "KA 274 (Kahuripan)",
     "tracks": [
       {
@@ -146352,7 +147553,7 @@
     "train_code": "274"
   },
   {
-    "sequence": 265,
+    "sequence": 272,
     "train_name": "KA 275 (Pasundan)",
     "tracks": [
       {
@@ -147295,7 +148496,7 @@
     "train_code": "275"
   },
   {
-    "sequence": 266,
+    "sequence": 273,
     "train_name": "KA 276 (Pasundan)",
     "tracks": [
       {
@@ -148238,7 +149439,7 @@
     "train_code": "276"
   },
   {
-    "sequence": 267,
+    "sequence": 274,
     "train_name": "KA 278 (Sri Tanjung)",
     "tracks": [
       {
@@ -148659,7 +149860,7 @@
     "train_code": "278"
   },
   {
-    "sequence": 268,
+    "sequence": 275,
     "train_name": "KA 279 (Sri Tanjung)",
     "tracks": [
       {
@@ -149116,7 +150317,7 @@
     "train_code": "279"
   },
   {
-    "sequence": 269,
+    "sequence": 276,
     "train_name": "KA 280 (Sri Tanjung)",
     "tracks": [
       {
@@ -149573,7 +150774,7 @@
     "train_code": "280"
   },
   {
-    "sequence": 270,
+    "sequence": 277,
     "train_name": "KA 277 (Sri Tanjung)",
     "tracks": [
       {
@@ -149994,7 +151195,7 @@
     "train_code": "277"
   },
   {
-    "sequence": 271,
+    "sequence": 278,
     "train_name": "KA 281 (Bengawan)",
     "tracks": [
       {
@@ -150766,7 +151967,7 @@
     "train_code": "281"
   },
   {
-    "sequence": 272,
+    "sequence": 279,
     "train_name": "KA 282 (Bengawan)",
     "tracks": [
       {
@@ -151538,7 +152739,7 @@
     "train_code": "282"
   },
   {
-    "sequence": 273,
+    "sequence": 280,
     "train_name": "KA 286 (Serayu)",
     "tracks": [
       {
@@ -151590,7 +152791,7 @@
     "train_code": "286"
   },
   {
-    "sequence": 274,
+    "sequence": 281,
     "train_name": "KA 283 (Serayu)",
     "tracks": [
       {
@@ -152272,7 +153473,7 @@
     "train_code": "283"
   },
   {
-    "sequence": 275,
+    "sequence": 282,
     "train_name": "KA 284 (Serayu)",
     "tracks": [
       {
@@ -152954,7 +154155,7 @@
     "train_code": "284"
   },
   {
-    "sequence": 276,
+    "sequence": 283,
     "train_name": "KA 285 (Serayu)",
     "tracks": [
       {
@@ -153006,7 +154207,7 @@
     "train_code": "285"
   },
   {
-    "sequence": 277,
+    "sequence": 284,
     "train_name": "KA 290 (Serayu)",
     "tracks": [
       {
@@ -153058,7 +154259,7 @@
     "train_code": "290"
   },
   {
-    "sequence": 278,
+    "sequence": 285,
     "train_name": "KA 287 (Serayu)",
     "tracks": [
       {
@@ -153740,7 +154941,7 @@
     "train_code": "287"
   },
   {
-    "sequence": 279,
+    "sequence": 286,
     "train_name": "KA 288 (Serayu)",
     "tracks": [
       {
@@ -154422,7 +155623,7 @@
     "train_code": "288"
   },
   {
-    "sequence": 280,
+    "sequence": 287,
     "train_name": "KA 289 (Serayu)",
     "tracks": [
       {
@@ -154474,7 +155675,7 @@
     "train_code": "289"
   },
   {
-    "sequence": 281,
+    "sequence": 288,
     "train_name": "KA 291 (Kutojaya Selatan)",
     "tracks": [
       {
@@ -154940,7 +156141,7 @@
     "train_code": "291"
   },
   {
-    "sequence": 282,
+    "sequence": 289,
     "train_name": "KA 292 (Kutojaya Selatan)",
     "tracks": [
       {
@@ -155406,7 +156607,7 @@
     "train_code": "292"
   },
   {
-    "sequence": 283,
+    "sequence": 290,
     "train_name": "KA 296 (Tawangalun)",
     "tracks": [
       {
@@ -155494,7 +156695,7 @@
     "train_code": "296"
   },
   {
-    "sequence": 284,
+    "sequence": 291,
     "train_name": "KA 293 (Tawangalun)",
     "tracks": [
       {
@@ -155807,7 +157008,7 @@
     "train_code": "293"
   },
   {
-    "sequence": 285,
+    "sequence": 292,
     "train_name": "KA 294 (Tawangalun)",
     "tracks": [
       {
@@ -156120,7 +157321,7 @@
     "train_code": "294"
   },
   {
-    "sequence": 286,
+    "sequence": 293,
     "train_name": "KA 295 (Tawangalun)",
     "tracks": [
       {
@@ -156208,7 +157409,7 @@
     "train_code": "295"
   },
   {
-    "sequence": 287,
+    "sequence": 294,
     "train_name": "KA 297 (Probowangi)",
     "tracks": [
       {
@@ -156656,7 +157857,7 @@
     "train_code": "297"
   },
   {
-    "sequence": 288,
+    "sequence": 295,
     "train_name": "KA 298 (Probowangi)",
     "tracks": [
       {
@@ -157104,7 +158305,7 @@
     "train_code": "298"
   },
   {
-    "sequence": 289,
+    "sequence": 296,
     "train_name": "KA 299 (Cikuray)",
     "tracks": [
       {
@@ -157579,7 +158780,7 @@
     "train_code": "299"
   },
   {
-    "sequence": 290,
+    "sequence": 297,
     "train_name": "KA 300 (Cikuray)",
     "tracks": [
       {
@@ -158054,8 +159255,8 @@
     "train_code": "300"
   },
   {
-    "sequence": 291,
-    "train_name": "KA 522 (Bandara YIA)",
+    "sequence": 298,
+    "train_name": "KA 521 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158121,11 +159322,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "522"
+    "train_code": "521"
   },
   {
-    "sequence": 292,
-    "train_name": "KA 523 (Bandara YIA)",
+    "sequence": 299,
+    "train_name": "KA 522 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158191,11 +159392,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "523"
+    "train_code": "522"
   },
   {
-    "sequence": 293,
-    "train_name": "KA 524 (Bandara YIA)",
+    "sequence": 300,
+    "train_name": "KA 523 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158261,11 +159462,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "523"
+  },
+  {
+    "sequence": 301,
+    "train_name": "KA 524 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "07:46:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "07:52:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "07:59:00",
+        "depart_time": "08:01:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "08:10:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "08:17:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "08:20:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "08:25:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "524"
   },
   {
-    "sequence": 294,
-    "train_name": "KA 526 (Bandara YIA)",
+    "sequence": 302,
+    "train_name": "KA 525 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158331,11 +159602,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "526"
+    "train_code": "525"
   },
   {
-    "sequence": 295,
-    "train_name": "KA 527 (Bandara YIA)",
+    "sequence": 303,
+    "train_name": "KA 526 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158401,11 +159672,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "527"
+    "train_code": "526"
   },
   {
-    "sequence": 296,
-    "train_name": "KA 528 (Bandara YIA)",
+    "sequence": 304,
+    "train_name": "KA 527 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158471,11 +159742,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "527"
+  },
+  {
+    "sequence": 305,
+    "train_name": "KA 528 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "13:25:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "13:31:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "13:38:00",
+        "depart_time": "13:40:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "13:49:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "13:56:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "13:59:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "14:04:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "528"
   },
   {
-    "sequence": 297,
-    "train_name": "KA 530 (Bandara YIA)",
+    "sequence": 306,
+    "train_name": "KA 529 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158541,11 +159882,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "530"
+    "train_code": "529"
   },
   {
-    "sequence": 298,
-    "train_name": "KA 531 (Bandara YIA)",
+    "sequence": 307,
+    "train_name": "KA 530 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158611,11 +159952,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "531"
+    "train_code": "530"
   },
   {
-    "sequence": 299,
-    "train_name": "KA 532 (Bandara YIA)",
+    "sequence": 308,
+    "train_name": "KA 531 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158681,11 +160022,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "531"
+  },
+  {
+    "sequence": 309,
+    "train_name": "KA 532 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "17:34:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "17:40:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "17:47:00",
+        "depart_time": "17:49:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "17:58:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "18:05:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "18:08:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "18:13:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "532"
   },
   {
-    "sequence": 300,
-    "train_name": "KA 534 (Bandara YIA)",
+    "sequence": 310,
+    "train_name": "KA 533 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158751,11 +160162,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "534"
+    "train_code": "533"
   },
   {
-    "sequence": 301,
-    "train_name": "KA 535 (Bandara YIA)",
+    "sequence": 311,
+    "train_name": "KA 534 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158821,11 +160232,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "535"
+    "train_code": "534"
   },
   {
-    "sequence": 302,
-    "train_name": "KA 536 (Bandara YIA)",
+    "sequence": 312,
+    "train_name": "KA 535 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158891,11 +160302,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "535"
+  },
+  {
+    "sequence": 313,
+    "train_name": "KA 536 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "08:40:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "08:46:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "08:52:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "09:00:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "09:07:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "09:10:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "09:15:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "536"
   },
   {
-    "sequence": 303,
-    "train_name": "KA 538 (Bandara YIA)",
+    "sequence": 314,
+    "train_name": "KA 537 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -158961,11 +160442,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "538"
+    "train_code": "537"
   },
   {
-    "sequence": 304,
-    "train_name": "KA 539 (Bandara YIA)",
+    "sequence": 315,
+    "train_name": "KA 538 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159031,11 +160512,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "539"
+    "train_code": "538"
   },
   {
-    "sequence": 305,
-    "train_name": "KA 540 (Bandara YIA)",
+    "sequence": 316,
+    "train_name": "KA 539 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159101,11 +160582,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "539"
+  },
+  {
+    "sequence": 317,
+    "train_name": "KA 540 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "12:24:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "12:30:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "12:36:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "12:44:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "12:51:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "12:54:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "12:59:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "540"
   },
   {
-    "sequence": 306,
-    "train_name": "KA 542 (Bandara YIA)",
+    "sequence": 318,
+    "train_name": "KA 541 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159171,11 +160722,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "542"
+    "train_code": "541"
   },
   {
-    "sequence": 307,
-    "train_name": "KA 543 (Bandara YIA)",
+    "sequence": 319,
+    "train_name": "KA 542 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159241,11 +160792,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "543"
+    "train_code": "542"
   },
   {
-    "sequence": 308,
-    "train_name": "KA 544 (Bandara YIA)",
+    "sequence": 320,
+    "train_name": "KA 543 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159311,11 +160862,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "543"
+  },
+  {
+    "sequence": 321,
+    "train_name": "KA 544 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "18:54:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "19:00:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "19:06:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "19:14:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "19:21:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "19:24:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "19:29:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "544"
   },
   {
-    "sequence": 309,
-    "train_name": "KA 546 (Bandara YIA)",
+    "sequence": 322,
+    "train_name": "KA 545 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159381,11 +161002,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "546"
+    "train_code": "545"
   },
   {
-    "sequence": 310,
-    "train_name": "KA 547F (Bandara YIA)",
+    "sequence": 323,
+    "train_name": "KA 546 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159451,11 +161072,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "547F"
+    "train_code": "546"
   },
   {
-    "sequence": 311,
-    "train_name": "KA 548F (Bandara YIA)",
+    "sequence": 324,
+    "train_name": "KA 547F (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159464,7 +161085,7 @@
         "depart_time": "06:00:00",
         "note": "",
         "station_code": "YK",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "2",
@@ -159473,7 +161094,7 @@
         "depart_time": "06:05:00",
         "note": "",
         "station_code": "PTN",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "3",
@@ -159482,7 +161103,7 @@
         "depart_time": "06:08:00",
         "note": "",
         "station_code": "RWL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "4",
@@ -159491,7 +161112,7 @@
         "depart_time": "06:15:00",
         "note": "",
         "station_code": "STL",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "5",
@@ -159500,7 +161121,7 @@
         "depart_time": "06:23:00",
         "note": "",
         "station_code": "WT",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "6",
@@ -159509,7 +161130,7 @@
         "depart_time": "06:29:00",
         "note": "",
         "station_code": "KDG",
-        "max_speed": null
+        "max_speed": 100
       },
       {
         "number": "7",
@@ -159518,14 +161139,84 @@
         "depart_time": "",
         "note": "",
         "station_code": "YIA",
+        "max_speed": 100
+      }
+    ],
+    "train_code": "547F"
+  },
+  {
+    "sequence": 325,
+    "train_name": "KA 548F (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "07:00:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": null
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "07:06:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": null
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "07:12:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": null
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "07:20:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": null
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "07:27:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": null
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "07:30:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": null
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "07:35:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
         "max_speed": null
       }
     ],
     "train_code": "548F"
   },
   {
-    "sequence": 312,
-    "train_name": "KA 550 (Bandara YIA)",
+    "sequence": 326,
+    "train_name": "KA 549 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159591,11 +161282,11 @@
         "max_speed": null
       }
     ],
-    "train_code": "550"
+    "train_code": "549"
   },
   {
-    "sequence": 313,
-    "train_name": "KA 551 (Bandara YIA)",
+    "sequence": 327,
+    "train_name": "KA 550 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159604,7 +161295,7 @@
         "depart_time": "09:05:00",
         "note": "",
         "station_code": "YIA",
-        "max_speed": 100
+        "max_speed": null
       },
       {
         "number": "2",
@@ -159613,7 +161304,7 @@
         "depart_time": "09:11:00",
         "note": "",
         "station_code": "KDG",
-        "max_speed": 100
+        "max_speed": null
       },
       {
         "number": "3",
@@ -159622,7 +161313,7 @@
         "depart_time": "09:17:00",
         "note": "",
         "station_code": "WT",
-        "max_speed": 100
+        "max_speed": null
       },
       {
         "number": "4",
@@ -159631,7 +161322,7 @@
         "depart_time": "09:25:00",
         "note": "",
         "station_code": "STL",
-        "max_speed": 100
+        "max_speed": null
       },
       {
         "number": "5",
@@ -159640,7 +161331,7 @@
         "depart_time": "09:32:00",
         "note": "",
         "station_code": "RWL",
-        "max_speed": 100
+        "max_speed": null
       },
       {
         "number": "6",
@@ -159649,7 +161340,7 @@
         "depart_time": "09:35:00",
         "note": "",
         "station_code": "PTN",
-        "max_speed": 100
+        "max_speed": null
       },
       {
         "number": "7",
@@ -159658,14 +161349,14 @@
         "depart_time": "",
         "note": "",
         "station_code": "YK",
-        "max_speed": 100
+        "max_speed": null
       }
     ],
-    "train_code": "551"
+    "train_code": "550"
   },
   {
-    "sequence": 314,
-    "train_name": "KA 552 (Bandara YIA)",
+    "sequence": 328,
+    "train_name": "KA 551 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159731,11 +161422,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "551"
+  },
+  {
+    "sequence": 329,
+    "train_name": "KA 552 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "10:54:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "11:00:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "11:06:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "11:14:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "11:21:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "11:24:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "11:29:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "552"
   },
   {
-    "sequence": 315,
-    "train_name": "KA 554 (Bandara YIA)",
+    "sequence": 330,
+    "train_name": "KA 553 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159801,11 +161562,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "554"
+    "train_code": "553"
   },
   {
-    "sequence": 316,
-    "train_name": "KA 555 (Bandara YIA)",
+    "sequence": 331,
+    "train_name": "KA 554 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159871,11 +161632,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "555"
+    "train_code": "554"
   },
   {
-    "sequence": 317,
-    "train_name": "KA 556 (Bandara YIA)",
+    "sequence": 332,
+    "train_name": "KA 555 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -159941,11 +161702,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "555"
+  },
+  {
+    "sequence": 333,
+    "train_name": "KA 556 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "16:17:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "16:23:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "16:29:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "16:37:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "16:44:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "16:47:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "16:52:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "556"
   },
   {
-    "sequence": 318,
-    "train_name": "KA 558 (Bandara YIA)",
+    "sequence": 334,
+    "train_name": "KA 557 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160011,11 +161842,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "558"
+    "train_code": "557"
   },
   {
-    "sequence": 319,
-    "train_name": "KA 559 (Bandara YIA)",
+    "sequence": 335,
+    "train_name": "KA 558 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160081,11 +161912,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "559"
+    "train_code": "558"
   },
   {
-    "sequence": 320,
-    "train_name": "KA 560 (Bandara YIA)",
+    "sequence": 336,
+    "train_name": "KA 559 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160151,11 +161982,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "559"
+  },
+  {
+    "sequence": 337,
+    "train_name": "KA 560 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "20:15:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "20:21:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "Ls",
+        "depart_time": "20:27:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "20:35:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "20:42:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "20:45:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "20:50:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "560"
   },
   {
-    "sequence": 321,
-    "train_name": "KA 562 (Bandara YIA)",
+    "sequence": 338,
+    "train_name": "KA 561 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160221,11 +162122,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "562"
+    "train_code": "561"
   },
   {
-    "sequence": 322,
-    "train_name": "KA 563 (Bandara YIA)",
+    "sequence": 339,
+    "train_name": "KA 562 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160291,11 +162192,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "563"
+    "train_code": "562"
   },
   {
-    "sequence": 323,
-    "train_name": "KA 564 (Bandara YIA)",
+    "sequence": 340,
+    "train_name": "KA 563 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160361,11 +162262,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "563"
+  },
+  {
+    "sequence": 341,
+    "train_name": "KA 564 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "11:35:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "11:41:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "11:48:00",
+        "depart_time": "11:50:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "11:59:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "12:06:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "12:09:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "12:14:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "564"
   },
   {
-    "sequence": 324,
-    "train_name": "KA 566 (Bandara YIA)",
+    "sequence": 342,
+    "train_name": "KA 565 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160431,11 +162402,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "566"
+    "train_code": "565"
   },
   {
-    "sequence": 325,
-    "train_name": "KA 567 (Bandara YIA)",
+    "sequence": 343,
+    "train_name": "KA 566 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160501,11 +162472,11 @@
         "max_speed": 100
       }
     ],
-    "train_code": "567"
+    "train_code": "566"
   },
   {
-    "sequence": 326,
-    "train_name": "KA 568 (Bandara YIA)",
+    "sequence": 344,
+    "train_name": "KA 567 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160571,11 +162542,81 @@
         "max_speed": 100
       }
     ],
+    "train_code": "567"
+  },
+  {
+    "sequence": 345,
+    "train_name": "KA 568 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "17:00:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "17:06:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "17:13:00",
+        "depart_time": "17:15:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "17:24:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "17:31:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "17:34:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "17:39:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "568"
   },
   {
-    "sequence": 327,
-    "train_name": "KA 570 (Bandara YIA)",
+    "sequence": 346,
+    "train_name": "KA 569 (Bandara YIA)",
     "tracks": [
       {
         "number": "1",
@@ -160641,10 +162682,80 @@
         "max_speed": 100
       }
     ],
+    "train_code": "569"
+  },
+  {
+    "sequence": 347,
+    "train_name": "KA 570 (Bandara YIA)",
+    "tracks": [
+      {
+        "number": "1",
+        "station": "Yogyakarta International\nAirport (YIA)",
+        "arrive_time": "",
+        "depart_time": "19:46:00",
+        "note": "",
+        "station_code": "YIA",
+        "max_speed": 100
+      },
+      {
+        "number": "2",
+        "station": "Kedundang (KDG)",
+        "arrive_time": "Ls",
+        "depart_time": "19:52:00",
+        "note": "",
+        "station_code": "KDG",
+        "max_speed": 100
+      },
+      {
+        "number": "3",
+        "station": "Wates (WT)",
+        "arrive_time": "19:59:00",
+        "depart_time": "20:01:00",
+        "note": "",
+        "station_code": "WT",
+        "max_speed": 100
+      },
+      {
+        "number": "4",
+        "station": "Sentolo (STL)",
+        "arrive_time": "Ls",
+        "depart_time": "20:10:00",
+        "note": "",
+        "station_code": "STL",
+        "max_speed": 100
+      },
+      {
+        "number": "5",
+        "station": "Rewulu (RWL)",
+        "arrive_time": "Ls",
+        "depart_time": "20:17:00",
+        "note": "",
+        "station_code": "RWL",
+        "max_speed": 100
+      },
+      {
+        "number": "6",
+        "station": "Patukan (PTN)",
+        "arrive_time": "Ls",
+        "depart_time": "20:20:00",
+        "note": "",
+        "station_code": "PTN",
+        "max_speed": 100
+      },
+      {
+        "number": "7",
+        "station": "Yogyakarta (YK)",
+        "arrive_time": "20:25:00",
+        "depart_time": "",
+        "note": "",
+        "station_code": "YK",
+        "max_speed": 100
+      }
+    ],
     "train_code": "570"
   },
   {
-    "sequence": 328,
+    "sequence": 348,
     "train_name": "KA 571 (Bandara SMO)",
     "tracks": [
       {
@@ -160795,7 +162906,7 @@
     "train_code": "571"
   },
   {
-    "sequence": 329,
+    "sequence": 349,
     "train_name": "KA 572 (Bandara SMO)",
     "tracks": [
       {
@@ -160946,7 +163057,7 @@
     "train_code": "572"
   },
   {
-    "sequence": 330,
+    "sequence": 350,
     "train_name": "KA 573 (Bandara SMO)",
     "tracks": [
       {
@@ -161097,7 +163208,7 @@
     "train_code": "573"
   },
   {
-    "sequence": 331,
+    "sequence": 351,
     "train_name": "KA 574 (Bandara SMO)",
     "tracks": [
       {
@@ -161248,7 +163359,7 @@
     "train_code": "574"
   },
   {
-    "sequence": 332,
+    "sequence": 352,
     "train_name": "KA 575 (Bandara SMO)",
     "tracks": [
       {
@@ -161399,7 +163510,7 @@
     "train_code": "575"
   },
   {
-    "sequence": 333,
+    "sequence": 353,
     "train_name": "KA 576 (Bandara SMO)",
     "tracks": [
       {
@@ -161550,7 +163661,7 @@
     "train_code": "576"
   },
   {
-    "sequence": 334,
+    "sequence": 354,
     "train_name": "KA 577 (Bandara SMO)",
     "tracks": [
       {
@@ -161701,7 +163812,7 @@
     "train_code": "577"
   },
   {
-    "sequence": 335,
+    "sequence": 355,
     "train_name": "KA 578 (Bandara SMO)",
     "tracks": [
       {
@@ -161852,7 +163963,7 @@
     "train_code": "578"
   },
   {
-    "sequence": 336,
+    "sequence": 356,
     "train_name": "KA 579 (Bandara SMO)",
     "tracks": [
       {
@@ -162003,7 +164114,7 @@
     "train_code": "579"
   },
   {
-    "sequence": 337,
+    "sequence": 357,
     "train_name": "KA 580 (Bandara SMO)",
     "tracks": [
       {

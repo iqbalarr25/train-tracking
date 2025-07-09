@@ -2,24 +2,50 @@ package database
 
 import (
 	"TrainTracking/internal/features/model"
-	"database/sql"
+	"encoding/json"
 	"fmt"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
+	"io"
 	"log"
+	"math"
+	"net/http"
+	"strings"
 )
 
-type PgRoutingData struct {
-	OrderFrom     int16      `gorm:"column:order_from"`
-	Sequence      int        `gorm:"column:seq"`
-	Latitude      float64    `gorm:"column:lat"`
-	Longitude     float64    `gorm:"column:lon"`
-	MaxSpeed      *float64   `gorm:"column:max_speed"`
-	Cost          float64    `gorm:"column:cost"`
-	IsStation     bool       `gorm:"column:is_station"`
-	RailNodeID    uuid.UUID  `gorm:"column:rail_node_id"`
-	RouteDetailID uuid.UUID  `gorm:"column:route_detail_id"`
-	StationID     *uuid.UUID `gorm:"column:station_id"`
+//type PgRoutingData struct {
+//	OrderFrom     int16      `gorm:"column:order_from"`
+//	Sequence      int        `gorm:"column:seq"`
+//	Latitude      float64    `gorm:"column:lat"`
+//	Longitude     float64    `gorm:"column:lon"`
+//	MaxSpeed      *float64   `gorm:"column:max_speed"`
+//	Cost          float64    `gorm:"column:cost"`
+//	IsStation     bool       `gorm:"column:is_station"`
+//	RailNodeID    uuid.UUID  `gorm:"column:rail_node_id"`
+//	RouteDetailID uuid.UUID  `gorm:"column:route_detail_id"`
+//	StationID     *uuid.UUID `gorm:"column:station_id"`
+//}
+
+type OsrmData struct {
+	Code      string     `json:"code"`
+	Routes    []Routes   `json:"routes"`
+	Waypoints []Waypoint `json:"waypoints"`
+}
+
+type Routes struct {
+	Geometry Geometry `json:"geometry"`
+}
+
+type Geometry struct {
+	Coordinates [][]float64 `json:"coordinates"`
+	Type        string      `json:"type"`
+}
+
+type Waypoint struct {
+	Hint     string    `json:"hint"`
+	Distance float64   `json:"distance"`
+	Name     string    `json:"name"`
+	Location []float64 `json:"location"`
 }
 
 func init() {
@@ -32,93 +58,115 @@ func init() {
 			}
 
 			for _, route := range routes {
-				var data []PgRoutingData
-
-				const sqlQuery = `
-				WITH station_sequence AS (
-				  SELECT rd.sequence AS ordering, rd.station_id
-				  FROM route_details rd
-				  WHERE rd.route_id = @route_id
-				),
-				station_main_nodes AS (
-				  SELECT DISTINCT ON (sn.station_id)
-					ss.ordering, sn.station_id, sn.node_id
-				  FROM station_sequence ss
-				  JOIN station_nodes sn ON sn.station_id = ss.station_id
-				  ORDER BY sn.station_id, sn.node_id
-				),
-				station_pairs AS (
-				  SELECT s1.ordering AS order_from, s2.ordering AS order_to,
-						 s1.node_id AS source, s2.node_id AS target
-				  FROM station_main_nodes s1
-				  JOIN station_main_nodes s2 ON s2.ordering = s1.ordering + 1
-				),
-				station_pairs_int AS (
-				  SELECT sp.order_from,
-						 rn1.node_int_id AS source_int,
-						 rn2.node_int_id AS target_int
-				  FROM station_pairs sp
-				  JOIN rail_nodes rn1 ON rn1.id = sp.source
-				  JOIN rail_nodes rn2 ON rn2.id = sp.target
-				),
-				paths AS (
-				  SELECT sp.order_from, d.seq, d.node, d.edge, d.cost
-				  FROM station_pairs_int sp,
-					   LATERAL (
-						 SELECT * FROM pgr_dijkstra(
-						   'SELECT edge_int_id AS id, source_int AS source, target_int AS target, cost, reverse_cost FROM rail_edges',
-						   sp.source_int, sp.target_int, false
-						 )
-					   ) AS d
-				),
-				paths_with_prev AS (
-				  SELECT p.*, LAG(p.node) OVER (PARTITION BY p.order_from ORDER BY p.seq) AS prev_node
-				  FROM paths p
-				),
-				segment_speed AS (
-				  SELECT rd.sequence AS order_from, rd.max_speed, rd.id AS route_detail_id
-				  FROM route_details rd
-				  WHERE rd.route_id = @route_id
-				),
-				path_result AS (
-				  SELECT p.order_from, p.seq, n.id AS rail_node_id, n.lat, n.lon,
-						 ss.max_speed, ss.route_detail_id, p.cost,
-						 CASE WHEN sn.station_id IS NOT NULL THEN true ELSE false END AS is_station,
-						 sn.station_id
-				  FROM paths_with_prev p
-				  JOIN rail_nodes n ON p.node = n.node_int_id
-				  LEFT JOIN station_nodes sn ON sn.node_id = n.id
-				  LEFT JOIN segment_speed ss ON ss.order_from = p.order_from
-				)
-				SELECT * FROM path_result
-				ORDER BY order_from, seq
-				`
-
-				if err := tx.Raw(sqlQuery, sql.Named("route_id", route.ID)).Scan(&data).Error; err != nil {
-					return err
+				var routeDetails []model.RouteDetail
+				if err := tx.Where("route_id = ?", route.ID).
+					Order("sequence ASC").
+					Preload("Station").
+					Find(&routeDetails).Error; err != nil {
+					log.Println("❌ Gagal ambil data route details:", err)
+					continue
 				}
 
-				for _, v := range data {
-					fmt.Print(v)
-					track := model.Track{
-						Sequence:      v.Sequence,
-						Latitude:      v.Latitude,
-						Longitude:     v.Longitude,
-						Cost:          v.Cost,
-						MaxSpeed:      v.MaxSpeed,
-						RouteDetailID: v.RouteDetailID,
-						StationID:     v.StationID,
+				var coords []string
+				for _, rd := range routeDetails {
+					if rd.Station.Lon != 0 && rd.Station.Lat != 0 {
+						coord := fmt.Sprintf("%.14f,%.14f", rd.Station.Lon, rd.Station.Lat)
+						coords = append(coords, coord)
+					}
+				}
+
+				coordString := strings.Join(coords, ";")
+
+				url := fmt.Sprintf(
+					"https://mule-open-titmouse.ngrok-free.app/route/v1/train/%s?alternatives=true&overview=full&geometries=geojson",
+					coordString,
+				)
+				fmt.Println(url)
+
+				resp, err := http.Get(url)
+				if err != nil {
+					fmt.Println("❌ Error saat request:", err)
+					return err
+				}
+				defer func(Body io.ReadCloser) {
+					err := Body.Close()
+					if err != nil {
+					}
+				}(resp.Body)
+
+				var osrmData OsrmData
+				if err := json.NewDecoder(resp.Body).Decode(&osrmData); err != nil {
+					return fmt.Errorf("gagal decode JSON: %w", err)
+				}
+
+				if len(osrmData.Routes) == 0 {
+					log.Printf("⚠️ Tidak ada route ditemukan dari OSRM untuk %s", route.ID)
+					continue
+				}
+
+				geometry := osrmData.Routes[0].Geometry
+				waypoints := osrmData.Waypoints
+
+				index := 0
+				for i, coord := range geometry.Coordinates {
+					var stationID *uuid.UUID
+					if i == 0 {
+						stationID = &routeDetails[index].StationID
+					} else if index+1 < len(waypoints) &&
+						isSameCoordinate(coord, waypoints[index+1].Location) &&
+						index+1 < len(routeDetails) {
+						index++
+						stationID = &routeDetails[index].StationID
 					}
 
-					err := tx.Create(&track).Error
-					if err != nil {
-						return err
+					var cost float64
+					if i > 0 {
+						prev := geometry.Coordinates[i-1]
+						lat1, lon1 := prev[1], prev[0]
+						lat2, lon2 := coord[1], coord[0]
+						cost = haversine(lat1, lon1, lat2, lon2)
+					}
+
+					track := model.Track{
+						Sequence:      i + 1,
+						Longitude:     coord[0],
+						Latitude:      coord[1],
+						RouteDetailID: routeDetails[index].ID,
+						MaxSpeed:      routeDetails[index].MaxSpeed,
+						StationID:     stationID,
+						Cost:          cost,
+					}
+
+					if err := tx.Create(&track).Error; err != nil {
+						log.Printf("❌ Gagal insert track untuk route %s, index %d: %v", route.ID, i, err)
 					}
 				}
 			}
 
-			log.Println("✅ Semua data selesai diproses")
 			return nil
 		},
 	})
+}
+
+func isSameCoordinate(coord1, coord2 []float64) bool {
+	if len(coord1) != 2 || len(coord2) != 2 {
+		return false
+	}
+	const tolerance = 1e-6
+	return math.Abs(coord1[0]-coord2[0]) < tolerance && math.Abs(coord1[1]-coord2[1]) < tolerance
+}
+
+func haversine(lat1, lon1, lat2, lon2 float64) float64 {
+	const R = 6371000 // Radius bumi dalam meter
+	dLat := (lat2 - lat1) * math.Pi / 180
+	dLon := (lon2 - lon1) * math.Pi / 180
+
+	lat1Rad := lat1 * math.Pi / 180
+	lat2Rad := lat2 * math.Pi / 180
+
+	a := math.Sin(dLat/2)*math.Sin(dLat/2) +
+		math.Sin(dLon/2)*math.Sin(dLon/2)*math.Cos(lat1Rad)*math.Cos(lat2Rad)
+
+	c := 2 * math.Atan2(math.Sqrt(a), math.Sqrt(1-a))
+	return R * c
 }

@@ -13,7 +13,7 @@ type (
 		Latitude      float64        `json:"latitude" gorm:"not null"`
 		Longitude     float64        `json:"longitude" gorm:"not null"`
 		Cost          float64        `json:"cost" gorm:"not null"`
-		MaxSpeed      *float64       `json:"max_speed"`
+		MaxSpeed      *int16         `json:"max_speed"`
 		RouteDetailID uuid.UUID      `json:"route_detail_id" gorm:"not null;index"`
 		StationID     *uuid.UUID     `json:"station_id" gorm:"index"`
 		CreatedAt     time.Time      `json:"created_at" gorm:"not null;default:CURRENT_TIMESTAMP"`

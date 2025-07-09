@@ -27,26 +27,29 @@ func (s *RouteService) GetRouteById(id string) (res model.GetRouteResponse, err 
 
 	detailResponses := make([]model.GetRouteDetailResponse, 0)
 
-	for _, detail := range route.RouteDetails {
-		trackResponses := make([]model.GetRouteTrackResponse, 0)
+	for i := 0; i < len(route.RouteDetails)-1; i++ {
+		detail := route.RouteDetails[i]
+		next := route.RouteDetails[i+1]
 
+		trackResponses := make([]model.GetRouteTrackResponse, 0)
 		for _, track := range detail.Tracks {
 			trackResponses = append(trackResponses, model.GetRouteTrackResponse{
 				ID:        track.ID,
 				Sequence:  track.Sequence,
-				Cost:      float32(track.Cost),
 				MaxSpeed:  track.MaxSpeed,
+				Cost:      float32(track.Cost),
 				Latitude:  track.Latitude,
 				Longitude: track.Longitude,
+				StationID: track.StationID,
 			})
 		}
 
 		detailResponses = append(detailResponses, model.GetRouteDetailResponse{
 			ID:         detail.ID,
 			From:       detail.Station.Name,
-			To:         detail.Station.Name,
-			ArriveTime: detail.ArriveTime,
+			To:         next.Station.Name,
 			DepartTime: detail.DepartTime,
+			ArriveTime: next.ArriveTime,
 			Track:      trackResponses,
 		})
 	}
@@ -55,8 +58,8 @@ func (s *RouteService) GetRouteById(id string) (res model.GetRouteResponse, err 
 		ID:         route.ID,
 		From:       route.DepartStation.Name,
 		To:         route.ArriveStation.Name,
-		ArriveTime: &route.ArriveTime,
 		DepartTime: &route.DepartTime,
+		ArriveTime: &route.ArriveTime,
 		Detail:     detailResponses,
 	}
 

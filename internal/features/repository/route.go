@@ -2,7 +2,6 @@ package repository
 
 import (
 	"TrainTracking/internal/features/model"
-	"fmt"
 	"gorm.io/gorm"
 )
 
@@ -23,7 +22,6 @@ func NewRouteRepository(db *gorm.DB) *RouteRepository {
 }
 
 func (r *RouteRepository) GetRouteById(id string, route *model.Route) (err error) {
-	fmt.Print(123)
 	err = r.DB.Model(model.Route{}).Where("id = ?", id).
 		Preload("RouteDetails.Tracks").
 		Preload("RouteDetails.Station").
