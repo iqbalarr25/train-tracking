@@ -12,7 +12,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   config.GetApp().Name,
 	Short: "A CLI tool for managing your application",
-	Long:  `Airplane Tracking`,
+	Long:  `Train Tracking`,
 }
 
 func Execute() {

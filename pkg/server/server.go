@@ -24,6 +24,7 @@ func StartApp() error {
 	app := fiber.New()
 
 	app.Use(logger.New())
+	helper.StartTrainStatusScheduler(config.GetDBConnection())
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "*",
