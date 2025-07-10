@@ -23,7 +23,7 @@ func NewRouteRepository(db *gorm.DB) *RouteRepository {
 
 func (r *RouteRepository) GetRouteById(id string, route *model.Route) (err error) {
 	err = r.DB.Model(model.Route{}).Where("id = ?", id).
-		Preload("RouteDetails.Tracks").
+		Preload("RouteDetails.Tracks.Station").
 		Preload("RouteDetails.Station").
 		Preload("Train").
 		Preload("DepartStation").
