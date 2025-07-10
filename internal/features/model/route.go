@@ -62,13 +62,19 @@ type (
 	}
 
 	GetRouteTrackResponse struct {
-		ID        uuid.UUID  `json:"id" gorm:"primaryKey"`
-		Sequence  int        `json:"sequence"`
-		Cost      float32    `json:"cost"`
-		MaxSpeed  *int16     `json:"max_speed"`
-		Latitude  float64    `json:"latitude"`
-		Longitude float64    `json:"longitude"`
-		StationID *uuid.UUID `json:"station_id"`
+		ID        uuid.UUID                     `json:"id" gorm:"primaryKey"`
+		Sequence  int                           `json:"sequence"`
+		Cost      float32                       `json:"cost"`
+		MaxSpeed  *int16                        `json:"max_speed"`
+		Latitude  float64                       `json:"latitude"`
+		Longitude float64                       `json:"longitude"`
+		Station   *GetRouteTrackStationResponse `json:"station"`
+	}
+
+	GetRouteTrackStationResponse struct {
+		ID   uuid.UUID `json:"id" gorm:"primaryKey"`
+		Name string    `json:"name"`
+		Ref  string    `json:"ref"`
 	}
 )
 

@@ -33,6 +33,14 @@ func (s *RouteService) GetRouteById(id string) (res model.GetRouteResponse, err 
 
 		trackResponses := make([]model.GetRouteTrackResponse, 0)
 		for _, track := range detail.Tracks {
+			var station *model.GetRouteTrackStationResponse
+			if track.Station != nil {
+				station = &model.GetRouteTrackStationResponse{
+					ID:   track.Station.ID,
+					Name: track.Station.Name,
+					Ref:  track.Station.Ref,
+				}
+			}
 			trackResponses = append(trackResponses, model.GetRouteTrackResponse{
 				ID:        track.ID,
 				Sequence:  track.Sequence,
@@ -40,7 +48,7 @@ func (s *RouteService) GetRouteById(id string) (res model.GetRouteResponse, err 
 				Cost:      float32(track.Cost),
 				Latitude:  track.Latitude,
 				Longitude: track.Longitude,
-				StationID: track.StationID,
+				Station:   station,
 			})
 		}
 
