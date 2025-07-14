@@ -81,6 +81,6 @@ func (h *TrainHandler) GetTrainPosition(conn *websocket.Conn) error {
 			return nil
 		}
 
-		time.Sleep(5 * time.Second)
+		time.Sleep(2 * time.Second)
 	}
 }

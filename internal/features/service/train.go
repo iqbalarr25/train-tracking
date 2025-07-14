@@ -69,6 +69,7 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 		return res, err
 	}
 
+	fmt.Println("INI STATUS: ", train.Status)
 	if train.Status == "Inactive" {
 		return model.GetTrainPositionResponse{
 			Lat:      0,
@@ -82,32 +83,52 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 		return res, errors.New("tidak ada data detail route untuk posisi kereta")
 	}
 
-	detail := train.Route.RouteDetails[0]
-	if detail.ArriveTime == nil || detail.DepartTime == nil {
-		return res, errors.New("data waktu keberangkatan/kedatangan tidak lengkap")
-	}
-
-	if len(detail.Tracks) < 2 {
-		return res, errors.New("jumlah track tidak cukup untuk menghitung posisi")
-	}
-
-	sort.Slice(detail.Tracks, func(i, j int) bool {
-		return detail.Tracks[i].Sequence < detail.Tracks[j].Sequence
-	})
-
-	var coords []model.TrainLatLon
-	for _, t := range detail.Tracks {
-		coords = append(coords, model.TrainLatLon{Lat: t.Latitude, Lon: t.Longitude})
-	}
-
 	loc, _ := time.LoadLocation("Asia/Jakarta")
 	now := time.Now().In(loc)
 
+	var coords []model.TrainLatLon
+	var allDepart, allArrive *time.Time
+
+	for i, detail := range train.Route.RouteDetails {
+		if detail.DepartTime != nil {
+			if allDepart == nil || detail.DepartTime.Before(*allDepart) {
+				allDepart = detail.DepartTime
+			}
+		}
+
+		if detail.ArriveTime != nil {
+			if allArrive == nil || detail.ArriveTime.After(*allArrive) {
+				allArrive = detail.ArriveTime
+			}
+		} else if detail.DepartTime != nil {
+			if allArrive == nil || detail.DepartTime.After(*allArrive) {
+				allArrive = detail.DepartTime
+			}
+		}
+
+		if i == len(train.Route.RouteDetails)-1 {
+			continue
+		}
+
+		sort.Slice(detail.Tracks, func(i, j int) bool {
+			return detail.Tracks[i].Sequence < detail.Tracks[j].Sequence
+		})
+
+		for _, t := range detail.Tracks {
+			coords = append(coords, model.TrainLatLon{Lat: t.Latitude, Lon: t.Longitude})
+		}
+	}
+
+	if len(coords) < 2 || allDepart == nil || allArrive == nil {
+		return res, errors.New("data tidak cukup untuk menghitung posisi")
+	}
+
 	dummyDate := "2000-01-01"
-	depart, _ := time.Parse("2006-01-02 15:04:05", dummyDate+" "+detail.DepartTime.Format("15:04:05"))
-	arrive, _ := time.Parse("2006-01-02 15:04:05", dummyDate+" "+detail.ArriveTime.Format("15:04:05"))
-	nowParsed, _ := time.Parse("2006-01-02 15:04:05", dummyDate+" "+now.Format("15:04:05"))
-	fmt.Println(depart, arrive, nowParsed)
+	depart, _ := time.Parse("2006-01-02 15:04:05", dummyDate+" "+allDepart.Format("15:04:05"))
+	arrive, _ := time.Parse("2006-01-02 15:04:05", dummyDate+" "+allArrive.Format("15:04:05"))
+	nowTime, _ := time.Parse("15:04:05", now.Format("15:04:05"))
+	nowParsed, _ := time.Parse("2006-01-02 15:04:05", dummyDate+" "+nowTime.Format("15:04:05"))
+
 	totalDuration := arrive.Sub(depart).Seconds()
 	elapsed := nowParsed.Sub(depart).Seconds()
 	progress := elapsed / totalDuration
@@ -118,6 +139,11 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 	if progress > 1 {
 		progress = 1
 	}
+
+	fmt.Println("Depart:", depart.Format("15:04:05"))
+	fmt.Println("Arrive:", arrive.Format("15:04:05"))
+	fmt.Println("Now   :", nowParsed.Format("15:04:05"))
+	fmt.Printf("Total Duration: %.0fs, Elapsed: %.0fs\n", totalDuration, elapsed)
 
 	log.Infof("🚆 Progress KA: %.2f%% (elapsed %.0fs dari %.0fs)", progress*100, elapsed, totalDuration)
 
