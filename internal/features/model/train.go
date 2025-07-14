@@ -48,6 +48,25 @@ type (
 		Name string    `json:"name"`
 		Ref  string    `json:"ref"`
 	}
+
+	GetTrainPositionResponse struct {
+		Lat      float64 `json:"lat"`
+		Lon      float64 `json:"lon"`
+		Progress float64 `json:"progress"`
+		Status   string  `json:"status"`
+	}
+
+	TrainPositionRouteDetailSummary struct {
+		DepartTime      time.Time `json:"depart_time"`
+		ArriveTime      time.Time `json:"arrive_time"`
+		ID              uuid.UUID `json:"id"`
+		CurrentSequence int64     `json:"current_sequence"`
+	}
+
+	TrainLatLon struct {
+		Lat float64 `json:"lat"`
+		Lon float64 `json:"lon"`
+	}
 )
 
 func (t *Train) BeforeCreate(_ *gorm.DB) error {

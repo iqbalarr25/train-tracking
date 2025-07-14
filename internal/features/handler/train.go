@@ -7,11 +7,15 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"math"
 	"net/http"
+	"time"
+
+	"github.com/gofiber/websocket/v2"
 )
 
 type (
 	TrainHandlerInterface interface {
 		GetTrainPagination(ctx *fiber.Ctx) error
+		GetTrainPosition(conn *websocket.Conn) error
 	}
 	TrainHandler struct {
 		SVC service.TrainServiceInterface
@@ -57,4 +61,26 @@ func (h *TrainHandler) GetTrainPagination(ctx *fiber.Ctx) error {
 		Success:   true,
 	}
 	return helper.GenerateResponsePagination(ctx, resp)
+}
+
+func (h *TrainHandler) GetTrainPosition(conn *websocket.Conn) error {
+	defer func(conn *websocket.Conn) {
+		err := conn.Close()
+		if err != nil {
+		}
+	}(conn)
+
+	id := conn.Params("id")
+
+	for {
+		resp, err := h.SVC.GetTrainPosition(id)
+
+		err = conn.WriteJSON(resp)
+		if err != nil {
+			helper.Exception(err)
+			return nil
+		}
+
+		time.Sleep(5 * time.Second)
+	}
 }

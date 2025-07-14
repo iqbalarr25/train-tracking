@@ -8,6 +8,8 @@ import (
 	"TrainTracking/internal/routes/middleware"
 	"github.com/gofiber/fiber/v2"
 	"gorm.io/gorm"
+
+	"github.com/gofiber/websocket/v2"
 )
 
 func RouteV1(r fiber.Router, DB *gorm.DB) {
@@ -18,12 +20,21 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	user := routeV1.Group("/users", middleware.CheckAuthDashboard)
 	train := routeV1.Group("/trains")
 	route := routeV1.Group("/routes")
+	ws := routeV1.Group("/ws")
 
 	// Define all v1 routes here
 	routeV1.Get("/helo", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusOK).JSON(map[string]string{
 			"msg": "hi",
 		})
+	})
+
+	ws.Use(func(c *fiber.Ctx) error {
+		if websocket.IsWebSocketUpgrade(c) {
+			c.Locals("allowed", true)
+			return c.Next()
+		}
+		return fiber.ErrUpgradeRequired
 	})
 
 	userRepo := repository.NewUserRepository(DB)
@@ -53,6 +64,13 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	trainHandler := handler.NewTrainHandler(trainService)
 	{
 		train.Get("", trainHandler.GetTrainPagination)
+
+		ws.Get("/train/:id/positions", websocket.New(func(conn *websocket.Conn) {
+			err := trainHandler.GetTrainPosition(conn)
+			if err != nil {
+				return
+			}
+		}))
 	}
 
 	routeHandler := handler.NewRouteHandler(routeService)
