@@ -13,19 +13,6 @@ import (
 	"strings"
 )
 
-//type PgRoutingData struct {
-//	OrderFrom     int16      `gorm:"column:order_from"`
-//	Sequence      int        `gorm:"column:seq"`
-//	Latitude      float64    `gorm:"column:lat"`
-//	Longitude     float64    `gorm:"column:lon"`
-//	MaxSpeed      *float64   `gorm:"column:max_speed"`
-//	Cost          float64    `gorm:"column:cost"`
-//	IsStation     bool       `gorm:"column:is_station"`
-//	RailNodeID    uuid.UUID  `gorm:"column:rail_node_id"`
-//	RouteDetailID uuid.UUID  `gorm:"column:route_detail_id"`
-//	StationID     *uuid.UUID `gorm:"column:station_id"`
-//}
-
 type OsrmData struct {
 	Code      string     `json:"code"`
 	Routes    []Routes   `json:"routes"`
