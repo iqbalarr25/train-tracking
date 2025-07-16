@@ -59,6 +59,7 @@ type (
 	TrainPositionRouteDetailSummary struct {
 		DepartTime      time.Time `json:"depart_time"`
 		ArriveTime      time.Time `json:"arrive_time"`
+		NextDepartTime  time.Time `json:"next_depart_time"`
 		ID              uuid.UUID `json:"id"`
 		CurrentSequence int64     `json:"current_sequence"`
 		NextSequence    int64     `json:"next_sequence"`

@@ -126,36 +126,46 @@ func (r *TrainRepository) getCurrentRouteDetail(id string, currentRoute *model.T
 	nowStr := now.Format("15:04:05")
 
 	query := `SELECT
-	  rd_current.id,
-	  rd_current.sequence AS current_sequence,
-	  rd_current.depart_time AS depart_time,
-	  (
-		SELECT rd_next.sequence
-		FROM route_details AS rd_next
-		WHERE rd_next.route_id = rd_current.route_id
-		  AND rd_next.sequence > rd_current.sequence
-		  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
-		ORDER BY rd_next.sequence
-		LIMIT 1
-	  ) AS next_sequence,
-	  (
-		SELECT COALESCE(rd_next.arrive_time, rd_next.depart_time)
-		FROM route_details AS rd_next
-		WHERE rd_next.route_id = rd_current.route_id
-		  AND rd_next.sequence > rd_current.sequence
-		  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
-		ORDER BY rd_next.sequence
-		LIMIT 1
-	  ) AS arrive_time
-	FROM
-	  route_details AS rd_current
-	WHERE
-	  rd_current.route_id = $1
-	  AND rd_current.depart_time IS NOT NULL
-	  AND TO_CHAR(rd_current.depart_time::timestamp, 'HH24:MI:SS') <= $2
-	ORDER BY
-	  rd_current.sequence DESC
-	LIMIT 1`
+		  rd_current.id,
+		  rd_current.sequence AS current_sequence,
+		  rd_current.depart_time AS depart_time,
+		  (
+			SELECT rd_next.depart_time
+			FROM route_details AS rd_next
+			WHERE rd_next.route_id = rd_current.route_id
+			  AND rd_next.sequence > rd_current.sequence
+			  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
+			ORDER BY rd_next.sequence
+			LIMIT 1
+		  ) AS next_depart_time,
+		  (
+			SELECT rd_next.sequence
+			FROM route_details AS rd_next
+			WHERE rd_next.route_id = rd_current.route_id
+			  AND rd_next.sequence > rd_current.sequence
+			  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
+			ORDER BY rd_next.sequence
+			LIMIT 1
+		  ) AS next_sequence,
+		  (
+			SELECT COALESCE(rd_next.arrive_time, rd_next.depart_time)
+			FROM route_details AS rd_next
+			WHERE rd_next.route_id = rd_current.route_id
+			  AND rd_next.sequence > rd_current.sequence
+			  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
+			ORDER BY rd_next.sequence
+			LIMIT 1
+		  ) AS arrive_time
+		
+		FROM
+		  route_details AS rd_current
+		WHERE
+		  rd_current.route_id = $1
+		  AND rd_current.depart_time IS NOT NULL
+		  AND TO_CHAR(rd_current.depart_time::timestamp, 'HH24:MI:SS') <= $2
+		ORDER BY
+		  rd_current.sequence DESC
+		LIMIT 1`
 
 	err = r.DB.Raw(query, id, nowStr).Scan(&currentRoute).Error
 	if err != nil {
@@ -191,23 +201,43 @@ func (r *TrainRepository) UpdateTrainStatuses() {
 			continue
 		}
 
-		departStr := route.DepartTime.Format("15:04:05")
-		arriveStr := route.ArriveTime.Format("15:04:05")
+		departStr := detail.DepartTime.Format("15:04:05")
+		nextDepartStr := detail.NextDepartTime.Format("15:04:05")
+		arriveStr := detail.ArriveTime.Format("15:04:05")
 
 		depart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+departStr, loc)
+		nextDepart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+nextDepartStr, loc)
 		arrive, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+arriveStr, loc)
 		board := depart.Add(-5 * time.Minute)
 
 		status := "Inactive"
 		switch {
-		case nowDummy.Before(board) || nowDummy.After(arrive):
-			status = "Inactive"
-		case nowDummy.After(board) && nowDummy.Before(depart):
+		case (nowDummy.After(arrive) && nowDummy.Before(nextDepart)) || (nowDummy.After(board) && nowDummy.Before(depart)):
 			status = "Boarding"
 		case nowDummy.After(depart) && nowDummy.Before(arrive):
 			status = "Moving"
 		}
 
+		//depart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+departStr, loc)
+		//arrive, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+arriveStr, loc)
+
+		//departStr := route.DepartTime.Format("15:04:05")
+		//arriveStr := route.ArriveTime.Format("15:04:05")
+		//
+		//depart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+departStr, loc)
+		//arrive, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+arriveStr, loc)
+		//board := depart.Add(-5 * time.Minute)
+		//
+		//status := "Inactive"
+		//switch {
+		//case nowDummy.Before(board) || nowDummy.After(arrive):
+		//	status = "Inactive"
+		//case nowDummy.After(board) && nowDummy.Before(depart):
+		//	status = "Boarding"
+		//case nowDummy.After(depart) && nowDummy.Before(arrive):
+		//	status = "Moving"
+		//}
+		//
 		log.Printf(
 			"\n🚂 KA %s\nNow        : %s\nBoarding   : %s\nDepart     : %s\nArrive     : %s\nCurrentStat: %s\n",
 			route.Train.Name,
