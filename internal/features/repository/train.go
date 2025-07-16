@@ -2,6 +2,8 @@ package repository
 
 import (
 	"TrainTracking/internal/features/model"
+	"errors"
+	"fmt"
 	"gorm.io/gorm"
 	"log"
 	"time"
@@ -10,6 +12,7 @@ import (
 type (
 	TrainRepositoryInterface interface {
 		GetTrainsPagination(req model.RequestPaginationTrain, res *[]model.Train) (count int64, err error)
+		GetTrainPosition(id string, train *model.Train) (err error)
 		UpdateTrainStatuses()
 	}
 
@@ -82,6 +85,89 @@ func (r *TrainRepository) GetTrainsPagination(req model.RequestPaginationTrain, 
 	return
 }
 
+func (r *TrainRepository) GetTrainPosition(id string, train *model.Train) (err error) {
+	err = r.DB.Preload("Route").Where("id = ?", id).First(train).Error
+	if err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			return fmt.Errorf("train dengan ID '%s' tidak ditemukan: %w", id, err)
+		}
+		return fmt.Errorf("gagal mengambil data train: %w", err)
+	}
+
+	if train.Route == nil {
+		return errors.New("route tidak ditemukan atau tidak valid pada train")
+	}
+
+	var trainSummary model.TrainPositionRouteDetailSummary
+	err = r.getCurrentRouteDetail(train.Route.ID.String(), &trainSummary)
+	if err != nil {
+		return err
+	}
+
+	var routeDetails []model.RouteDetail
+	err = r.DB.Where("route_id = ? AND sequence >= ? AND sequence <= ?", train.Route.ID, trainSummary.CurrentSequence, trainSummary.NextSequence).
+		Preload("Tracks").
+		Find(&routeDetails).Error
+	if err != nil {
+		return err
+	}
+
+	train.Route.RouteDetails = routeDetails
+
+	return nil
+}
+
+func (r *TrainRepository) getCurrentRouteDetail(id string, currentRoute *model.TrainPositionRouteDetailSummary) (err error) {
+	loc, err := time.LoadLocation("Asia/Jakarta")
+	if err != nil {
+		return fmt.Errorf("gagal memuat lokasi Jakarta: %w", err)
+	}
+	now := time.Now().In(loc)
+	nowStr := now.Format("15:04:05")
+
+	query := `SELECT
+	  rd_current.id,
+	  rd_current.sequence AS current_sequence,
+	  rd_current.depart_time AS depart_time,
+	  (
+		SELECT rd_next.sequence
+		FROM route_details AS rd_next
+		WHERE rd_next.route_id = rd_current.route_id
+		  AND rd_next.sequence > rd_current.sequence
+		  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
+		ORDER BY rd_next.sequence
+		LIMIT 1
+	  ) AS next_sequence,
+	  (
+		SELECT COALESCE(rd_next.arrive_time, rd_next.depart_time)
+		FROM route_details AS rd_next
+		WHERE rd_next.route_id = rd_current.route_id
+		  AND rd_next.sequence > rd_current.sequence
+		  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
+		ORDER BY rd_next.sequence
+		LIMIT 1
+	  ) AS arrive_time
+	FROM
+	  route_details AS rd_current
+	WHERE
+	  rd_current.route_id = $1
+	  AND rd_current.depart_time IS NOT NULL
+	  AND TO_CHAR(rd_current.depart_time::timestamp, 'HH24:MI:SS') <= $2
+	ORDER BY
+	  rd_current.sequence DESC
+	LIMIT 1`
+
+	err = r.DB.Raw(query, id, nowStr).Scan(&currentRoute).Error
+	if err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			return errors.New("tidak ada posisi train yang cocok ditemukan untuk waktu saat ini")
+		}
+		return fmt.Errorf("gagal mengeksekusi query posisi train: %w", err)
+	}
+
+	return nil
+}
+
 func (r *TrainRepository) UpdateTrainStatuses() {
 	var routes []model.Route
 
@@ -98,6 +184,13 @@ func (r *TrainRepository) UpdateTrainStatuses() {
 	nowDummy, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+now.Format("15:04:05"), loc)
 
 	for _, route := range routes {
+		var detail model.TrainPositionRouteDetailSummary
+		err := r.getCurrentRouteDetail(route.ID.String(), &detail)
+		if err != nil {
+			log.Printf("❌ Gagal dapat posisi detail untuk KA %s: %v", route.Train.Name, err)
+			continue
+		}
+
 		departStr := route.DepartTime.Format("15:04:05")
 		arriveStr := route.ArriveTime.Format("15:04:05")
 
