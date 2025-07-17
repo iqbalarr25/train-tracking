@@ -209,35 +209,16 @@ func (r *TrainRepository) UpdateTrainStatuses() {
 		nextDepart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+nextDepartStr, loc)
 		arrive, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+arriveStr, loc)
 		board := depart.Add(-5 * time.Minute)
+		finishGap := arrive.Add(+5 * time.Minute)
 
 		status := "Inactive"
 		switch {
-		case (nowDummy.After(arrive) && nowDummy.Before(nextDepart)) || (nowDummy.After(board) && nowDummy.Before(depart)):
+		case (nowDummy.After(arrive) && nowDummy.Before(nextDepart)) || (nowDummy.After(board) && nowDummy.Before(depart)) || (nowDummy.After(arrive) && nowDummy.Before(finishGap)):
 			status = "Boarding"
 		case nowDummy.After(depart) && nowDummy.Before(arrive):
 			status = "Moving"
 		}
 
-		//depart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+departStr, loc)
-		//arrive, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+arriveStr, loc)
-
-		//departStr := route.DepartTime.Format("15:04:05")
-		//arriveStr := route.ArriveTime.Format("15:04:05")
-		//
-		//depart, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+departStr, loc)
-		//arrive, _ := time.ParseInLocation("2006-01-02 15:04:05", dummyDate+" "+arriveStr, loc)
-		//board := depart.Add(-5 * time.Minute)
-		//
-		//status := "Inactive"
-		//switch {
-		//case nowDummy.Before(board) || nowDummy.After(arrive):
-		//	status = "Inactive"
-		//case nowDummy.After(board) && nowDummy.Before(depart):
-		//	status = "Boarding"
-		//case nowDummy.After(depart) && nowDummy.Before(arrive):
-		//	status = "Moving"
-		//}
-		//
 		log.Printf(
 			"\n🚂 KA %s\nNow        : %s\nBoarding   : %s\nDepart     : %s\nArrive     : %s\nCurrentStat: %s\n",
 			route.Train.Name,
