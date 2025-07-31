@@ -7,7 +7,7 @@ import (
 
 type (
 	RouteRepositoryInterface interface {
-		GetRouteById(id string, res *model.Route) (err error)
+		GetRouteDetailByRouteId(id string, res *[]model.RouteDetail) (err error)
 	}
 
 	RouteRepository struct {
@@ -21,14 +21,13 @@ func NewRouteRepository(db *gorm.DB) *RouteRepository {
 	}
 }
 
-func (r *RouteRepository) GetRouteById(id string, route *model.Route) (err error) {
-	err = r.DB.Model(model.Route{}).Where("id = ?", id).
-		Preload("RouteDetails.Tracks.Station").
-		Preload("RouteDetails.Station").
-		Preload("Train").
-		Preload("DepartStation").
-		Preload("ArriveStation").
-		First(&route).Error
+func (r *RouteRepository) GetRouteDetailByRouteId(id string, routeDetail *[]model.RouteDetail) (err error) {
+	err = r.DB.Where("route_id = ?", id).
+		Preload("Station").
+		Find(&routeDetail).Error
+	if err != nil {
+		return err
+	}
 
 	return
 }

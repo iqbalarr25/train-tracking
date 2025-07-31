@@ -7,7 +7,7 @@ import (
 
 type (
 	RouteServiceInterface interface {
-		GetRouteById(id string) (resp model.GetRouteResponse, err error)
+		GetRouteDetailByRouteId(id string) (resp []model.GetRouteDetailResponse, err error)
 	}
 
 	RouteService struct {
@@ -21,55 +21,26 @@ func NewRouteService(repo repository.RouteRepositoryInterface) RouteServiceInter
 	}
 }
 
-func (s *RouteService) GetRouteById(id string) (res model.GetRouteResponse, err error) {
-	var route model.Route
-	err = s.Repo.GetRouteById(id, &route)
+func (s *RouteService) GetRouteDetailByRouteId(id string) (res []model.GetRouteDetailResponse, err error) {
+	var routeDetails []model.RouteDetail
+	err = s.Repo.GetRouteDetailByRouteId(id, &routeDetails)
 
 	detailResponses := make([]model.GetRouteDetailResponse, 0)
 
-	for i := 0; i < len(route.RouteDetails)-1; i++ {
-		detail := route.RouteDetails[i]
-		next := route.RouteDetails[i+1]
-
-		trackResponses := make([]model.GetRouteTrackResponse, 0)
-		for _, track := range detail.Tracks {
-			var station *model.GetRouteTrackStationResponse
-			if track.Station != nil {
-				station = &model.GetRouteTrackStationResponse{
-					ID:   track.Station.ID,
-					Name: track.Station.Name,
-					Ref:  track.Station.Ref,
-				}
-			}
-			trackResponses = append(trackResponses, model.GetRouteTrackResponse{
-				ID:        track.ID,
-				Sequence:  track.Sequence,
-				MaxSpeed:  track.MaxSpeed,
-				Cost:      float32(track.Cost),
-				Latitude:  track.Latitude,
-				Longitude: track.Longitude,
-				Station:   station,
-			})
-		}
-
+	for _, routeDetail := range routeDetails {
 		detailResponses = append(detailResponses, model.GetRouteDetailResponse{
-			ID:         detail.ID,
-			From:       detail.Station.Name,
-			To:         next.Station.Name,
-			DepartTime: detail.DepartTime,
-			ArriveTime: next.ArriveTime,
-			Track:      trackResponses,
+			ID: routeDetail.ID,
+			Station: model.GetRouteTrackStationResponse{
+				ID:   routeDetail.ID,
+				Name: routeDetail.Station.Name,
+				Ref:  routeDetail.Station.Ref,
+			},
+			DepartTime: routeDetail.DepartTime,
+			ArriveTime: routeDetail.ArriveTime,
+			Latitude:   routeDetail.Station.Lat,
+			Longitude:  routeDetail.Station.Lon,
 		})
 	}
 
-	result := model.GetRouteResponse{
-		ID:         route.ID,
-		From:       route.DepartStation.Name,
-		To:         route.ArriveStation.Name,
-		DepartTime: &route.DepartTime,
-		ArriveTime: &route.ArriveTime,
-		Detail:     detailResponses,
-	}
-
-	return result, err
+	return detailResponses, err
 }
