@@ -40,6 +40,7 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	userRepo := repository.NewUserRepository(DB)
 	trainRepo := repository.NewTrainRepository(DB)
 	routeRepo := repository.NewRouteRepository(DB)
+	trackRepo := repository.NewTrackRepository(DB)
 
 	userService := service.NewUserService(userRepo)
 	authService := service.NewAuthService(userRepo)
@@ -47,6 +48,8 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	trainService := service.NewTrainService(trainRepo)
 
 	routeService := service.NewRouteService(routeRepo)
+
+	trackService := service.NewTrackService(trackRepo)
 
 	authHandler := handler.NewAuthHandler(authService)
 	{
@@ -75,6 +78,10 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 
 	routeHandler := handler.NewRouteHandler(routeService)
 	{
-		route.Get("/:id", routeHandler.GetRouteById)
+		route.Get("/:id", routeHandler.GetRouteDetailByRouteId)
+		trackHandler := handler.NewTrackHandler(trackService)
+		{
+			route.Get("/:id/tracks", trackHandler.GetTracksByRouteId)
+		}
 	}
 }

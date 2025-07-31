@@ -126,46 +126,28 @@ func (r *TrainRepository) getCurrentRouteDetail(id string, currentRoute *model.T
 	nowStr := now.Format("15:04:05")
 
 	query := `SELECT
-		  rd_current.id,
-		  rd_current.sequence AS current_sequence,
-		  rd_current.depart_time AS depart_time,
-		  (
-			SELECT rd_next.depart_time
-			FROM route_details AS rd_next
-			WHERE rd_next.route_id = rd_current.route_id
-			  AND rd_next.sequence > rd_current.sequence
-			  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
-			ORDER BY rd_next.sequence
-			LIMIT 1
-		  ) AS next_depart_time,
-		  (
-			SELECT rd_next.sequence
-			FROM route_details AS rd_next
-			WHERE rd_next.route_id = rd_current.route_id
-			  AND rd_next.sequence > rd_current.sequence
-			  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
-			ORDER BY rd_next.sequence
-			LIMIT 1
-		  ) AS next_sequence,
-		  (
-			SELECT COALESCE(rd_next.arrive_time, rd_next.depart_time)
-			FROM route_details AS rd_next
-			WHERE rd_next.route_id = rd_current.route_id
-			  AND rd_next.sequence > rd_current.sequence
-			  AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
-			ORDER BY rd_next.sequence
-			LIMIT 1
-		  ) AS arrive_time
-		
-		FROM
-		  route_details AS rd_current
-		WHERE
-		  rd_current.route_id = $1
-		  AND rd_current.depart_time IS NOT NULL
-		  AND TO_CHAR(rd_current.depart_time::timestamp, 'HH24:MI:SS') <= $2
-		ORDER BY
-		  rd_current.sequence DESC
-		LIMIT 1`
+	  rd_current.id,
+	  rd_current.sequence AS current_sequence,
+	  rd_current.depart_time AS depart_time,
+	  next_detail.depart_time AS next_depart_time,
+	  next_detail.sequence AS next_sequence,
+	  COALESCE(next_detail.arrive_time, next_detail.depart_time) AS arrive_time
+	FROM route_details AS rd_current
+	LEFT JOIN LATERAL (
+	  SELECT *
+	  FROM route_details AS rd_next
+	  WHERE rd_next.route_id = rd_current.route_id
+		AND rd_next.sequence > rd_current.sequence
+		AND (rd_next.arrive_time IS NOT NULL OR rd_next.depart_time IS NOT NULL)
+	  ORDER BY rd_next.sequence
+	  LIMIT 1
+	) AS next_detail ON true
+	WHERE
+	  rd_current.route_id = $1
+	  AND rd_current.depart_time IS NOT NULL
+	  AND TO_CHAR(rd_current.depart_time::timestamp, 'HH24:MI:SS') <= $2
+	ORDER BY rd_current.sequence DESC
+	LIMIT 1`
 
 	err = r.DB.Raw(query, id, nowStr).Scan(&currentRoute).Error
 	if err != nil {

@@ -23,6 +23,16 @@ type (
 		RouteDetail RouteDetail `json:"route_detail" gorm:"foreignKey:RouteDetailID;references:ID"`
 		Station     *Station    `json:"station" gorm:"foreignKey:StationID;references:ID"`
 	}
+
+	GetTrackResponse struct {
+		ID        uuid.UUID                     `json:"id" gorm:"primaryKey"`
+		Sequence  int                           `json:"sequence"`
+		Cost      float64                       `json:"cost"`
+		MaxSpeed  *int16                        `json:"max_speed"`
+		Latitude  float64                       `json:"latitude"`
+		Longitude float64                       `json:"longitude"`
+		Station   *GetRouteTrackStationResponse `json:"station"`
+	}
 )
 
 func (t *Track) BeforeCreate(_ *gorm.DB) error {

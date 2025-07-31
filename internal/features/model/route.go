@@ -43,32 +43,13 @@ type (
 		Tracks  []Track `json:"tracks" gorm:"foreignKey:RouteDetailID;references:ID"`
 	}
 
-	GetRouteResponse struct {
-		ID         uuid.UUID                `json:"id" gorm:"primaryKey"`
-		From       string                   `json:"from"`
-		To         string                   `json:"to"`
-		DepartTime *time.Time               `json:"depart_time"`
-		ArriveTime *time.Time               `json:"arrive_time"`
-		Detail     []GetRouteDetailResponse `json:"details"`
-	}
-
 	GetRouteDetailResponse struct {
-		ID         uuid.UUID               `json:"id" gorm:"primaryKey"`
-		From       string                  `json:"from"`
-		To         string                  `json:"to"`
-		DepartTime *time.Time              `json:"depart_time"`
-		ArriveTime *time.Time              `json:"arrive_time"`
-		Track      []GetRouteTrackResponse `json:"tracks"`
-	}
-
-	GetRouteTrackResponse struct {
-		ID        uuid.UUID                     `json:"id" gorm:"primaryKey"`
-		Sequence  int                           `json:"sequence"`
-		Cost      float32                       `json:"cost"`
-		MaxSpeed  *int16                        `json:"max_speed"`
-		Latitude  float64                       `json:"latitude"`
-		Longitude float64                       `json:"longitude"`
-		Station   *GetRouteTrackStationResponse `json:"station"`
+		ID         uuid.UUID                    `json:"id" gorm:"primaryKey"`
+		Station    GetRouteTrackStationResponse `json:"station"`
+		DepartTime *time.Time                   `json:"depart_time"`
+		ArriveTime *time.Time                   `json:"arrive_time"`
+		Latitude   float64                      `json:"latitude"`
+		Longitude  float64                      `json:"longitude"`
 	}
 
 	GetRouteTrackStationResponse struct {

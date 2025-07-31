@@ -8,24 +8,24 @@ import (
 )
 
 type (
-	RouteHandlerInterface interface {
-		GetRouteDetailByRouteId(ctx *fiber.Ctx) error
+	TrackHandlerInterface interface {
+		GetTracksByRouteId(ctx *fiber.Ctx) error
 	}
-	RouteHandler struct {
-		SVC service.RouteServiceInterface
+	TrackHandler struct {
+		SVC service.TrackServiceInterface
 	}
 )
 
-func NewRouteHandler(svc service.RouteServiceInterface) RouteHandlerInterface {
-	return &RouteHandler{
+func NewTrackHandler(svc service.TrackServiceInterface) TrackHandlerInterface {
+	return &TrackHandler{
 		SVC: svc,
 	}
 }
 
-func (h *RouteHandler) GetRouteDetailByRouteId(ctx *fiber.Ctx) error {
+func (h *TrackHandler) GetTracksByRouteId(ctx *fiber.Ctx) error {
 	id := ctx.Params("id")
 
-	resp, err := h.SVC.GetRouteDetailByRouteId(id)
+	resp, err := h.SVC.GetTracksByRouteId(id)
 	if err != nil {
 		return helper.GenerateResponse(ctx, http.StatusInternalServerError, err.Error(), nil, false)
 	}
