@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Test WebTransport</title>
+</head>
+<body>
+<h1>WebTransport Test</h1>
+<script>
+    (async () => {
+        try {
+            const transport = new WebTransport("https://localhost:4433/v1/wt/train/2243e050-df4e-4315-a14b-2f52d26ae3a1/positions");
+            await transport.ready;
+            console.log("WebTransport connected");
+
+            const stream = await transport.createBidirectionalStream();
+            const reader = stream.readable.getReader();
+
+            while (true) {
+                const { value, done } = await reader.read();
+                if (done) break;
+
+                const text = new TextDecoder().decode(value);
+                console.log("WebTransport:", JSON.parse(text));
+            }
+        } catch (err) {
+            console.error("WebTransport failed:", err);
+        }
+    })();
+</script>
+</body>
+</html>

@@ -19,6 +19,7 @@ var ctx = context.Background()
 
 func StartApp() error {
 	config.InitDatabase()
+	DB := config.GetDBConnection()
 	config.InitCache(ctx)
 
 	app := fiber.New()
@@ -30,7 +31,8 @@ func StartApp() error {
 		AllowHeaders: "*",
 		AllowMethods: "*",
 	}))
-	routes.Register(app)
+	routes.Register(app, DB)
+	StartWebTransportServer(DB)
 
 	if err := scheduler.Register(); err != nil {
 		helper.Exception(err)

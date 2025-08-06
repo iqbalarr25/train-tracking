@@ -1,13 +1,12 @@
 package routes
 
 import (
-	"TrainTracking/internal/config"
 	routes_api "TrainTracking/internal/routes/v1"
 	"github.com/gofiber/fiber/v2"
+	"gorm.io/gorm"
 )
 
-func Register(r fiber.Router) {
-	DB := config.GetDBConnection()
+func Register(r fiber.Router, DB *gorm.DB) {
 	api := r.Group("/api")
 
 	routes_api.RouteV1(api, DB)
