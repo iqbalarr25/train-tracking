@@ -18,9 +18,9 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	routeV1 := r.Group("/v1")
 	auth := routeV1.Group("/auth")
 	user := routeV1.Group("/users", middleware.CheckAuthDashboard)
-	train := routeV1.Group("/trains")
-	route := routeV1.Group("/routes")
-	ws := routeV1.Group("/ws")
+	train := routeV1.Group("/trains", middleware.CheckAuthDashboard)
+	route := routeV1.Group("/routes", middleware.CheckAuthDashboard)
+	ws := routeV1.Group("/ws", middleware.CheckAuthDashboard)
 
 	// Define all v1 routes here
 	routeV1.Get("/helo", func(c *fiber.Ctx) error {
@@ -54,6 +54,7 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	authHandler := handler.NewAuthHandler(authService)
 	{
 		auth.Post("/login", authHandler.Login)
+		auth.Post("/register", authHandler.Register)
 	}
 
 	userHandler := handler.NewUserHandler(userService)
