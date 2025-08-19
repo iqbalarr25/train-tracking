@@ -30,9 +30,3 @@ it will rolling back your last migration
 
 #### Execute your migration (rollback)
 `go run . db rollback`
-
-## Contributor
-TransTRACK Tech Team
-
-## License
-TransTRACK.

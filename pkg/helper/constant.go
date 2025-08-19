@@ -2,8 +2,7 @@ package helper
 
 const (
 	UserRoleAdmin               = "ADMIN"
-	UserRoleOperator            = "OPERATOR"
-	UserRoleSetter              = "SETTER"
+	UserRoleMember              = "MEMBER"
 	SuccessCreatedDataMessage   = "Data created successfully"
 	SuccessUpdatedDataMessage   = "Data updated successfully"
 	SuccessDeletedDataMessage   = "Data deleted successfully"

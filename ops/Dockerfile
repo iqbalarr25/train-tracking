@@ -8,4 +8,4 @@ COPY . .
 RUN go install
 RUN go build
 
-CMD AirplaneTracking start
+CMD TrainTracking start

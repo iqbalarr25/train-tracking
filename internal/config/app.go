@@ -33,22 +33,6 @@ func GetCurrentEnvironment() string {
 	return GetApp().Env
 }
 
-type Telematic struct {
-	ApiUrl   string
-	User     string
-	Password string
-	Token    string
-}
-
-func GetTelematic() Telematic {
-	return Telematic{
-		ApiUrl:   getEnv("TELEMATIC_API_URL", "https://telematics.transtrack.id"),
-		User:     getEnv("TELEMATIC_API_USER", "bar"),
-		Password: getEnv("TELEMATIC_API_PASSWORD", "password"),
-		Token:    getEnv("TELEMATIC_TOKEN", ""),
-	}
-}
-
 type Cache struct {
 	Host     string
 	Port     string
