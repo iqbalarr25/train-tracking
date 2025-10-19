@@ -1,0 +1,28 @@
+version: "3"
+services:
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${IMAGE_NAME}
+    container_name: ${IMAGE_NAME}-${APP_ENV}-application
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    deploy:
+      replicas: ${COMPOSE_REPLICAS:-1}
+    ports:
+      - "${COMPOSE_PUBLIC_PORT}:9000"
+    volumes:
+      # - ./:/app
+      - /etc/localtime:/etc/localtime:ro
+      - ./.env:/app/.env
+    networks:
+      - database-network
+      - proxy
+
+networks:
+  database-network:
+    external: true
+  proxy:
+    external: true
