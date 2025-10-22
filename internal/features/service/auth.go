@@ -38,9 +38,10 @@ func (s *AuthService) Login(request *model.LoginRequest) (*model.LoginResponse, 
 	res := model.LoginResponse{
 		Id:    user.ID,
 		Email: user.Email,
+		Name:  user.Name,
 	}
 
-	token, err := helper.CreateToken(user.Email, user.Role)
+	token, err := helper.CreateToken(user.ID.String(), user.Email, user.Role)
 	if err != nil {
 		return nil, http.StatusInternalServerError, err
 	}
@@ -82,7 +83,7 @@ func (s *AuthService) Register(request *model.RegisterRequest) (*model.RegisterR
 		Name:  user.Name,
 	}
 
-	token, err := helper.CreateToken(user.Email, user.Role)
+	token, err := helper.CreateToken(user.ID.String(), user.Email, user.Role)
 	if err != nil {
 		return nil, http.StatusInternalServerError, err
 	}
