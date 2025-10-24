@@ -5,7 +5,6 @@ import (
 	"TrainTracking/internal/features/handler"
 	"TrainTracking/internal/features/repository"
 	"TrainTracking/internal/features/service"
-	"TrainTracking/internal/routes/middleware"
 	"github.com/gofiber/fiber/v2"
 	"gorm.io/gorm"
 
@@ -17,10 +16,10 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 	config.InitAWS()
 	routeV1 := r.Group("/v1")
 	auth := routeV1.Group("/auth")
-	user := routeV1.Group("/users", middleware.CheckAuthDashboard)
-	train := routeV1.Group("/trains", middleware.CheckAuthDashboard)
-	route := routeV1.Group("/routes", middleware.CheckAuthDashboard)
-	ws := routeV1.Group("/ws", middleware.CheckAuthDashboard)
+	user := routeV1.Group("/users")
+	train := routeV1.Group("/trains")
+	route := routeV1.Group("/routes")
+	ws := routeV1.Group("/ws")
 
 	// Define all v1 routes here
 	routeV1.Get("/helo", func(c *fiber.Ctx) error {
