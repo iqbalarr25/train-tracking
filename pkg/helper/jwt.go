@@ -12,16 +12,17 @@ var (
 	SecretKey = config.GetApp().JWTSecret
 )
 
-func CreateToken(email, role string) (string, error) {
+func CreateToken(userID, email, role string) (string, error) {
 	env := config.GetApp()
 	jwtExpirationTime, _ := strconv.Atoi(env.JWTExpirationTime)
 
 	claims := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-		"sub": email,                                                                 // Subject (user identifier)
-		"iss": config.GetApp().Name,                                                  // Issuer
-		"aud": role,                                                                  // Audience (user role)
-		"exp": time.Now().Add(time.Minute * time.Duration(jwtExpirationTime)).Unix(), // Expiration time
-		"iat": time.Now().Unix(),                                                     // Issued at
+		"user_id": userID,
+		"sub":     email,                                                                 // Subject (user identifier)
+		"iss":     config.GetApp().Name,                                                  // Issuer
+		"aud":     role,                                                                  // Audience (user role)
+		"exp":     time.Now().Add(time.Minute * time.Duration(jwtExpirationTime)).Unix(), // Expiration time
+		"iat":     time.Now().Unix(),                                                     // Issued at
 	})
 
 	tokenString, err := claims.SignedString([]byte(SecretKey))
