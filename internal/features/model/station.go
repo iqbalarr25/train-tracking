@@ -22,6 +22,12 @@ type (
 		Lat  float64
 		Lon  float64
 	}
+
+	StationListResponse struct {
+		ID   uuid.UUID `json:"id"`
+		Name string    `json:"name"`
+		Ref  string    `json:"ref"`
+	}
 )
 
 func (s *Station) BeforeCreate(_ *gorm.DB) error {
