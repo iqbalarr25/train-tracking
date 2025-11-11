@@ -147,7 +147,6 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 
 	log.Infof("🚆 Progress KA: %.2f%% (elapsed %.0fs dari %.0fs)", progress*100, elapsed, totalDuration)
 
-	// Hitung jarak antar koordinat
 	totalDist := 0.0
 	distances := make([]float64, len(coords)-1)
 	for i := 1; i < len(coords); i++ {
@@ -156,7 +155,6 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 		totalDist += d
 	}
 
-	// Cari posisi berdasarkan progress
 	target := progress * totalDist
 	traveled := 0.0
 	for i := 0; i < len(distances); i++ {
