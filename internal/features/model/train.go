@@ -50,10 +50,12 @@ type (
 	}
 
 	GetTrainPositionResponse struct {
-		Lat      float64 `json:"lat"`
-		Lon      float64 `json:"lon"`
-		Progress float64 `json:"progress"`
-		Status   string  `json:"status"`
+		Lat         float64 `json:"lat"`
+		Lon         float64 `json:"lon"`
+		Progress    float64 `json:"progress"`
+		Status      string  `json:"status"`
+		PrevStation Station `json:"prev_station"`
+		NextStation Station `json:"next_station"`
 	}
 
 	TrainPositionRouteDetailSummary struct {
