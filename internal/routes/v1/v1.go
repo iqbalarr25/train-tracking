@@ -16,7 +16,7 @@ func RouteV1(r fiber.Router, DB *gorm.DB) {
 
 	config.InitAWS()
 	routeV1 := r.Group("/v1")
-	auth := routeV1.Group("/auth", middleware.CheckAuthDashboard)
+	auth := routeV1.Group("/auth")
 	user := routeV1.Group("/users", middleware.CheckAuthDashboard)
 	train := routeV1.Group("/trains", middleware.CheckAuthDashboard)
 	route := routeV1.Group("/routes", middleware.CheckAuthDashboard)
