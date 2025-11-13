@@ -72,10 +72,12 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 	fmt.Println("INI STATUS: ", train.Status)
 	if train.Status == "Inactive" {
 		return model.GetTrainPositionResponse{
-			Lat:      0,
-			Lon:      0,
-			Progress: 0,
-			Status:   train.Status,
+			Lat:         0,
+			Lon:         0,
+			Progress:    0,
+			Status:      train.Status,
+			PrevStation: model.Station{},
+			NextStation: model.Station{},
 		}, nil
 	}
 
@@ -88,6 +90,7 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 
 	var coords []model.TrainLatLon
 	var allDepart, allArrive *time.Time
+	var prevStation, nextStation model.Station
 
 	for i, detail := range train.Route.RouteDetails {
 		if detail.DepartTime != nil {
@@ -105,7 +108,11 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 				allArrive = detail.DepartTime
 			}
 		}
+		if i != 0 {
+			prevStation = train.Route.RouteDetails[i-1].Station
+		}
 
+		nextStation = detail.Station
 		if i == len(train.Route.RouteDetails)-1 {
 			continue
 		}
@@ -141,9 +148,12 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 	}
 
 	fmt.Println("Depart:", depart.Format("15:04:05"))
+	fmt.Println("Prev Station:", prevStation)
+	fmt.Println("Next Station:", nextStation)
 	fmt.Println("Arrive:", arrive.Format("15:04:05"))
 	fmt.Println("Now   :", nowParsed.Format("15:04:05"))
 	fmt.Printf("Total Duration: %.0fs, Elapsed: %.0fs\n", totalDuration, elapsed)
+	fmt.Println("Depart:", depart.Format("15:04:05"))
 
 	log.Infof("🚆 Progress KA: %.2f%% (elapsed %.0fs dari %.0fs)", progress*100, elapsed, totalDuration)
 
@@ -168,10 +178,12 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 				train.Status = "Boarding"
 			}
 			return model.GetTrainPositionResponse{
-				Lat:      lat,
-				Lon:      lon,
-				Progress: progress,
-				Status:   train.Status,
+				Lat:         lat,
+				Lon:         lon,
+				Progress:    progress,
+				Status:      train.Status,
+				PrevStation: prevStation,
+				NextStation: nextStation,
 			}, nil
 		}
 		traveled += distances[i]
@@ -179,10 +191,12 @@ func (s *TrainService) GetTrainPosition(id string) (res model.GetTrainPositionRe
 
 	last := coords[len(coords)-1]
 	return model.GetTrainPositionResponse{
-		Lat:      last.Lat,
-		Lon:      last.Lon,
-		Progress: progress,
-		Status:   train.Status,
+		Lat:         last.Lat,
+		Lon:         last.Lon,
+		Progress:    progress,
+		Status:      train.Status,
+		PrevStation: prevStation,
+		NextStation: nextStation,
 	}, nil
 }
 

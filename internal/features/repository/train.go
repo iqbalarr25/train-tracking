@@ -105,7 +105,7 @@ func (r *TrainRepository) GetTrainPosition(id string, train *model.Train) (err e
 	}
 
 	var routeDetails []model.RouteDetail
-	err = r.DB.Where("route_id = ? AND sequence >= ? AND sequence <= ?", train.Route.ID, trainSummary.CurrentSequence, trainSummary.NextSequence).
+	err = r.DB.Preload("Station").Where("route_id = ? AND sequence >= ? AND sequence <= ?", train.Route.ID, trainSummary.CurrentSequence, trainSummary.NextSequence).
 		Preload("Tracks").
 		Find(&routeDetails).Error
 	if err != nil {
